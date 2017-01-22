@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Девайс - каталог товаров</title>
+  </head>
+  <body>
+
+        <header class="main-header">
+          <div class="container">
+
+            <a  href="index.html" >  <img src=""  alt="Лого" class="logo"> </a>
+
+            <div class="user-block">
+                <input type="submit" class="search" value="Поиск по сайту">
+                <a class="account" href="#">Валентин Петухов</a>
+                <a class="login" href="#"> Вход</a>
+                <a class="compare" href="#">Сравнить</a>
+                <a class="basket" href="#">Корзина</a>
+            </div>
+
+            <nav class="main-navigation">
+              <ul>
+                <li>
+                  <a  href="#" class="catalog-menu"> Каталог товаров </a>
+                </li>
+                <li>
+                  <a href="#"> Доставка </a>
+                </li>
+                <li>
+                  <a href="#"> Гарантия </a>
+                </li>
+                <li>
+                  <a  href="#"> Контакты</a>
+                </li>
+              </ul>
+            </nav>
+        </header>
+
+
+      <main class="container">
+        <div class="catalog-hat">
+          <h1> Моноподы для селфи </h1>
+        <!-- Хлебные крошки -->
+        <ul class="breadcrumps">
+          <li>
+          <a  href="#">Главная</a>
+          </li>
+
+          <li>
+          <a  href="#">Каталог</a>
+          </li>
+
+          <li>
+          Моноподы для селфи
+          </li>
+        </ul>
+
+        </div>
+
+
+        <div class="catalog-content">
+          <div class="catalog-filter">
+            <form>
+            <fieldset class="filter-price">
+              <legend class="catalog-content-title">Стоимость</legend>
+
+                <input type=range min=0 max=1000000000 value=3 class="choose-price">
+
+            </fieldset>
+
+            <fieldset class="filter-color">
+             <legend class="catalog-content-title">Цвет</legend>
+
+            <label>
+              <input type="checkbox" name="color1" value="Черный" checked>
+              Черный
+            </label>
+
+            <label>
+              <input type="checkbox" name="color2" value="Белый" >
+              Белый
+            </label>
+
+            <label>
+              <input type="checkbox" name="color3" value="Синий" checked >
+              Синий
+            </label>
+
+            <label>
+              <input type="checkbox" name="color4" value="Красный" checked >
+              Красный
+            </label>
+
+            <label>
+              <input type="checkbox" name="colord5" value="Розовый" >
+              Розовый
+            </label>
+
+
+          </fieldset>
+
+          <fieldset class="filter-bluetooth">
+           <legend class="catalog-content-title">Группы товаров</legend>
+
+            <label>
+              <input type="radio" name="presence" value="Есть" checked>
+              Есть
+            </label>
+
+            <label>
+              <input type="radio" name="absence" value="Нет" >
+            Нет
+            </label>
+
+
+        </fieldset>
+
+        <input type="submit" class="catalog-show-groups" value="Показать">
+       </form>
+      </div>
+
+
+          <div class="catalog-listproducts">
+            <article class="catalog-product">
+              <a href="#"> <img src="img/goods1.jpg" alt="Любительская селфи-палка"> </a>
+              <a href="#" class="product-title">Любительская селфи-палка</a>
+              <p class="product-price">500 руб</p>
+            </article>
+
+            <article class="catalog-product">
+              <a href="#"> <img src="img/goods2.jpg" alt="Профессиональная селфи-палка"> </a>
+              <a href="#" class="product-title">Профессиональная селфи-палка</a>
+              <p class="product-price">1500 руб</p>
+            </article>
+
+            <article class="catalog-product">
+              <a href="#"> <img src="img/goods3.jpg" alt="Непотопляемая селфи-палка"> </a>
+              <a href="#" class="product-title">Любительская селфи-палка</a>
+              <p class="product-price">2500 руб</p>
+            </article>
+
+            <article class="catalog-product">
+              <a href="#"> <img src="img/goods1.jpg" alt="Селфи-палка 'Следуй за мной'"> </a>
+              <a href="#" class="product-title">Селфи-палка 'Следуй за мной'</a>
+              <p class="product-price">4900 руб</p>
+            </article>
+
+          </div>
+
+          <button class="btn-catalog-prev" type="button"> Назад </button>
+          <div class="paginator">
+              <a class="btn-activ" href="#">1</a>
+              <a class="btn" href="#">2</a>
+              <a class="btn" href="#">3</a>
+          </div>
+          <button class="btn-catalog-next" type="button"> Вперед </button>
+        </div>
+
+      </main>
+
+      <footer class="main-footer">
+      <div class="container">
+        <section class="footer-adress">
+          DEVICE<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+
+        </section>
+        <section class="footer-links">
+
+          <nav class="main-navigation">
+          <ul>
+          <li>
+            <a href="#"> Доставка </a>
+          </li>
+          <li>
+            <a href="#"> Гарантия </a>
+          </li>
+          <li>
+            <a  href="#"> Контакты</a>
+          </li>
+          </ul>
+          </nav>
+
+          <div class="footer-social">
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          </div>
+
+        </section>
+        <section class="footer-copyright">
+
+          <div class="user-block">
+              <a class="login" href="#"> Войти</a>
+              <a class="compare" href="#">Сравнить</a>
+              <a class="basket" href="#">Корзина</a>
+          </div>
+          Телефон: +7 (495) 495-95-95
+        </section>
+      </div>
+      </footer>
+  </body>
+</html>
