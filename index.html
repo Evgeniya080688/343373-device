@@ -13,12 +13,18 @@
 
         <div class="user-block">
             <form>
-              <label>
-                <img src="" alt="find" class=search-icon>
-                <input type="submit" class="search" value="Поиск по сайту">
-              </label>
+              <label for="search">Поиск</label>
+              <input type="submit" id="search" value="Поиск по сайту">
             </form>
-            <div class="btn-enter"><a class="login" href="#"> Войти</a></div>
+
+            <div class="user-account">
+              <label for="qwe" class="enter">Войти</label>
+              <div class="user">
+                <p class="name">Валентин Петухов</p>
+                <label for="qwe" class="exit">Выйти</label>
+              </div>
+            </div>
+
             <a class="compare" href="#">Сравнить</a>
             <a class="basket" href="#">Корзина</a>
         </div>
@@ -62,15 +68,15 @@
             </div>
             <div class="banner-info">
               <section class="feature-info">
-                <h3 class="feature-title">8,5 метров</h2>
+                <h3 class="feature-title">8,5 метров</h3>
                 <p>Длина палки</p>
               </section>
               <section class="feature-info">
-                <h3 class="feature-title">5 кг</h2>
+                <h3 class="feature-title">5 кг</h3>
                 <p>Вес палки</p>
               </section>
               <section class="feature-info">
-                <h3 class="feature-title">Карбон</h2>
+                <h3 class="feature-title">Карбон</h3>
                 <p>Материал</p>
               </section>
             </div>
@@ -80,12 +86,12 @@
     <!--Список продукции -->
       <div class="catalog-list">
         <ul>
-          <li><a href="#" class="type-of-product"> <img class="virtual-reality" src="">Виртуальная реальность</a></li>
-          <li><a href="#" class="type-of-product"> <img class="monopods-for-selfi" src="">Моноподы для селфи</a></li>
-          <li><a href="#" class="type-of-product"> <img class="action-camera" src="">Экшн-камеры</a></li>
-          <li><a href="#" class="type-of-product"> <img class="fitness-braceletы" src="">Фитнес-браслеты</a></li>
-          <li><a href="#" class="type-of-product"> <img class="smart-clock" src="">Умные часы</a></li>
-          <li><a href="#" class="type-of-product"> <img class="quadcopters" src="">Квадрокоптеры</a></li>
+          <li><a href="#" class="virtual-reality">Виртуальная реальность</a></li>
+          <li><a href="#" class="monopods-for-selfi">Моноподы для селфи</a></li>
+          <li><a href="#" class="action-camera">Экшн-камеры</a></li>
+          <li><a href="#" class="fitness-bracelets">Фитнес-браслеты</a></li>
+          <li><a href="#" class="smart-clock">Умные часы</a></li>
+          <li><a href="#" class="quadcopters">Квадрокоптеры</a></li>
         <ul>
       </div>
     </main>
@@ -157,12 +163,17 @@
     <footer class="main-footer">
       <div class="container">
 
-        <section class="footer-adress">
+        <div class="footer-links">
           <img src="" alt="DEVICE">
-          <p class="organization-adress">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
-        </section>
+          <div class="user-block">
+              <a class="login" href="#"> Войти</a>
+              <a class="compare" href="#">Сравнить</a>
+              <a class="basket" href="#">Корзина</a>
+          </div>
+        </div>
 
-        <section class="footer-links">
+        <div class="footer-contacts">
+          <p class="organization-adress">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
           <nav class="footer-navigation">
             <ul>
               <li>
@@ -176,24 +187,18 @@
               </li>
             </ul>
           </nav>
-
-          <div class="footer-social">
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          </div>
-        </section>
-
-        <section class="footer-copyright">
-          <div class="user-block">
-              <a class="login" href="#"> Войти</a>
-              <a class="compare" href="#">Сравнить</a>
-              <a class="basket" href="#">Корзина</a>
-          </div>
           <p class="number-phone">Телефон: +7 (495) 495-95-95</p>
-        </section>
+        </div>
+
+        <div class="footer-social">
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        </div>
+
       </div>
     </footer>
-    
+
+
   </body>
 </html>
