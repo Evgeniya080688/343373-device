@@ -12,18 +12,23 @@
         <a  href="index.html" >  <img src=""  alt="Лого" class="logo"> </a>
 
         <div class="user-block">
-            <input type="submit" class="search" value="Поиск по сайту">
-
-            <a class="login" href="#"> Войти</a>
+            <form>
+              <label>
+                <img src="" alt="find" class=search-icon>
+                <input type="submit" class="search" value="Поиск по сайту">
+              </label>
+            </form>
+            <div class="btn-enter"><a class="login" href="#"> Войти</a></div>
             <a class="compare" href="#">Сравнить</a>
             <a class="basket" href="#">Корзина</a>
         </div>
 
+        <div>
+          <a  href="#" class="catalog-menu"> Каталог товаров </a>
+        </div>
+
         <nav class="main-navigation">
           <ul>
-            <li>
-              <a  href="#" class="catalog-menu"> Каталог товаров </a>
-            </li>
             <li>
               <a href="#"> Доставка </a>
             </li>
@@ -36,153 +41,159 @@
           </ul>
         </nav>
 
-
+      </div>
     </header>
 
-  <main class="container">
-<!--банер сайта -->
-  <div class="banner">
-    <div class="banner-picture"><img src="" alt="banner1"></div>
-    <div class="banner-content">
-      <p class="banner-number">01</p>
-      <h2 class="banner-title">Делай селфи, как Бен Стиллер!</h2>
-      <p class="banner-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+    <main class="container">
+      <!--банер сайта -->
+      <div class="banner">
+        <div class="banner-picture"><img src="" alt="banner1"></div>
+          <div class="banner-content">
+            <p class="banner-number">01</p>
+            <h2 class="banner-title">Делай селфи, как Бен Стиллер!</h2>
+            <p class="banner-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a class="banner-details" href="#">Подробнее</a>
+            <div class="banner-navigation">
+              <ul>
+                <li class="btn-active">1</li>
+                <li class="btn">2</li>
+                <li class="btn">3</li>
+              </ul>
+            </div>
+            <div class="banner-info">
+              <section class="feature-info">
+                <h3 class="feature-title">8,5 метров</h2>
+                <p>Длина палки</p>
+              </section>
+              <section class="feature-info">
+                <h3 class="feature-title">5 кг</h2>
+                <p>Вес палки</p>
+              </section>
+              <section class="feature-info">
+                <h3 class="feature-title">Карбон</h2>
+                <p>Материал</p>
+              </section>
+            </div>
+          </div>
+        </div>
 
-      <div class="banner-navigation">
-        <a class="banner-details" href="#">Подробнее</a>
-        <a class="btn-activ" href="#">1</a>
-        <a class="btn" href="#">2</a>
-        <a class="btn" href="#">3</a>
+    <!--Список продукции -->
+      <div class="catalog-list">
+        <ul>
+          <li><a href="#" class="type-of-product"> <img class="virtual-reality" src="">Виртуальная реальность</a></li>
+          <li><a href="#" class="type-of-product"> <img class="monopods-for-selfi" src="">Моноподы для селфи</a></li>
+          <li><a href="#" class="type-of-product"> <img class="action-camera" src="">Экшн-камеры</a></li>
+          <li><a href="#" class="type-of-product"> <img class="fitness-braceletы" src="">Фитнес-браслеты</a></li>
+          <li><a href="#" class="type-of-product"> <img class="smart-clock" src="">Умные часы</a></li>
+          <li><a href="#" class="type-of-product"> <img class="quadcopters" src="">Квадрокоптеры</a></li>
+        <ul>
       </div>
-      <div class="banner-info">
-      <section class="feature-info">
-        <h3 class="feature-title">8,5 метров</h2>
-        <p>Длина палки</p>
-      </section>
-      <section class="feature-info">
-        <h3 class="feature-title">5 кг</h2>
-        <p>Вес палки</p>
-      </section>
-      <section class="feature-info">
-        <h3 class="feature-title">Карбон</h2>
-        <p>Материал</p>
-      </section>
-    </div>
-    </div>
-  </div>
-<!--Список продукции -->
-  <div class="catalog-list">
-    <ul>
-      <li><a href="#" class="type1"> Виртуальная реальность</a></li>
-      <li><a href="#" class="type2"> Моноподы для селфи</a></li>
-      <li><a href="#" class="type3"> Экшн-камеры</a></li>
-      <li><a href="#" class="type4"> Фитнес-браслеты</a></li>
-      <li><a href="#" class="type5"> Умные часы</a></li>
-      <li><a href="#" class="type6"> Квадрокоптеры</a></li>
-    <ul>
-  </div>
+    </main>
 
 <!--Важная информация для пользователей-->
     <div class="catalog-content">
-      <div class="info-menu">
+      <div class="container">
 
-          <a href="#" class="active info"> Доставка</a>
-          <a href="#" > Гарантия</a>
-          <a href="#" > Кредит</a>
-      </div>
+        <div class="info-menu">
+            <a href="#" class="active info"> Доставка</a>
+            <a href="#" > Гарантия</a>
+            <a href="#" > Кредит</a>
+        </div>
 
-      <div class="info-description">
-        <div class="info-delivery">
-            <h2 class="title-info">Доставка</h2>
-            <p>Мы с удовольствием доставим ваш товар к вашему подъезду совершенно бесплатно. Ведь мы неплохо заработаем, поднимая его на ваш этаж. </p>
-            <img src="" alt="delivery">
-        </div>
-        <div class="info-warranity" hidden>
-          <h2 class="title-info">Гарантия</h2>
-          <p>Мы с удовольствием бесплатно все починим. </p>
-          <img src="" alt="warranity">
-        </div>
-        <div class="info-credit" hidden>
-          <h2 class="title-info">Кредит</h2>
-          <p>Мы с удовольствием предоставим вам кредит. </p>
-          <img src="" alt="warranity">
+        <div class="info-description">
+          <div class="info-delivery">
+              <h2 class="title-info">Доставка</h2>
+              <p>Мы с удовольствием доставим ваш товар к вашему подъезду совершенно бесплатно. Ведь мы неплохо заработаем, поднимая его на ваш этаж. </p>
           </div>
+          <div class="info-warranity" hidden>
+            <h2 class="title-info">Гарантия</h2>
+            <p>Мы с удовольствием бесплатно все починим. </p>
+          </div>
+          <div class="info-credit" hidden>
+            <h2 class="title-info">Кредит</h2>
+            <p>Мы с удовольствием предоставим вам кредит. </p>
+          </div>
+         </div>
+
       </div>
     </div>
 
-<!--лого производителей-->
-    <div class="catalog-content">
+  <!--лого производителей-->
+    <div class="container">
       <div class="partners-logo">
-        <img src="img/logo-dji.jpg" alt="DJI">
-        <img src="img/logo-sp.jpg" alt="SP">
-        <img src="img/logo-gopro.jpg" alt="GoPro">
-        <img src="img/logo-vive.jpg" alt="VIVE">
+        <a href="#"><img src="img/logo-dji.jpg" alt="DJI"></a>
+        <a href="#"><img src="img/logo-sp.jpg" alt="SP"></a>
+        <a href="#"><img src="img/logo-gopro.jpg" alt="GoPro"></a>
+        <a href="#"><img src="img/logo-vive.jpg" alt="VIVE"></a>
       </div>
-        </div>
+    </div>
+
 
 <!--Информация о нас-->
-    <div class="catalog-content">
-      <div class="about-us">
-        <h2 class="title-info">О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России. DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелТорЭкспедиция</li>
-        </ul>
-        <a class="details" href="#">Подробнее о нас</a>
-      </div>
-      <div class="contacts">
-        <h2 class="title-info">Контакты</h2>
-        <p>Вы сможете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473277!2d37.52742931553117!3d55.687034004530496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1485102946215"
-        width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <a class="details" href="mailto:eugeniya.pal@yandex.ru">Напишите нам</a>
-      </div>
-   </main>
-
-
-    <footer class="main-footer">
     <div class="container">
-      <section class="footer-adress">
-        DEVICE<br>
-        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-
-      </section>
-      <section class="footer-links">
-
-        <nav class="main-navigation">
-        <ul>
-        <li>
-          <a href="#"> Доставка </a>
-        </li>
-        <li>
-          <a href="#"> Гарантия </a>
-        </li>
-        <li>
-          <a  href="#"> Контакты</a>
-        </li>
-        </ul>
-        </nav>
-
-        <div class="footer-social">
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+      <div class="catalog-content">
+        <div class="about-us">
+          <h2 class="title-info">О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России. DEVICE работает со многими транспортными компаниями:</p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелТорЭкспедиция</li>
+          </ul>
+          <a class="details" href="#">Подробнее о нас</a>
         </div>
-
-      </section>
-      <section class="footer-copyright">
-
-        <div class="user-block">
-            <a class="login" href="#"> Войти</a>
-            <a class="compare" href="#">Сравнить</a>
-            <a class="basket" href="#">Корзина</a>
+        <div class="contacts">
+          <h2 class="title-info">Контакты</h2>
+          <p>Вы сможете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473277!2d37.52742931553117!3d55.687034004530496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1485102946215"
+          width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <a class="details" href="mailto:eugeniya.pal@yandex.ru">Напишите нам</a>
         </div>
-        Телефон: +7 (495) 495-95-95
-      </section>
+      </div>
     </div>
+
+<!--подвал-->
+    <footer class="main-footer">
+      <div class="container">
+
+        <section class="footer-adress">
+          <img src="" alt="DEVICE">
+          <p class="organization-adress">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+        </section>
+
+        <section class="footer-links">
+          <nav class="footer-navigation">
+            <ul>
+              <li>
+                <a href="#"> Доставка </a>
+              </li>
+              <li>
+                <a href="#"> Гарантия </a>
+              </li>
+              <li>
+                <a  href="#"> Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer-social">
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          </div>
+        </section>
+
+        <section class="footer-copyright">
+          <div class="user-block">
+              <a class="login" href="#"> Войти</a>
+              <a class="compare" href="#">Сравнить</a>
+              <a class="basket" href="#">Корзина</a>
+          </div>
+          <p class="number-phone">Телефон: +7 (495) 495-95-95</p>
+        </section>
+      </div>
     </footer>
+    
   </body>
 </html>
