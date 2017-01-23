@@ -9,31 +9,25 @@
 
     <header class="main-header">
       <div class="container">
-
-        <a  href="index.html" >  <img src=""  alt="Лого" class="logo"> </a>
-
+        <a href="index.html" >  <img src=""  alt="Лого" class="logo"> </a>
         <div class="user-block">
             <form>
               <label for="search">Поиск</label>
               <input type="submit" id="search" value="Поиск по сайту">
             </form>
-
             <div class="user-account">
-              <label for="qwe" class="enter">Войти</label>
+              <a class="enter" href="#">Войти</a>
               <div class="user">
-                <p class="name">Валентин Петухов</p>
-                <label for="qwe" class="exit">Выйти</label>
+                <a class="name" href="#">Валентин Петухов</a>
+                <a class="exit" href="#">Выйти</a>
               </div>
             </div>
-
             <a class="compare" href="#">Сравнить</a>
             <a class="basket" href="#">Корзина</a>
         </div>
-
         <div>
           <a  href="#" class="catalog-menu"> Каталог товаров </a>
         </div>
-
         <nav class="main-navigation">
           <ul>
             <li>
@@ -47,7 +41,6 @@
             </li>
           </ul>
         </nav>
-
       </div>
     </header>
 
@@ -74,10 +67,7 @@
           <form>
             <fieldset class="filter-price">
               <legend class="catalog-content-title">Стоимость</legend>
-              <div class="range-min">
-                <input type="range" min=0 max=1000000000 min=0 max=10000 value=3 class="choose-price">
-              </div>
-              <div class="range-max">
+              <div class="range">
                 <input type="range" min=0 max=1000000000 min=0 max=10000 value=3 class="choose-price">
               </div>
               <input type="text" class="min-price" size="10">
