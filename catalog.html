@@ -6,44 +6,43 @@
   </head>
 
   <body>
-
     <header class="main-header">
       <div class="container">
-        <a href="index.html" >  <img src=""  alt="Лого" class="logo"> </a>
+        <a href="index.html" ><img src=""  alt="Лого" class="logo"></a>
         <div class="user-block">
-            <form>
-              <label for="search">Поиск</label>
-              <input type="submit" id="search" value="Поиск по сайту">
-            </form>
-            <div class="user-account">
-              <a class="enter" href="#">Войти</a>
-              <div class="user">
-                <a class="name" href="#">Валентин Петухов</a>
-                <a class="exit" href="#">Выйти</a>
-              </div>
+          <form>
+            <label for="search">Поиск</label>
+            <input type="submit" id="search" value="Поиск по сайту">
+          </form>
+          <div class="user-account">
+            <a class="enter" href="#">Войти</a>
+            <div class="user">
+              <a class="name" href="#">Валентин Петухов</a>
+              <a class="exit" href="#">Выйти</a>
             </div>
-            <a class="compare" href="#">Сравнить</a>
-            <a class="basket" href="#">Корзина</a>
+          </div>
+          <a class="compare" href="#">Сравнить</a>
+          <a class="basket" href="#">Корзина</a>
         </div>
         <div>
-          <a  href="#" class="catalog-menu"> Каталог товаров </a>
+          <a  href="#" class="catalog-menu">Каталог товаров </a>
         </div>
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#"> Доставка </a>
+              <a href="#">Доставка </a>
             </li>
             <li>
-              <a href="#"> Гарантия </a>
+              <a href="#">Гарантия </a>
             </li>
             <li>
-              <a  href="#"> Контакты</a>
+              <a  href="#">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-
+<!--основное содержимое-->
     <main class="container">
       <div class="catalog-hat">
         <h1> Моноподы для селфи </h1>
@@ -59,12 +58,12 @@
           Моноподы для селфи
           </li>
         </ul>
-
       </div>
-
       <div class="catalog-content">
+      <!-- Настройка фильтров -->
         <div class="catalog-filter">
           <form>
+            <!-- По цене -->
             <fieldset class="filter-price">
               <legend class="catalog-content-title">Стоимость</legend>
               <div class="range">
@@ -73,83 +72,69 @@
               <input type="text" class="min-price" size="10">
               <input type="text" class="max-price" size="10">
             </fieldset>
-
+            <!-- По цвету -->
             <fieldset class="filter-color">
               <legend class="catalog-content-title">Цвет</legend>
-
               <label>
                 <input type="checkbox" name="color1" value="Черный" checked>
                 Черный
               </label>
-
               <label>
                 <input type="checkbox" name="color2" value="Белый" >
                 Белый
               </label>
-
               <label>
                 <input type="checkbox" name="color3" value="Синий" checked >
                 Синий
               </label>
-
               <label>
                 <input type="checkbox" name="color4" value="Красный" checked >
                 Красный
               </label>
-
               <label>
                 <input type="checkbox" name="colord5" value="Розовый" >
                 Розовый
               </label>
-
             </fieldset>
-
             <fieldset class="filter-bluetooth">
+              <!-- По наличию блютуса -->
              <legend class="catalog-content-title">Bluetooth</legend>
-
               <label>
                 <input type="radio" name="presence" value="Есть" checked>
                 Есть
               </label>
-
               <label>
                 <input type="radio" name="presence" value="Нет" >
               Нет
               </label>
-
             </fieldset>
-
             <input type="submit" class="submit" value="Показать">
           </form>
         </div>
-
+        <!-- Товары -->
         <div class="catalog-listproducts">
           <article class="catalog-product">
             <img src="img/goods1.jpg" alt="Любительская селфи-палка">
             <a href="#" class="product-title">Любительская селфи-палка</a>
             <p class="product-price">500 руб</p>
           </article>
-
           <article class="catalog-product">
             <img src="img/goods2.jpg" alt="Профессиональная селфи-палка">
             <a href="#" class="product-title">Профессиональная селфи-палка</a>
             <p class="product-price">1500 руб</p>
           </article>
-
           <article class="catalog-product">
             <img src="img/goods3.jpg" alt="Непотопляемая селфи-палка">
             <a href="#" class="product-title">Любительская селфи-палка</a>
             <p class="product-price">2500 руб</p>
           </article>
-
           <article class="catalog-product">
             <img src="img/goods1.jpg" alt="Селфи-палка 'Следуй за мной'">
             <a href="#" class="product-title">Селфи-палка 'Следуй за мной'</a>
             <p class="product-price">4900 руб</p>
           </article>
-
         </div>
-
+        <!-- Навигация по страницам каталога -->
         <div class="paginator">
             <a href="#" class="btn-catalog-prev" > Назад </a>
             <a class="btn-activ" href="#">1</a>
@@ -157,50 +142,42 @@
             <a class="btn" href="#">3</a>
             <a href="#" class="btn-catalog-next" type="button"> Вперед </a>
         </div>
-
       </div>
-
     </main>
-
-      <!--подвал-->
+      <!--Подвал-->
     <footer class="main-footer">
       <div class="container">
-
         <div class="footer-links">
           <img src="" alt="DEVICE">
           <div class="user-block">
-              <a class="login" href="#"> Войти</a>
-              <a class="compare" href="#">Сравнить</a>
-              <a class="basket" href="#">Корзина</a>
+            <a class="login" href="#"> Войти</a>
+            <a class="compare" href="#">Сравнить</a>
+            <a class="basket" href="#">Корзина</a>
           </div>
         </div>
-
         <div class="footer-contacts">
           <p class="organization-adress">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
           <nav class="footer-navigation">
             <ul>
               <li>
-                <a href="#"> Доставка </a>
+                <a href="#">Доставка</a>
               </li>
               <li>
-                <a href="#"> Гарантия </a>
+                <a href="#">Гарантия</a>
               </li>
               <li>
-                <a  href="#"> Контакты</a>
+                <a  href="#">Контакты</a>
               </li>
             </ul>
           </nav>
           <p class="number-phone">Телефон: +7 (495) 495-95-95</p>
         </div>
-
         <div class="footer-social">
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         </div>
-
       </div>
     </footer>
-
   </body>
 </html>
