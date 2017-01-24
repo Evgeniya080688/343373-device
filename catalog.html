@@ -8,7 +8,7 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <a href="index.html" ><img src=""  alt="Лого" class="logo"></a>
+        <a href="index.html" ><img src="" alt="Лого" class="logo"></a>
         <div class="user-block">
           <form>
             <label for="search">Поиск</label>
@@ -25,41 +25,56 @@
           <a class="basket" href="#">Корзина</a>
         </div>
         <div>
-          <a  href="#" class="catalog-menu">Каталог товаров </a>
+          <a href="#" class="catalog-menu">Каталог товаров</a>
         </div>
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">Доставка </a>
+              <a href="#">Доставка</a>
             </li>
             <li>
-              <a href="#">Гарантия </a>
+              <a href="#">Гарантия</a>
             </li>
             <li>
-              <a  href="#">Контакты</a>
+              <a href="#">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-<!--основное содержимое-->
-    <main class="container">
-      <div class="catalog-hat">
-        <h1> Моноподы для селфи </h1>
+<!--Шапка каталога-->
+    <div class="catalog-hat">
+      <div class="container">
+        <h1>Моноподы для селфи</h1>
       <!-- Хлебные крошки -->
         <ul class="breadcrumps">
           <li>
-            <a  href="#">Главная</a>
+            <a href="#">Главная</a>
           </li>
           <li>
-            <a  href="#">Каталог</a>
+            <a href="#">Каталог</a>
           </li>
           <li>
           Моноподы для селфи
           </li>
         </ul>
       </div>
-      <div class="catalog-content">
+    </div>
+   <!--Настройка сортировки-->
+    <div class="catalog-sorting">
+      <div class="container">
+        <p class="title-sort">Фильтр:</p>
+        <p class="title-sort">Сортировка:</p>
+        <a href="#" class="type-sort sort-price">По цене</p>
+        <a href="#" class="type-sort sort-category">По типу</p>
+        <a href="#" class="type-sort sort-popular">По популярности</p>
+        <a href="#" class="sort-to-max"></p>
+        <a href="#" class="sort-to-min"></p>
+      </div>
+    </div>
+    <!--Основное содержимое-->
+    <div class="catalog-content">
+      <main class="container">
       <!-- Настройка фильтров -->
         <div class="catalog-filter">
           <form>
@@ -136,21 +151,21 @@
         </div>
         <!-- Навигация по страницам каталога -->
         <div class="paginator">
-            <a href="#" class="btn-catalog-prev" > Назад </a>
-            <a class="btn-activ" href="#">1</a>
-            <a class="btn" href="#">2</a>
-            <a class="btn" href="#">3</a>
-            <a href="#" class="btn-catalog-next" type="button"> Вперед </a>
+          <a href="#" class="btn-catalog-prev" >Назад</a>
+          <a class="btn-activ" href="#">1</a>
+          <a class="btn" href="#">2</a>
+          <a class="btn" href="#">3</a>
+          <a href="#" class="btn-catalog-next" type="button">Вперед</a>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
       <!--Подвал-->
     <footer class="main-footer">
       <div class="container">
         <div class="footer-links">
           <img src="" alt="DEVICE">
           <div class="user-block">
-            <a class="login" href="#"> Войти</a>
+            <a class="login" href="#">Войти</a>
             <a class="compare" href="#">Сравнить</a>
             <a class="basket" href="#">Корзина</a>
           </div>
@@ -166,7 +181,7 @@
                 <a href="#">Гарантия</a>
               </li>
               <li>
-                <a  href="#">Контакты</a>
+                <a href="#">Контакты</a>
               </li>
             </ul>
           </nav>
