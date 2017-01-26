@@ -1,0 +1,15 @@
+body {
+      font-size: 15px;
+      line-height: 30px;
+      color: #444;
+      font-family: 'Open Sans', 'Arial', sans-serif;
+      font-weight: bold;
+}
+
+h1, h2{
+      font-size: 47px;
+      line-height: 52px;
+      color: #000;
+      font-weight: bold;
+      font-family: 'Gilroy', 'Arial', sans-serif;
+}
