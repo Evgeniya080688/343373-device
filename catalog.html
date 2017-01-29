@@ -8,54 +8,58 @@
 
   <body>
     <header class="main-header">
-      <div class="container">
-        <a href="index.html"><img src="" alt="Лого" class="logo"></a>
+      <div class="container clearfix">
+        <a class="logo-to-index" href="index.html">DEVICE</a>
         <div class="user-block">
-          <form>
+          <form class="search-block">
             <label for="search">Поиск</label>
             <input type="submit" id="search" value="Поиск по сайту">
           </form>
           <div class="user-account">
             <a class="enter" href="#">Войти</a>
-            <div class="user">
+            <div class="user" hidden>
               <a class="name" href="#">Валентин Петухов</a>
               <a class="exit" href="#">Выйти</a>
             </div>
           </div>
-          <a class="compare" href="#">Сравнить</a>
-          <a class="basket" href="#">Корзина</a>
+          <div class="action-block">
+            <a class="compare" href="#">Сравнить</a>
+            <a class="basket" href="#">Корзина</a>
+          </div>
         </div>
-        <div>
-          <a href="#" class="catalog-menu">Каталог товаров</a>
+        <div class="navigation-menu clearfix">
+          <div class="nav-catalog">
+            <a href="#" class="catalog-menu">Каталог товаров</a>
+          </div>
+          <nav class="main-navigation clearfix">
+            <ul>
+              <li class="nav-delivery">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="nav-warranity">
+                <a href="#">Гарантия</a>
+              </li>
+              <li class="nav-contacts">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Доставка</a>
-            </li>
-            <li>
-              <a href="#">Гарантия</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
 <!--Шапка каталога-->
     <div class="catalog-hat">
       <div class="container">
-        <h1>Моноподы для селфи</h1>
+        <h1 class="title-variation">Моноподы для селфи</h1>
       <!-- Хлебные крошки -->
         <ul class="breadcrumps">
-          <li>
+          <li class="breadcrumps-item">
             <a href="#">Главная</a>
           </li>
-          <li>
+          <li class="breadcrumps-item">
             <a href="#">Каталог</a>
           </li>
-          <li>
+          <li class="breadcrumps-item">
           Моноподы для селфи
           </li>
         </ul>
@@ -64,7 +68,7 @@
    <!--Настройка сортировки-->
     <div class="catalog-sorting">
       <div class="container">
-        <p class="title-sort">Фильтр:</p>
+        <p class="title-filtr">Фильтр:</p>
         <p class="title-sort">Сортировка:</p>
         <a href="#" class="type-sort sort-price">По цене</a>
         <a href="#" class="type-sort sort-category">По типу</a>
@@ -75,7 +79,7 @@
     </div>
     <!--Основное содержимое-->
     <div class="catalog-content">
-      <main class="container">
+      <main class="container clearfix">
       <!-- Настройка фильтров -->
         <div class="catalog-filter">
           <form>
@@ -128,51 +132,53 @@
           </form>
         </div>
         <!-- Товары -->
-        <div class="catalog-listproducts">
-          <article class="catalog-product">
-            <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-            <a href="#" class="product-title">Любительская селфи-палка</a>
-            <p class="product-price">500 руб</p>
-          </article>
-          <article class="catalog-product">
-            <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-            <a href="#" class="product-title">Профессиональная селфи-палка</a>
-            <p class="product-price">1500 руб</p>
-          </article>
-          <article class="catalog-product">
-            <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-            <a href="#" class="product-title">Любительская селфи-палка</a>
-            <p class="product-price">2500 руб</p>
-          </article>
-          <article class="catalog-product">
-            <img src="img/item-4.jpg" alt="Селфи-палка 'Следуй за мной'" width="360" height="380">
-            <a href="#" class="product-title">Селфи-палка 'Следуй за мной'</a>
-            <p class="product-price">4900 руб</p>
-          </article>
-        </div>
-        <!-- Навигация по страницам каталога -->
-        <div class="paginator">
-          <a href="#" class="btn-catalog-prev" >Назад</a>
-          <a class="btn-activ" href="#">1</a>
-          <a class="btn" href="#">2</a>
-          <a class="btn" href="#">3</a>
-          <a href="#" class="btn-catalog-next" type="button">Вперед</a>
+        <div class="catalog-view">
+          <div class="catalog-listproducts">
+            <article class="catalog-product">
+              <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+              <a href="#" class="product-title">Любительская селфи-палка</a>
+              <p class="product-price">500 руб</p>
+            </article>
+            <article class="catalog-product">
+              <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+              <a href="#" class="product-title">Профессиональная селфи-палка</a>
+              <p class="product-price">1500 руб</p>
+            </article>
+            <article class="catalog-product">
+              <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+              <a href="#" class="product-title">Любительская селфи-палка</a>
+              <p class="product-price">2500 руб</p>
+            </article>
+            <article class="catalog-product">
+              <img src="img/item-4.jpg" alt="Селфи-палка 'Следуй за мной'" width="360" height="380">
+              <a href="#" class="product-title">Селфи-палка 'Следуй за мной'</a>
+              <p class="product-price">4900 руб</p>
+            </article>
+          </div>
+          <!-- Навигация по страницам каталога -->
+          <div class="paginator">
+            <a href="#" class="btn-catalog-prev" >Назад</a>
+            <a class="btn-activ" href="#">1</a>
+            <a class="btn" href="#">2</a>
+            <a class="btn" href="#">3</a>
+            <a href="#" class="btn-catalog-next" type="button">Вперед</a>
+          </div>
         </div>
       </main>
     </div>
       <!--Подвал-->
     <footer class="main-footer">
       <div class="container">
-        <div class="footer-links">
-          <img src="" alt="DEVICE">
-          <div class="user-block">
-            <a class="login" href="#">Войти</a>
+        <div class="footer-links clearfix">
+          <a class="logo-foot" href="index.html">DEVICE</a>
+          <div class="user-block-foot">
+            <a class="login" href="#"> Войти</a>
             <a class="compare" href="#">Сравнить</a>
             <a class="basket" href="#">Корзина</a>
           </div>
         </div>
         <div class="footer-contacts">
-          <p class="organization-adress">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+          <p class="organization-adress">Адрес: г. Москва, ул. Строителей, 15</p>
           <nav class="footer-navigation">
             <ul>
               <li>
@@ -182,16 +188,22 @@
                 <a href="#">Гарантия</a>
               </li>
               <li>
-                <a href="#">Контакты</a>
+                <a  href="#">Контакты</a>
               </li>
             </ul>
           </nav>
           <p class="number-phone">Телефон: +7 (495) 495-95-95</p>
         </div>
-        <div class="footer-social">
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <div class="footer-info-links">
+          <div class="decorative-element"></div>
+          <div class="footer-social">
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          </div>
+          <div class="htmlacademy-link">
+            <a href="https://up.htmlacademy.ru"></a>
+          </div>
         </div>
       </div>
     </footer>
