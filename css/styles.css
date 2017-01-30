@@ -45,7 +45,7 @@ h1, h2{
 
 .search-block{
   display: inline-block;
-  vertical-align: baseline;;
+  vertical-align: baseline;
   padding-left: 60px;
   width: 540px;
   font-size: 15px;
@@ -53,14 +53,14 @@ h1, h2{
 
 .user-account {
   display: inline-block;
-  vertical-align: baseline;;
+  vertical-align: baseline;
   width: 280px;
   font-size: 15px;
 }
 
 .action-block {
   display: inline-block;
-  vertical-align: baseline;;
+  vertical-align: baseline;
   font-size: 15px;
   width: 280px;
 }
@@ -74,12 +74,14 @@ h1, h2{
 }
 
 .navigation-menu {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
+  font-size: 0px;
 }
 
-.catalog-menu {
-  float: left;
-  width: 540px;
+.nav-catalog {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 500px;
   padding-left: 60px;
   font-size: 18px;
   text-transform: uppercase;
@@ -87,8 +89,10 @@ h1, h2{
 }
 
 .main-navigation {
-  float: right;
-  font-size: 0px;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 560px;
+  font-size: 18px;
 }
 
 .nav-delivery {
@@ -97,7 +101,7 @@ h1, h2{
   font-size: 18px;
   text-transform: uppercase;
   font-style: italic;
-  width: 160px;
+  width: 140px;
 }
 
 .nav-warranity {
@@ -106,7 +110,7 @@ h1, h2{
   font-size: 18px;
   text-transform: uppercase;
   font-style: italic;
-  width: 220px;
+  width: 200px;
 }
 
 .nav-contacts {
@@ -115,7 +119,7 @@ h1, h2{
   font-size: 18px;
   text-transform: uppercase;
   font-style: italic;
-  width: 180px;
+  width: 170px;
 }
 
 .banner {
@@ -226,32 +230,46 @@ h1, h2{
 .user-block-foot {
   float: right;
   width: 324px;
+  text-align: right;
 }
 
 .footer-contacts {
   min-height: 87px;
-  font-size: 0px;
+
 }
 
 .organization-adress {
-  display: inline-block;
-  vertical-align: top;
+  float: left;
   font-size: 15px;
   width: 360px;
 }
 
 .footer-navigation {
-  display: inline-block;
-  vertical-align: top;
+  float: left;
+  width: 440px;
   font-size: 15px;
-  width: 640px;
+}
+
+.foot-delivery {
+  float: left;
+  width: 120px;
+}
+
+.foot-warranity {
+  float: left;
+  width: 120px;
+}
+
+.foot-contacts{
+  float: left;
+  width: 120px;
 }
 
 .number-phone {
-  display: inline-block;
-  vertical-align: top;
+  float: right;
+  text-align: right;
   font-size: 15px;
-  width: 160px;
+  width: 360px;
 }
 
 .footer-info-links {
@@ -272,6 +290,18 @@ h1, h2{
   width: 160px;
   margin-right: 470px;
 }
+
+.social-btn{
+  width: 39px;
+  min-height: 39px;
+  margin-right: 15px;
+  font-size: 3px;
+}
+
+.social-btn:last-child {
+  margin-right: 0px;
+}
+
 
 .htmlacademy-link {
   display: inline-block;
