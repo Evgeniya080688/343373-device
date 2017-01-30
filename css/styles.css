@@ -196,7 +196,19 @@ h1, h2{
 }
 
 .partners-logo {
+  font-size: 0px;
   min-height: 289px;
+  width: 1200px;
+}
+
+.partners-logo-item{
+  float: left;
+  width: 260px;
+  margin-right: 40px;
+}
+
+.partners-logo-item:last-child {
+  margin-right: 0px;
 }
 
 .about-us {
