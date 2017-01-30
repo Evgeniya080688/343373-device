@@ -131,6 +131,7 @@ h1, h2{
   float: left;
   width: 600px;
   padding: auto;
+  text-align: center;
 }
 
 .banner-content {
