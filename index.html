@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс - интернет-магазин гаджетов</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
 
   <body>
@@ -12,8 +14,9 @@
         <a class="logo-to-index" href="index.html">DEVICE</a>
         <div class="user-block">
           <form class="search-block">
-            <label for="search">Поиск</label>
             <input type="submit" id="search" value="Поиск по сайту">
+            <label for="search" hidden>Поиск по сайту</label>
+            <input type="text" for="search" name="search" value="Поиск по сайту">
           </form>
           <div class="user-account">
             <a class="enter" href="#">Войти</a>
@@ -54,21 +57,21 @@
         <div class="banner-picture"><img src="img/slider-1.png" alt="Селфи-палки" width="384" height="486"></div>
         <div class="banner-content">
           <p class="banner-number">01</p>
-          <h2 class="banner-title">Делай селфи, как Бен Стиллер!</h2>
-          <p class="banner-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <h2 class="banner-title">Делай селфи,<br> как Бен Стиллер!</h2>
+          <p class="banner-description">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <div class="more-info clearfix">
-            <a class="banner-details" href="#">Подробнее</a>
+            <a class="btn banner-details" href="#">Подробнее</a>
             <div class="banner-navigation">
               <ul>
-                <li class="btn-active">1</li>
-                <li class="btn">2</li>
-                <li class="btn">3</li>
+                <li class="list-style list-style-active"></li>
+                <li class="list-style"></li>
+                <li class="list-style"></li>
               </ul>
             </div>
           </div>
           <div class="banner-info">
             <section class="feature-info">
-              <h3 class="feature-title">8,5 метров</h3>
+              <h3 class="feature-title">8,5 м</h3>
               <p>Длина палки</p>
             </section>
             <section class="feature-info">
@@ -96,9 +99,9 @@
     <div class="index-content">
       <div class="container info-block clearfix">
         <div class="info-menu">
-          <a href="#" class="active info"> Доставка</a>
-          <a href="#"> Гарантия</a>
-          <a href="#"> Кредит</a>
+          <a href="#" class="active-info"> Доставка</a>
+          <a href="#" class="btn"> Гарантия</a>
+          <a href="#" class="btn"> Кредит</a>
         </div>
         <div class="info-description">
           <div class="info-delivery">
@@ -137,14 +140,14 @@
             <li>Автотрейдинг</li>
             <li>ЖелТорЭкспедиция</li>
           </ul>
-          <a class="details" href="#">Подробнее о нас</a>
+          <a class="btn details" href="#">Подробнее о нас</a>
         </div>
         <div class="contacts">
           <h2 class="title-info">Контакты</h2>
           <p>Вы сможете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473277!2d37.52742931553117!3d55.687034004530496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1485102946215"
-          width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <a class="details" href="mailto:eugeniya.pal@yandex.ru">Напишите нам</a>
+          width="560" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <a class="btn details" href="mailto:eugeniya.pal@yandex.ru">Напишите нам</a>
         </div>
       </div>
     </div>
