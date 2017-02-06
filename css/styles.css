@@ -1,8 +1,21 @@
 @font-face {
-    font-family: Gilroy; /* имя шрифта для CSS правил */
-    src: local("Gilroy"), /* проверяем наличие шрифта в ОС пользователя */
-         url(/fonts/gilroylight.woff2) /* если шрифт не установлен, тогда загружаем его по указанному пути */
-  }
+font-family: "Gilroy";
+src: local("Gilroy Light"), local("Gilroy-Light"),
+url("../fonts/gilroylight.woff2") format("woff2"),
+url("../fonts/gilroylight.woff") format("woff"),
+url("../fonts/Gilroylight.ttf") format("truetype");
+font-weight: 300;
+font-style: normal;
+}
+@font-face {
+font-family: "Gilroy";
+src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
+url("../fonts/gilroyextrabold.woff2") format("woff2"),
+url("../fonts/gilroyextrabold.woff") format("woff"),
+url("../fonts/Gilroyextrabold.ttf") format("truetype");
+font-weight: 800;
+font-style: normal;
+}
 
 body {
   font-size: 15px;
@@ -17,7 +30,7 @@ h1, h2{
   line-height: 52px;
   color: #000;
   font-weight: bold;
-  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
 }
 
 .clearfix::after {
@@ -972,7 +985,6 @@ h1, h2{
 .social-btn-tw {
   background-image: url("../img/icon-twitter.png");
 }
-
 
 
 /*catalog*/
