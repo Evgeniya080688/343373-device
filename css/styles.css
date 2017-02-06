@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Gilroy; /* имя шрифта для CSS правил */
+    src: local("Gilroy"), /* проверяем наличие шрифта в ОС пользователя */
+         url(/fonts/gilroylight.woff2) /* если шрифт не установлен, тогда загружаем его по указанному пути */
+  }
+
 body {
   font-size: 15px;
   line-height: 30px;
@@ -25,17 +31,17 @@ h1, h2{
   width: 1160px;
   margin: 0 auto;
   padding: 0;
+
+
 }
 
-.main-header {
-  width: 1160px;
-  background-color: #f7e296;
-  margin: 41px auto  auto auto;
+.main-header .container{
+  background: linear-gradient(to bottom, transparent 20px, #ffe27f 20px);
+  margin: 20px auto  auto auto;
 }
 
 .logo-to-index {
   position: relative;
-  top: -15px;
   padding-left: 60px;
   font-size: 48px;
   font-family: 'Gilroy ExtraBold', 'Sans Serif', sans;
@@ -81,7 +87,7 @@ h1, h2{
   position: relative;
   width: 18px;
   height: 18px;
-  background: transparent url("img/search.png") no-repeat;
+  background: transparent url("../img/search.png") no-repeat;
   /*background-position: -1px -15px;*/
   opacity: 0.3;
 }
@@ -114,6 +120,8 @@ h1, h2{
 .enter {
   color: #272525;
   text-decoration: none;
+  padding-left: 29px;
+  position: relative;
 }
 
 .user-account a:hover {
@@ -128,13 +136,15 @@ h1, h2{
 .enter::before {
   content: "";
   position: absolute;
+  top: 5px;
+  left: 0px;
 
   width: 18px;
   height: 18px;
 
-  background: transparent url("img/user.png") no-repeat;
-  /*background-position: -1px -15px;
-  opacity: 0.3;*/
+  background: transparent url("../img/user.png") no-repeat;
+  background-position: 0px 0px;
+
 }
 
 .enter:hover::before {
@@ -157,24 +167,42 @@ h1, h2{
 .compare {
   width: 100px;
   margin-right: 20px;
-  padding-left: 27px;
+  padding-left: 20px;
+  position: relative;
 }
 
 .compare::before {
   content: "";
   position: absolute;
+  left: 0px;
+  top: 6px;
 
   width: 18px;
   height: 18px;
 
-  background: transparent url("img/compare.png") no-repeat;
+  background: transparent url("../img/compare.png") no-repeat;
   /*background-position: -1px -15px;
   opacity: 0.3;*/
 }
 
 .basket {
   width: 100px;
-  padding-left: 41px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.basket::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 6px;
+
+  width: 18px;
+  height: 18px;
+
+  background: transparent url("../img/cart.png") no-repeat;
+  /*background-position: -1px -15px;
+  opacity: 0.3;*/
 }
 
 .action-block a:hover {
@@ -185,6 +213,7 @@ h1, h2{
   opacity: 0.3;
 }
 
+
 /* Основная навигация по сайту */
 
 .navigation-menu {
@@ -192,7 +221,7 @@ h1, h2{
   font-size: 0px;
   font-family: 'Gilroy ExtraBold', 'Arial', giltroy;
   text-transform: uppercase;
-
+  position: relative;
 }
 
 .navigation-menu a {
@@ -216,7 +245,36 @@ h1, h2{
   width: 500px;
   padding-left: 60px;
   font-size: 18px;
+}
 
+.nav-catalog:active::before {
+  content: "Виртуальная реальность Моноподы для селфи";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 110px;
+  left: 0;
+  width: 1160px;
+  height: 130px;
+  background-color: #ffe393;
+  margin: 0;
+}
+
+.catalog-menu {
+  position: relative;
+}
+
+.catalog-menu::before {
+  content: "";
+  position: absolute;
+  left: 235px;
+  top: 2px;
+
+  width: 18px;
+  height: 18px;
+
+  background: transparent url("../img/plus.png") no-repeat;
+  opacity: 0.3;
 }
 
 .main-navigation {
@@ -250,18 +308,8 @@ h1, h2{
 .banner {
   min-height: 500px;
   margin-bottom: 98px;
-}
 
-.banner::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-
-  display: block;
-  width: 1160px;
-  height: 118px;
-
-  background-color: #f7e296;
+  background: linear-gradient(to top, transparent 400px, #ffe27f 400px);
 }
 
 .banner-picture {
@@ -282,11 +330,12 @@ h1, h2{
   font-size: 179.2px;
   font-family: "Gilroy", "Arial", giltroy;
   font-weight: bold;
+  line-height: 170px;
   position: absolute;
   margin: 0;
   padding: 0;
   right: 45px;
-  top: 67px;
+  top: 0px;
 }
 
 .banner-title {
@@ -328,7 +377,7 @@ h1, h2{
   font-family: 'Gilroy ExtraBold', 'Arial', giltroy;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 8px;
 
 }
 
@@ -340,7 +389,7 @@ h1, h2{
   width: inherit;
   height: 9px;
   background-color: #f0c52e;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .btn:hover {
@@ -403,7 +452,9 @@ h1, h2{
 /* Категории продукции */
 
 .catalog-list {
+  margin-top: 0;
   margin-bottom: 80px;
+  padding: 0;
   min-height: 232px;
   font-size: 0px;
 }
@@ -411,27 +462,55 @@ h1, h2{
 .catalog-list a {
   text-decoration: none;
   color: #000000;
+  position: relative;
+  padding-top: 195px;
+  margin-top: 0;
 }
+
 
 .variation::before {
   content: "";
   position: absolute;
+  top: 0;
   z-index: -1;
   display: block;
   width: 160px;
   height: 160px;
   background-color: #f7e296;
-  margin-top: -195px;
 }
 
 .variation:hover::before{
-  background-color: #f0c52e;
+  background-color: #ffc600;
+}
 
+.variation:active{
+  opacity: 0.3;
 }
 
 .virtual-reality {
-  background-image: url();
+  background: url("../img/popular-1.png") no-repeat;
 }
+
+.monopods-for-selfi {
+  background: url("../img/popular-2.png") no-repeat;
+}
+
+.action-camera {
+  background: url("../img/popular-3.png") no-repeat;
+}
+
+.fitness-bracelets {
+  background: url("../img/popular-4.png") no-repeat;
+}
+
+.smart-clock {
+  background: url("../img/popular-5.png") no-repeat;
+}
+
+.quadcopters {
+  background: url("../img/popular-6.png") no-repeat;
+}
+
 
 .variation {
   display: inline-block;
@@ -452,7 +531,7 @@ h1, h2{
   margin-bottom: 150px;
 }
 
-.info-block::before{
+.index-content::before{
   content: "";
   position: absolute;
   z-index: -1;
@@ -460,7 +539,7 @@ h1, h2{
   width: 100%;
   height: 288px;
   margin-top: 100px;
-  margin-left: 0;
+
   padding: 0;
   background-color: #e5e5e5;
 }
@@ -476,13 +555,14 @@ h1, h2{
 .info-menu a{
   display: block;
   width: 160px;
+  height: 40px;
   margin-bottom: 20px;
   text-decoration: none;
 }
 
 .info-menu a:active{
   min-width: 255px;
-  min-height: 34px;
+  min-height: 40px;
   padding-top: 8px;
   text-align: left;
   padding-left: 25px;
@@ -496,7 +576,7 @@ h1, h2{
   font-family: 'Gilroy ExtraBold', 'Arial', giltroy;
   text-transform: uppercase;
   min-width: 255px;
-  min-height: 34px;
+  min-height: 40px;
   padding-top: 8px;
   text-align: left;
   padding-left: 25px;
@@ -509,6 +589,7 @@ h1, h2{
   width: 760px;
   padding-left: 120px;
   padding-top: 30px;
+  position: relative;
 }
 
 .info-description p {
@@ -519,13 +600,14 @@ h1, h2{
   content: "";
   position: absolute;
   right: 67px;
+  top: 87px;
   display: block;
   width: 140px;
-  height: 178px;
+  height: 190px;
 
   margin-left: 0;
   padding: 0;
-  background-color: #222222;
+  background: url("../img/delivery.png") no-repeat;
 
 }
 
@@ -535,14 +617,22 @@ h1, h2{
   display: inline-block;
   vertical-align: top;
 
-  min-height: 289px;
   width: 1200px;
+  margin-bottom: 92px;
 }
 
 .partners-logo-item{
   float: left;
   width: 260px;
   margin-right: 40px;
+  opacity: 0.2;
+  background-image: url();
+  filter: grayscale(100%);
+}
+
+.partners-logo-item:hover {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 .partners-logo-item:last-child {
@@ -550,12 +640,19 @@ h1, h2{
 }
 
 /* О нас и контакты */
-
-
 .about-us {
   float: left;
-  width: 600px;
+  width: 460px;
   min-height: 651px;
+  padding-right: 140px;
+}
+
+.about-us {
+  background-color: #ffffff;
+}
+
+.contacts {
+  background-color: #ffffff;
 }
 
 .about-us::before {
@@ -580,7 +677,7 @@ h1, h2{
 .about-us p {
   font-size: 15px;
   font-family: "Open Sans";
-  color: #767676;
+  color: #464646;
   line-height: 2;
   text-align: left;
 }
@@ -638,11 +735,23 @@ h1, h2{
 
 }
 
-.footer-links {
+.footer-links{
   padding-top: 60px;
   margin-bottom: 38px;
+
 }
 
+.footer-links a{
+    opacity: 0.7;
+}
+
+.footer-links a:hover{
+  opacity: 1;
+}
+
+.footer-links a:active{
+  opacity: 0.3;
+}
 
 .logo-foot {
   float: left;
@@ -651,12 +760,67 @@ h1, h2{
   font-family: 'Gilroy ExtraBold', 'Sans Serif', sans;
   text-decoration: none;
   color: #f7e184;
+  opacity: 1;
+}
+
+.logo-foot:hover {
+  color: #ffc700;
+}
+
+.logo-foot:active {
+  color: #ffc600;
+  opacity: 0.3;
 }
 
 .user-block-foot {
   float: right;
-  width: 324px;
+
   text-align: right;
+}
+
+.user-block-foot .login {
+  padding-left: 28px;
+  margin-right: 40px;
+  position: relative;
+}
+
+.user-block-foot .login::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+
+  width: 18px;
+  height: 18px;
+
+  background: transparent url("../img/user-footer.png") no-repeat;
+  background-position: 0px 0px;
+}
+
+.user-block-foot .compare::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0px;
+
+  width: 18px;
+  height: 18px;
+
+  background: transparent url("../img/compare-footer.png") no-repeat;
+  background-position: 0px 0px;
+}
+
+.user-block-foot .basket::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+
+  width: 18px;
+  height: 18px;
+
+  background: transparent url("../img/cart-footer.png") no-repeat;
+  background-position: 0px 0px;
 }
 
 .user-block-foot a{
@@ -700,6 +864,14 @@ h1, h2{
   letter-spacing: 4px;
 }
 
+.footer-navigation a:hover {
+  opacity: 0.6;
+}
+
+.footer-navigation a:active {
+  opacity: 0.3;
+}
+
 .foot-delivery {
   float: left;
   width: 120px;
@@ -727,15 +899,34 @@ h1, h2{
 }
 
 .footer-info-links {
-
+  position: relative;
 }
 
 .decorative-element {
+  display: block;
   float: left;
-  font-size: 15px;
-  width: 500px;
-  min-height: 39px;
+  height: 7px;
+  width: 80px;
+  margin-top: 18px;
+  margin-right: 420px;
+  background-color: #ffe27f;
 
+}
+
+.htmlacademy-link {
+  display: block;
+  float: right;
+
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 0px;
+
+  width: 27px;
+  height: 37px;
+
+  background: transparent url("../img/htmlacademy.png") no-repeat;
+  background-position: 0px 0px;
 }
 
 .footer-social{
@@ -744,22 +935,45 @@ h1, h2{
   width: 160px;
 }
 
-.social-btn{
-  width: 39px;
-  min-height: 39px;
-  margin-right: 15px;
-  font-size: 3px;
-}
 
 .social-btn:last-child {
   margin-right: 0px;
 }
 
-.htmlacademy-link {
-  float: left;
-  font-size: 15px;
-  width: 500px;
+.social-btn {
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  margin: 0 2px;
+
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+
+  opacity: 0.3;
 }
+
+.social-btn:hover {
+  opacity: 0.6;
+}
+
+.social-btn:active {
+  opacity: 0.1;
+}
+
+.social-btn-fb {
+  background-image: url("../img/icon-fb.png");
+}
+
+.social-btn-inst {
+  background-image: url("../img/icon-inst.png");
+}
+
+.social-btn-tw {
+  background-image: url("../img/icon-twitter.png");
+}
+
+
 
 /*catalog*/
 
@@ -782,7 +996,42 @@ h1, h2{
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
-  margin-right: 40px;
+  margin-right: 19px;
+  font-family: "Open Sans Ligth", "Arial", sans-serif;
+}
+
+.breadcrumps-item.active {
+  opacity: 0.3;
+}
+
+.breadcrumps-item a {
+  color: #000000;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
+.breadcrumps-item a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumps-item a:active {
+  opacity: 0.1;
+}
+
+.breadcrumps-item::after {
+  content: ">";
+  margin-left: 17px;
+  font-family: "Open Sans Ligth", sans-serif;
+  color: #000000;
+  opacity: 1;
+}
+
+.breadcrumps-item:last-child::after {
+  content: ""
+}
+
+.catalog-content {
+  background-color: #eeeeee;
 }
 
 .catalog-sorting {
@@ -795,6 +1044,11 @@ h1, h2{
   width: 267px;
   padding-left: 60px;
   font-size: 16px;
+  background-color: #dddddd;
+  color: #000000;
+  font-family: 'Gilroy ExtraBold', 'Arial', giltroy;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 
 }
 
@@ -802,6 +1056,26 @@ h1, h2{
   float: left;
   width: 760px;
   padding-left: 73px;
+}
+
+.title-sort-type a {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Open Sans Regular', 'Arial', sans-serif;
+  opacity: 0.3;
+  font-weight: normal;
+}
+
+.title-sort-type a:hover {
+  opacity: 0.6;
+}
+
+.title-sort-type a:active {
+  opacity: 1;
+}
+
+.title-sort-type .active {
+  opacity: 1;
 }
 
 .title-sort-type {
@@ -815,19 +1089,69 @@ h1, h2{
   vertical-align: baseline;
   font-size: 16px;
   margin-right: 53px;
+  color: #000000;
+  font-family: 'Gilroy ExtraBold', 'Arial', giltroy;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 .type-sort {
   display: inline-block;
   vertical-align: baseline;
   font-size: 14px;
-  margin-right: 27px
+  margin-right: 27px;
+  opacity: 1;
 }
 
 .sorting-arrows {
   float: right;
   width: 60px;
-  font-size: 8px;
+  max-height: 10px;
+  margin-top: 25px;
+  font-size: 0px;
+
+}
+
+.sort-to-max {
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  max-height: 12px;
+
+}
+
+.sort-to-max::before {
+  content: "";
+  display: block;
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+  background-color: #000000;
+  transform: rotate(45deg);
+  position: absolute;
+  margin-left: 2px;
+  margin-top: -5px;
+}
+
+.sort-to-min {
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 10px;
+
+}
+
+.sort-to-min::before {
+  content: "";
+  display: block;
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+  background-color: #000000;
+  transform: rotate(45deg);
+  position: absolute;
+  margin-left: 28px;
+  margin-top: 4px;
 }
 
 .catalog-filter {
@@ -837,12 +1161,49 @@ h1, h2{
   min-height: 1218px;
 }
 
+.catalog-filter {
+  margin-top: 70px;
+}
+
+.catalog-filter fieldset {
+  border: 0px solid;
+  margin-bottom: 35px;
+}
+
+.catalog-content-title {
+  font-size: 18px;
+  font-family: "Gilroy";
+  color: #000000;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  padding-top: 15px;
+  border-top: 2px solid #000000;
+  width: 200px;
+
+}
+
+.filter-color label {
+  display: block;
+}
+
+.filter-bluetooth label {
+  display: block;
+}
+
+.catalog-filter input:[type="sumbit"]{
+  width: 200px;
+}
+
 .catalog-view {
   float:right;
   width: 760px;
   padding-left: 73px;
-  padding-top: 52px;
+  padding-top: 70px;
   font-size: 0px;
+  background-color: #ffffff;
+
+
 }
 
 .catalog-product {
@@ -850,7 +1211,71 @@ h1, h2{
   vertical-align: top;
   width: 360px;
   margin-right: 20px;
-  font-size: 15px;
+  margin-bottom: 60px;
+  font-size: 0px;
+  position: relative;
+}
+
+.catalog-product a {
+  text-decoration: none;
+
+}
+
+.catalog-product img {
+  margin-bottom: 28px;
+  background-color:
+}
+
+.catalog-product img:hover {
+  opacity: 0.7;
+  visibility: visible;
+}
+
+.add-compare {
+  position: absolute;
+  left: 100px;
+  top: 228px;
+  font-size: 13px;
+  font-family: "Open Sans Light";
+  color: #000000;
+  line-height: 2.769;
+  opacity: 0.5;
+}
+
+.catalog-product input[type="submit"]{
+  position: absolute;
+  left: 80px;
+  top: 180px;
+  width: 200px;
+}
+
+.product-title {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin-top: 0;
+
+  width: 260px;
+  font-size: 18px;
+  font-family: "Gilroy";
+  color: #000000;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.product-price {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin-top: 1px;
+  width: 100px;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: normal;
+  color: #444444;
+  line-height: 1.2;
+  text-align: right;
+
 }
 
 .catalog-product:nth-child(2n) {
@@ -858,6 +1283,85 @@ h1, h2{
 }
 
 .paginator {
+  display: block;
+  width: 690px;
+  height: 70px;
   margin-left: 20px;
   font-size: 15px;
+  background-color: #ebebeb;
+  margin-bottom: 76px;
+  font-size: 0;
+  padding: 0;
+}
+
+.paginator a {
+  text-decoration: none;
+
+}
+
+.paginator .btn-pag {
+  font-size: 16px;
+  color: #000000;
+  font-family: 'Gilroy ExtraBold', 'Arial', giltroy;
+  text-transform: uppercase;
+  opacity: 0.3;
+  margin-right: 25px;
+}
+
+.paginator .btn-active {
+  opacity: 1;
+}
+
+.btn-catalog-prev {
+  display: inline-block;
+  vertical-align: baseline;
+
+  width: 100px;
+  min-height: 50px;
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size: 16px;
+  color: #000000;
+  font-family: 'Gilroy ExtraBold', 'Arial', giltroy;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-right: 185px;
+
+}
+
+.btn-catalog-prev:hover {
+  background-color: #d9d9d9;
+}
+
+.btn-catalog-prev:active {
+  background-color: #878787;
+  opacity: 0.3;
+
+}
+
+.btn-catalog-next {
+  display: inline-block;
+  vertical-align: baseline;
+
+  width: 100px;
+  min-height: 50px;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-left: 156px;
+
+  font-size: 16px;
+  color: #000000;
+  font-family: 'Gilroy ExtraBold', 'Arial', giltroy;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+}
+
+.btn-catalog-next:hover {
+  background-color: #d9d9d9;
+}
+
+.btn-catalog-next:active {
+  background-color: #878787;
+  opacity: 0.3;
 }
