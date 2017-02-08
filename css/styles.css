@@ -524,7 +524,7 @@ h1, h2{
   padding: 0;
 }
 
- .list-style{
+ .list-style-nav{
 
   width: 4px;
   height: 4px;
@@ -537,19 +537,16 @@ h1, h2{
   margin-right: 23px;
 }
 
-.list-style-active {
-  opacity: 1;
-}
 
-.banner-navigation .list-style:last-child {
+.list-style-nav:last-child {
     margin-right: 0px;
 }
 
-.list-style:hover {
+.list-style-nav:hover {
   opacity: 0.4;
 }
 
-.list-style:active {
+.list-style-nav:active {
   opacity: 1;
 }
 
@@ -905,7 +902,7 @@ h1, h2{
  position: relative;
 }
 
-li::before {
+.list-style-marker::before {
   content: "";
   display: block;
   position: absolute;
@@ -916,9 +913,8 @@ li::before {
   border: 3px solid #000;
   border-radius: 50%;
   opacity: 0.3;
-  
-}
 
+}
 
 .contacts {
   float: left;
