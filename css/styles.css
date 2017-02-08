@@ -1,27 +1,27 @@
 @font-face {
-font-family: "Gilroy";
-src: local("Gilroy Light"), local("Gilroy-Light"),
-url("../fonts/gilroylight.woff2") format("woff2"),
-url("../fonts/gilroylight.woff") format("woff"),
-url("../fonts/Gilroylight.ttf") format("truetype");
-font-weight: 300;
-font-style: normal;
+  font-family: "Gilroy";
+  src: local("Gilroy Light"), local("Gilroy-Light"),
+  url("../fonts/gilroylight.woff2") format("woff2"),
+  url("../fonts/gilroylight.woff") format("woff"),
+  url("../fonts/Gilroylight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 @font-face {
-font-family: "Gilroy";
-src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
-url("../fonts/gilroyextrabold.woff2") format("woff2"),
-url("../fonts/gilroyextrabold.woff") format("woff"),
-url("../fonts/Gilroyextrabold.ttf") format("truetype");
-font-weight: 800;
-font-style: normal;
+  font-family: "Gilroy";
+  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
+  url("../fonts/gilroyextrabold.woff2") format("woff2"),
+  url("../fonts/gilroyextrabold.woff") format("woff"),
+  url("../fonts/Gilroyextrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
 }
 
 body {
   font-size: 15px;
   line-height: 30px;
   color: #444;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'Open Sans Light', 'Arial', sans-serif;
   font-weight: bold;
 }
 
@@ -30,7 +30,7 @@ h1, h2{
   line-height: 52px;
   color: #000;
   font-weight: bold;
-  font-family: 'Gilroy ExtraBold', 'Arial', sans-serif;
+  font-family: 'Gilroy', 'Arial', sans-serif;
 }
 
 .clearfix::after {
@@ -49,92 +49,121 @@ h1, h2{
 }
 
 .main-header .container{
-  background: linear-gradient(to bottom, transparent 20px, #ffe27f 20px);
-  margin: 20px auto  auto auto;
+  background: linear-gradient(to bottom, transparent 40px, rgba(255, 198, 0, 0.5) 20px);
+  margin: auto;
+  padding-top: 22px;
 }
 
 .logo-to-index {
   position: relative;
   padding-left: 60px;
   font-size: 48px;
-  font-family: 'Gilroy ExtraBold', 'Sans Serif', sans;
+  font-family: 'Gilroy', 'Sans Serif', sans;
   text-decoration: none;
   color: #000000;
 }
 
 .logo-to-index:hover {
-  color: #272525;
+  color: #444444;
 }
 
 .logo-to-index:active {
-  color: #464646;
+  color: #666666;
 }
 
 /* Функции для пользователя */
 
 .user-block {
   font-size: 0px;
-  margin-bottom: 43px;
-}
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 
-.search-block{
-  display: inline-block;
-  vertical-align: baserline;
-  padding-left: 60px;
-
-  width: 540px;
+  font-family: "Open Sans", "Arial", sans;
   font-size: 15px;
 }
 
+.search-block{
+  position: relative;
+  width: 440px;
+  font-size: 15px;
+  border-bottom: 0px solid #000000;
+  margin-right: 100px;
+}
+
 .search-block label{
-  padding-left: 20px;
-  opacity: 0.3;
+  background: transparent url("../img/search.svg") no-repeat;
+  padding-right: 20px;
+  padding-top: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 15px;
+  left: 0;
 }
 
 .search-block label:hover {
   opacity: 0.6;
 }
 
-.search-block input[type="submit"]{
-  content: "";
-  position: relative;
-  width: 18px;
-  height: 18px;
-  background: transparent url("../img/search.png") no-repeat;
-  /*background-position: -1px -15px;*/
-  opacity: 0.3;
-}
-
 .search-block input[type="text"]{
+  font-family: "Open Sans", "Arial", sans;
+  font-size: 15px;
   background-color: transparent;
+  line-height: 47px;
+  width: 324px;
   opacity: 0.3;
   border: 0px solid;
+  outline: none;
+  padding-left: 40px;
+  padding-top: 0;
 }
 
-.search-block input[type="text"]:hover{
+.search-block input[type="text"]:hover {
   background-color: transparent;
   opacity: 0.6;
 }
 
-.search-block input[type="text"]:focus{
-  background-color: transparent;
-  opacity: 1;
+.search-block input[type="text"]:focus {
   border-bottom: 2px solid #000000;
+  opacity: 1;
+}
+
+.search-block input[type="text"]:focus + .search-btn {
+  display: block;
+  opacity: 1;
+
+}
+
+.search-block input[type="submit"] {
+  display: none;
+  position: absolute;
+  width: 85px;
+  min-height: 49px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #000000;
+  bottom: 0px;
+  right: 0;
+
+
 }
 
 /* форма входа  */
 .user-account {
-  display: inline-block;
-  vertical-align: baseline;
   width: 280px;
   font-size: 15px;
+  position: relative;
 }
 
 .enter {
   color: #272525;
   text-decoration: none;
   padding-left: 29px;
-  position: relative;
 }
 
 .user-account a:hover {
@@ -149,13 +178,14 @@ h1, h2{
 .enter::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 0px;
+  margin: auto;
+  top: 10px;
+  left: 0;
 
   width: 18px;
   height: 18px;
 
-  background: transparent url("../img/user.png") no-repeat;
+  background: transparent url("../img/user.svg") no-repeat;
   background-position: 0px 0px;
 
 }
@@ -167,55 +197,63 @@ h1, h2{
 /* Сравнить и корзина */
 
 .action-block {
-  display: inline-block;
-  vertical-align: baseline;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
   font-size: 15px;
+  position: relative;
+  width: 220px;
 }
 
 .action-block a{
   color: #272525;
   text-decoration: none;
+  width: 220px;
+
 }
 
 .compare {
   width: 100px;
-  margin-right: 20px;
   padding-left: 20px;
   position: relative;
+
 }
 
 .compare::before {
   content: "";
   position: absolute;
   left: 0px;
-  top: 6px;
+  top: 10px;
 
   width: 18px;
   height: 18px;
+  background: transparent url("../img/compare.svg") no-repeat;
 
-  background: transparent url("../img/compare.png") no-repeat;
   /*background-position: -1px -15px;
   opacity: 0.3;*/
 }
 
 .basket {
-  width: 100px;
+  width: 83px;
   padding-left: 25px;
   position: relative;
+  text-align: right;
+
 }
 
 .basket::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 6px;
+  right: 70px;
+  top: 10px;
 
   width: 18px;
   height: 18px;
+  background: transparent url("../img/cart.svg") no-repeat;
+  opacity: 0.3;
 
-  background: transparent url("../img/cart.png") no-repeat;
-  /*background-position: -1px -15px;
-  opacity: 0.3;*/
 }
 
 .action-block a:hover {
@@ -230,11 +268,17 @@ h1, h2{
 /* Основная навигация по сайту */
 
 .navigation-menu {
-  margin-bottom: 55px;
+  display: flex;
+
+  margin-left: 60px;
+  margin-right: 55px;
+  margin-bottom: 40px;
+
   font-size: 0px;
-  font-family: 'Gilroy ExtraBold', 'Arial', giltroy;
+  font-family: 'Gilroy', 'Arial', gilroy;
   text-transform: uppercase;
   position: relative;
+
 }
 
 .navigation-menu a {
@@ -253,34 +297,23 @@ h1, h2{
 }
 
 .nav-catalog {
-  display: inline-block;
-  vertical-align: baseline;
-  width: 500px;
-  padding-left: 60px;
+  width: 543px;
+  padding-bottom: 30px;
   font-size: 18px;
+  align-self: center;
 }
 
-.nav-catalog:active::before {
-  content: "Виртуальная реальность Моноподы для селфи";
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 110px;
-  left: 0;
-  width: 1160px;
-  height: 130px;
-  background-color: #ffe393;
-  margin: 0;
-}
 
 .catalog-menu {
+  align-self: center;
   position: relative;
+  padding-right: 30px;
 }
 
 .catalog-menu::before {
   content: "";
   position: absolute;
-  left: 235px;
+  right: 0px;
   top: 2px;
 
   width: 18px;
@@ -290,30 +323,85 @@ h1, h2{
   opacity: 0.3;
 }
 
-.main-navigation {
-  display: inline-block;
-  vertical-align: baseline;
-  width: 560px;
-  font-size: 18px;
+.nav-catalog:hover .show-menu{
+  display: block;
 }
 
-.nav-delivery {
-  display: inline-block;
-  vertical-align: top;
-  width: 140px;
+.show-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: -60px;
+  width: 1100px;
+  height: 130px;
+  padding-left: 60px;
+  padding-top: 0;
+  padding-bottom: 30px;
+
+  background-color: #ffe393;
+  margin: 0;
 }
 
-.nav-warranity {
-  display: inline-block;
-  vertical-align: top;
+.menu-list{
+  display: flex;
+  margin: 0;
+  padding-left: 0px;
+
+  font-family: "Open Sans", "Arial", sans;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.show-menu a {
+  font-family: "Open Sans", "Arial", sans;
+  font-size: 15px;
+  letter-spacing: 0px;
+
+
+}
+
+.menu-list .column-item {
+  margin-top: -23px;
+  margin-right: 40px;
+  width: 160px;
+}
+
+.menu-list .column-item:nth-child(1) {
   width: 200px;
 }
 
+.main-navigation {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 560px;
+  font-size: 18px;
+  margin:0;
+  padding-bottom: 30px;
+}
+
+.main-navigation ul {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+.main-navigation li {
+  list-style: none;
+
+}
+
+.nav-delivery {
+  width: 160px;
+}
+
+.nav-warranity {
+  width: 120px;
+}
+
 .nav-contacts {
-  display: inline-block;
-  vertical-align: top;
   text-align: right;
-  width: 170px;
+  width: 223px;
+
 }
 
 /* Банер */
@@ -321,8 +409,8 @@ h1, h2{
 .banner {
   min-height: 500px;
   margin-bottom: 98px;
-
-  background: linear-gradient(to top, transparent 400px, #ffe27f 400px);
+  position: relative;
+  background: linear-gradient(to top, transparent 402px, rgba(255, 198, 0, 0.5) 402px);
 }
 
 .banner-picture {
@@ -368,6 +456,8 @@ h1, h2{
 }
 
 .banner-description {
+  font-family: "Open Sans", "Arial", sans;
+  font-size: 15px;
   margin-bottom: 50px;
 }
 
@@ -387,11 +477,13 @@ h1, h2{
   min-height: 32px;
   letter-spacing: 4px;
   font-size: 18px;
-  font-family: 'Gilroy ExtraBold', 'Arial', giltroy;
+  font-family: 'Gilroy', 'Arial', giltroy;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   padding-top: 8px;
-
+  position: relative;
+  z-index: 2;
 }
 
 .btn::before {
@@ -400,9 +492,9 @@ h1, h2{
   z-index: -1;
   display: block;
   width: inherit;
-  height: 9px;
+  height: 8px;
   background-color: #f0c52e;
-  margin-top: 12px;
+  margin-top: 11px;
 }
 
 .btn:hover {
@@ -415,29 +507,46 @@ h1, h2{
 }
 
 .banner-navigation {
-  float: right;
-  width: 80px;
-  max-height: 11px;
-  margin-right: 80px;
-  margin-top: 13px;
-  padding: 0;
+  position: absolute;
+  display: flex;
+  top: 330px;
+  right: 80px;
+
   font-size: 0px;
 }
 
-.banner-navigation li{
-  display: inline-block;
+.banner-navigation .list-style{
+
+  width: 10px;
+  height: 10px;
   vertical-align: top;
   font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-left: 20px;
+  color: black;
 }
 
-.list-style {
+.list-style::before {
+  content: "";
   display: block;
+
   width: 10px;
   height: 10px;
   background-color: #000000;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  opacity: 0.3;
+}
+
+.list-style:hover::before {
+  opacity: 0.4;
+}
+
+.list-style:active::before {
+  opacity: 1;
+}
+
+.list-style-active::before {
+  opacity: 1;
 }
 
 .banner-info {
@@ -478,8 +587,9 @@ h1, h2{
   position: relative;
   padding-top: 195px;
   margin-top: 0;
+  font-family: "Gilroy", "Arial", sans;
+  font-size: 18px;
 }
-
 
 .variation::before {
   content: "";
@@ -489,41 +599,92 @@ h1, h2{
   display: block;
   width: 160px;
   height: 160px;
-  background-color: #f7e296;
+  background-color: #ffc600;
+  opacity: 0.5;
 }
 
 .variation:hover::before{
+  opacity:1;
+}
+
+.variation:active::before{
   background-color: #ffc600;
+  opacity: 1;
 }
 
-.variation:active{
-  opacity: 0.3;
+.variation:active::after {
+  opacity: 0.3
 }
 
-.virtual-reality {
+.variation:active span {
+  opacity: 0.3
+}
+
+.virtual-reality::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: block;
+  width: 160px;
+  height: 160px;
   background: url("../img/popular-1.png") no-repeat;
 }
 
-.monopods-for-selfi {
+.monopods-for-selfi::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: block;
+  width: 160px;
+  height: 160px;
   background: url("../img/popular-2.png") no-repeat;
 }
 
-.action-camera {
+.action-camera::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: block;
+  width: 160px;
+  height: 160px;
   background: url("../img/popular-3.png") no-repeat;
 }
 
-.fitness-bracelets {
+.fitness-bracelets::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: block;
+  width: 160px;
+  height: 160px;
   background: url("../img/popular-4.png") no-repeat;
 }
 
-.smart-clock {
+.smart-clock::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: block;
+  width: 160px;
+  height: 160px;
   background: url("../img/popular-5.png") no-repeat;
 }
 
-.quadcopters {
+.quadcopters::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: block;
+  width: 160px;
+  height: 160px;
   background: url("../img/popular-6.png") no-repeat;
 }
-
 
 .variation {
   display: inline-block;
@@ -540,27 +701,20 @@ h1, h2{
 }
 
 /* Важная информация для пользователей */
-.info-block {
-  margin-bottom: 150px;
+.index-content {
+  padding-bottom: 70px;
+  margin-bottom: 97px;
+  background: linear-gradient(to bottom, transparent 100px, #e5e5e5 100px);
 }
 
-.index-content::before{
-  content: "";
-  position: absolute;
-  z-index: -1;
-  display: block;
-  width: 100%;
-  height: 288px;
-  margin-top: 100px;
 
-  padding: 0;
-  background-color: #e5e5e5;
+.info-block {
+  font-family: "Open Sans", "Arial", sans;
 }
 
 .info-menu {
   float: left;
   width: 276px;
-  min-height: 235px;
   border-right: 4px solid #000000;
   padding-top: 80px;
 }
@@ -581,12 +735,18 @@ h1, h2{
   padding-left: 25px;
   color: #f7e184;
   background-color: #000000;
+
+}
+
+.info-menu a:active::before {
+  background: transparent;
 }
 
 .active-info{
   letter-spacing: 4px;
   font-size: 18px;
-  font-family: 'Gilroy ExtraBold', 'Arial', giltroy;
+  font-family: 'Gilroy', 'Arial', giltroy;
+  font-weight: bold;
   text-transform: uppercase;
   min-width: 255px;
   min-height: 40px;
@@ -683,10 +843,6 @@ h1, h2{
 
 }
 
-.about-us a:hover{
-
-}
-
 .about-us p {
   font-size: 15px;
   font-family: "Open Sans";
@@ -697,7 +853,8 @@ h1, h2{
 
 .about-us ul {
   margin-top: 60px;
-  font-family: "Gilroy ExtraBold";
+  font-family: "Gilroy", "Arial", sans;
+  font-weight: bold;
   line-height: 40px;
   color: #000000;
   margin-bottom: 70px;
@@ -750,27 +907,17 @@ h1, h2{
 
 .footer-links{
   padding-top: 60px;
+  padding-right: 0;
   margin-bottom: 38px;
+  display: flex;
+  justify-content: space-between;
 
-}
-
-.footer-links a{
-    opacity: 0.7;
-}
-
-.footer-links a:hover{
-  opacity: 1;
-}
-
-.footer-links a:active{
-  opacity: 0.3;
 }
 
 .logo-foot {
-  float: left;
   width: 836px;
   font-size: 48px;
-  font-family: 'Gilroy ExtraBold', 'Sans Serif', sans;
+  font-family: 'Gilroy', 'Sans Serif', sans;
   text-decoration: none;
   color: #f7e184;
   opacity: 1;
@@ -785,22 +932,53 @@ h1, h2{
   opacity: 0.3;
 }
 
-.user-block-foot {
-  float: right;
+.user-block-foot{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
 
-  text-align: right;
+.user-block-foot a{
+  font-family: "Open Sans Light", sans-serif;
+  color: #929292;
+  margin-top:0;
+  padding: 0;
+  opacity: 0.7;
+}
+
+.user-block-foot a:hover{
+  opacity: 1;
+}
+
+.user-block-foot a:active{
+  opacity: 0.3;
 }
 
 .user-block-foot .login {
   padding-left: 28px;
-  margin-right: 40px;
+  margin-right: 45px;
   position: relative;
+
+}
+
+.user-block-foot .compare{
+  width: 70px;
+  padding-left: 21px;
+  margin-right: 45px;
+
+}
+
+.user-block-foot .cart{
+  padding-left: 21px;
+  width: 84px;
+
 }
 
 .user-block-foot .login::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 10px;
   left: 0px;
 
   width: 18px;
@@ -813,7 +991,7 @@ h1, h2{
 .user-block-foot .compare::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 10px;
   left: 0px;
 
   width: 18px;
@@ -826,7 +1004,7 @@ h1, h2{
 .user-block-foot .basket::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 9px;
   left: 0px;
 
   width: 18px;
@@ -836,11 +1014,6 @@ h1, h2{
   background-position: 0px 0px;
 }
 
-.user-block-foot a{
-  font-family: "Open Sans Light", sans-serif;
-  color: #929292;
-  margin-top:0;
-}
 
 .footer-contacts {
   min-height: 87px;
@@ -872,7 +1045,7 @@ h1, h2{
 
 .footer-navigation a {
   color: #ffffff;
-  font-family: 'Gilroy ExtraBold', 'Arial', giltroy;
+  font-family: 'Gilroy ExtraBold', 'Arial', gilroy;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
