@@ -12,8 +12,9 @@
         <a class="logo-to-index" href="index.html">DEVICE</a>
         <div class="user-block">
           <form class="search-block">
-            <input type="submit" id="search" value="Поиск по сайту">
-            <label for="search">Поиск по сайту</label>
+            <label for="search"></label>
+            <input type="text" id="search" name="search" value="" placeholder="Поиск по сайту">
+            <input type="submit" class="search-btn" value="Найти">
           </form>
           <div class="user-account">
             <a class="enter" href="#">Войти</a>
@@ -27,11 +28,27 @@
             <a class="basket" href="#">Корзина</a>
           </div>
         </div>
-        <div class="navigation-menu clearfix">
+        <div class="navigation-menu">
           <div class="nav-catalog">
             <a href="#" class="catalog-menu">Каталог товаров</a>
+            <div class="show-menu">
+              <div class="menu-list">
+                <div class="column-item">
+                  <p><a href="#">Виртуальная реальность</a></p>
+                  <p><a href="catalog.html">Моноподы для селфи</a></p>
+                  <p><a href="#">Экшн-камеры</a></p>
+                </div>
+                <div class="column-item" >
+                  <p><a href="#">Фитнес-браслеты</a></p>
+                  <p><a href="#">Умные часы</a></p>
+                </div>
+                <div class="column-item" >
+                  <p><a href="#">Квадрокоптеры</a></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <nav class="main-navigation clearfix">
+          <nav class="main-navigation">
             <ul>
               <li class="nav-delivery">
                 <a href="#">Доставка</a>
@@ -186,7 +203,7 @@
       <!--Подвал-->
     <footer class="main-footer">
       <div class="container">
-        <div class="footer-links clearfix">
+        <div class="footer-links ">
           <a class="logo-foot" href="index.html">DEVICE</a>
           <div class="user-block-foot">
             <a class="login" href="#"> Войти</a>
@@ -194,7 +211,7 @@
             <a class="basket" href="#">Корзина</a>
           </div>
         </div>
-        <div class="footer-contacts clearfix">
+        <div class="footer-contacts">
           <p class="organization-adress">Адрес: г. Москва, ул. Строителей, 15</p>
           <nav class="footer-navigation">
             <ul>

@@ -97,9 +97,9 @@
           </div>
         </div>
         <div class="banner-navigation">
-          <div class="list-style list-style-active"></div>
-          <div class="list-style"></div>
-          <div class="list-style"></div>
+          <div class="list-style-nav list-style-active"></div>
+          <div class="list-style-nav"></div>
+          <div class="list-style-nav"></div>
         </div>
       </div>
       <!--Категории продукции -->
@@ -116,7 +116,7 @@
     <div class="index-content">
       <div class="container info-block clearfix">
         <div class="info-menu">
-          <a href="#" class="active-info"> Доставка</a>
+          <a href="#" class="btn active-info"> Доставка</a>
           <a href="#" class="btn"> Гарантия</a>
           <a href="#" class="btn"> Кредит</a>
         </div>
@@ -174,7 +174,7 @@
         <div class="footer-links ">
           <a class="logo-foot" href="index.html">DEVICE</a>
           <div class="user-block-foot">
-            <a class="login" href="#"> Войти</a>
+            <a class="login" href="#">Войти</a>
             <a class="compare" href="#">Сравнить</a>
             <a class="basket" href="#">Корзина</a>
           </div>
@@ -209,5 +209,25 @@
         </div>
       </div>
     </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="login-form" action="#" method="post">
+        <label class="user-name">
+          Ваше имя:
+          <input class="type-name" type="text" name="name" placeholder="Представьтесь пожалуйста">
+        </label>
+        <label class="user-e-mail">
+          Ваш e-mail:
+          <input class="type-e-mail" type="text" name="e-mail" placeholder="Для отправки ответа">
+        </label>
+        <div>
+          <label class="user-message">
+            Текст письма:
+            <textarea rows="6" cols="45" class="type-message" name="message" placeholder="В свободной форме"></textarea>
+          </label>
+        </div>
+        <button class="btn-message btn" type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
