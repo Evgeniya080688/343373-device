@@ -994,11 +994,11 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .logo-foot:hover {
-  color: #ffc700;
+  color: #f0c52e;
 }
 
 .logo-foot:active {
-  color: #ffc600;
+  color: #f0c52e;
   opacity: 0.3;
 }
 
