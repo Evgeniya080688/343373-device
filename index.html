@@ -161,9 +161,9 @@
         <div class="contacts">
           <h2 class="title-info">Контакты</h2>
           <p>Вы сможете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473277!2d37.52742931553117!3d55.687034004530496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1485102946215"
-          width="560" height="224" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <a class="btn details" href="mailto:eugeniya.pal@yandex.ru">Напишите нам</a>
+          <div class="map-contact js-open-map">
+          </div>
+          <a class="btn write-us">Напишите нам</a>
         </div>
       </div>
     </div>
@@ -213,11 +213,12 @@
       <form class="login-form" action="#" method="post">
         <label class="user-name">
           Ваше имя:
-          <input class="type-name" type="text" name="name" placeholder="Представьтесь пожалуйста">
+          <input class="type-name" type="text" name="client" placeholder="Представьтесь пожалуйста" required>
+
         </label>
         <label class="user-e-mail">
           Ваш e-mail:
-          <input class="type-e-mail" type="text" name="e-mail" placeholder="Для отправки ответа">
+          <input class="type-e-mail" type="text" name="mail" placeholder="Для отправки ответа" required>
         </label>
         <div>
           <label class="user-message">
@@ -228,5 +229,101 @@
         <button class="btn-message btn" type="submit">Отправить</button>
       </form>
     </div>
+    <div class="modal-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473277!2d37.52742931553117!3d55.687034004530496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1485102946215"
+          width="960" height="564" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <script>
+      var link = document.querySelector(".write-us");
+      var popup = document.querySelector(".modal-content");
+      var close = popup.querySelector(".modal-content-close");
+      var form = popup.querySelector("form");
+      var client = popup.querySelector("[name=client]");
+      var mail = popup.querySelector("[name=mail]");
+      var message = popup.querySelector("[name=message]");
+      var storageclient = localStorage.getItem("client");
+      var storagemail = localStorage.getItem("mail");
+
+//открытие формы
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+
+
+        if (storageclient && storagemail){
+          client.value = storageclient;
+          mail.value = storagemail;
+          message.focus();
+        }
+        else if (storageclient) {
+          client.value = storageclient;
+          mail.focus();
+        } else if (storagemail){
+          mail.value = storagemail;
+          message.focus();
+        } else if (!storageclient && !storagemail){
+        client.focus();
+        }
+      });
+
+//закрытие формы
+      close.addEventListener("click", function(event) {
+       event.preventDefault();
+       popup.classList.remove("modal-content-show");
+       popup.classList.remove("modal-error");
+     });
+
+
+//проверка валидности
+     form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        if (!client.value || !mail.value) {
+          event.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+          //this.style.backgroundColor = 'black';
+        } else {
+          localStorage.setItem("client", client.value);
+        }
+      });
+
+//закрытие по esc
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+            popup.classList.remove("modal-error");
+          }
+        }
+      });
+
+      var maplink = document.querySelector(".map-contact");
+      var mappopup = document.querySelector(".modal-map");
+      var closemap = mappopup.querySelector(".modal-content-close");
+      var mapopen = document.querySelector(".js-open-map");
+
+//открытие карты
+      maplink.addEventListener("click", function(event) {
+        event.preventDefault();
+        mappopup.classList.add("modal-content-show");
+      });
+
+//закрытие карты
+     closemap.addEventListener("click", function(event) {
+      event.preventDefault();
+      mappopup.classList.remove("modal-content-show");
+    });
+//закрытие по esc
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (mappopup.classList.contains("modal-content-show")) {
+            mappopup.classList.remove("modal-content-show");
+          }
+        }
+      });
+
+    </script>
   </body>
 </html>
