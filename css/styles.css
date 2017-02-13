@@ -101,7 +101,8 @@ h1, h2{
 }
 
 .search-block label{
-  background: transparent url("../img/search.png") no-repeat;
+  background: transparent url("../img/spritesheet.png") no-repeat;
+  background-position: 5px 177px ;
   padding-right: 20px;
   padding-top: 20px;
   opacity: 1;
@@ -125,12 +126,14 @@ h1, h2{
   outline: none;
   padding-left: 40px;
   padding-top: 0;
+
+  border-bottom: 2px solid transparent;
 }
 
 .search-block input[type="submit"] {
-  display: none;
-
-  width: 85px;
+  display: block;
+  opacity: 0;
+  width: 83px;
   min-height: 49px;
   background-color: transparent;
   outline: none;
@@ -150,7 +153,6 @@ h1, h2{
 }
 
 input[type="text"]:focus + .search-btn {
-  display: block;
   opacity: 1;
 }
 
@@ -895,7 +897,7 @@ input[type="text"] + input[type="submit"]:active {
 
 .about-us p {
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: "Open Sans","Arial", sans;
   color: #464646;
   line-height: 2;
   text-align: left;
@@ -903,11 +905,12 @@ input[type="text"] + input[type="submit"]:active {
 
 .about-us ul {
   margin-top: 60px;
-  font-family: "Gilroy", "Arial", sans;
+  padding-left: 0;
+  font-family: "Gilroy", "Arial", gilroy;
   font-weight: bold;
   line-height: 40px;
   color: #000000;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .about-us li{
@@ -933,7 +936,7 @@ input[type="text"] + input[type="submit"]:active {
 .contacts {
   float: left;
   width: 560px;
-  min-height: 651px;
+
 }
 
 .contacts::before {
@@ -948,14 +951,24 @@ input[type="text"] + input[type="submit"]:active {
 .contacts a{
   display: block;
   width: 260px;
+  cursor: pointer;
 }
 
 .contacts p {
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: "Open Sans","Arial", sans;
   color: #767676;
   line-height: 2;
   text-align: left;
+  margin-bottom: 40px;
+}
+
+.map-contact{
+  width: 560px;
+  height: 225px;
+  background: #e9e9e9 url("../img/map.jpg") no-repeat;
+  margin-bottom: 77px;
+  cursor: pointer;
 }
 
 .contacts iframe{
@@ -1025,7 +1038,7 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .user-block-foot a:active{
-  opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .user-block-foot .login {
@@ -1147,7 +1160,8 @@ input[type="text"] + input[type="submit"]:active {
 
 .footer-navigation a {
   color: #ffffff;
-  font-family: 'Gilroy ExtraBold', 'Arial', gilroy;
+  font-family: 'Gilroy', 'Arial', gilroy;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -1929,24 +1943,81 @@ label:active input[type="radio"] + .radio-indicator{
   opacity: 0.3;
 }
 
-/*Всплывающая форма*/
+/*Всплывающие окна*/
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal-content {
   position: fixed;
   display: none;
   top: 250px;
-  left: 480px;
+  left: 0;
+  right: 0;
+  margin: auto;
 
   width: 960px;
-
-  margin: auto auto;
-
   color:#000000;
 
   background-color: #ffffff;
-  box-shadow: 0 0 50px 50px rgba(0, 0, 0, 0.7);
+  box-shadow:
+     0px 10px 40px 0px rgba(0, 0, 0, 0.3),
+    -50px 0 50px -50px rgba(0, 0, 0, 0.7),
+    50px 0 50px -50px rgba(0, 0, 0, 0.7);
   z-index: 3;
 
+}
 
+.modal-map {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  width: 960px;
+  height: 560px;
+
+  background: #e9e5dc url("../img/map-big.jpg");
+  box-shadow:
+     0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+
+  z-index: 3;
+
+}
+
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-content-close {
@@ -2011,8 +2082,8 @@ label:active input[type="radio"] + .radio-indicator{
 }
 
 .login-form input[type="text"] {
-  background-color: #e6e6e6;
-  opacity: 0.5;
+  background-color: rgba(235, 235, 235,0.5);
+  color: rgba(0, 0, 0, 0.4);
   padding: 15px 20px;
   border-color: transparent;
   display: block;
@@ -2020,6 +2091,28 @@ label:active input[type="radio"] + .radio-indicator{
   width: 320px;
   margin-bottom: 40px;
   box-sizing: content-box;
+}
+
+.login-form input:hover {
+  background-color: rgba(235, 235, 235,0.8);
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.login-form input[type="text"]:active,
+.login-form textarea:active{
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  outline: none;
+  border: 2px solid #e5e5e5;
+}
+
+.login-form input[type="text"]:focus,
+.login-form textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+
+  outline: none;
+  border: 2px solid #e5e5e5;
 }
 
 .login-form .user-message {
@@ -2031,7 +2124,6 @@ label:active input[type="radio"] + .radio-indicator{
 .login-form textarea {
   background-color: #e6e6e6;
   opacity: 0.5;
-
   padding: 15px 20px;
 
   border-color: transparent;
@@ -2047,4 +2139,8 @@ label:active input[type="radio"] + .radio-indicator{
   background-color: transparent;
   border: none;
   bottom: 0;
+}
+
+.invalide-value {
+  background-color: rgba(255, 182, 182, 0.5);
 }
