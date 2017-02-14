@@ -28,7 +28,7 @@ body {
 
 h1, h2{
   font-size: 47px;
-  line-height: 52px;
+  line-height: 54px;
   color: #000;
   font-weight: bold;
   font-family: 'Gilroy', 'Arial', gilroy;
@@ -76,7 +76,7 @@ h1, h2{
 .user-block {
   font-size: 0px;
   margin-bottom: 8px;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-left: 60px;
   margin-right: 60px;
   position: relative;
@@ -109,7 +109,7 @@ h1, h2{
   opacity: 1;
   position: absolute;
   top: 15px;
-  left: 0;
+  left: 5px;
 }
 
 .search-block label:hover {
@@ -188,7 +188,7 @@ input[type="text"] + input[type="submit"]:active {
   color: #272525;
   text-decoration: none;
 
-  padding-left: 29px;
+  padding-left: 25px;
 }
 
 .user-account a:hover {
@@ -261,7 +261,7 @@ input[type="text"] + input[type="submit"]:active {
 
 .basket {
   width: 83px;
-  padding-left: 25px;
+  padding-left: 23px;
   position: relative;
   text-align: right;
 
@@ -442,7 +442,7 @@ input[type="text"] + input[type="submit"]:active {
 
 .banner {
   min-height: 500px;
-  margin-bottom: 98px;
+  margin-bottom: 93px;
   position: relative;
   background: linear-gradient(to top, transparent 402px, rgba(240, 197, 46, 0.5) 402px);
 
@@ -515,13 +515,13 @@ input[type="text"] + input[type="submit"]:active {
 .banner-description {
   font-family: "Open Sans", "Arial", sans;
   font-size: 15px;
-  margin-top: 220px;
-  margin-bottom: 50px;
+  margin-top: 215px;
+  margin-bottom: 45px;
 
 }
 
 .more-info {
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 }
 
 .banner-details {
@@ -540,8 +540,9 @@ input[type="text"] + input[type="submit"]:active {
   display: inline-block;
   vertical-align: top;
   font-size: 15px;
-  margin-right: 80px;
+  margin-right: 70px;
   font-family: "Open Sans", "Arial", sans;
+  font-weight: 400;
 }
 
 .feature-title {
@@ -596,7 +597,7 @@ input[type="text"] + input[type="submit"]:active {
 .banner-navigation {
   position: absolute;
   display: flex;
-  top: 330px;
+  top: 335px;
   right: 80px;
   font-size: 0px;
   box-sizing: border-box;
@@ -638,7 +639,7 @@ input[type="text"] + input[type="submit"]:active {
 
 .catalog-list {
   margin-top: 0;
-  margin-bottom: 80px;
+  margin-bottom: 88px;
   padding: 0;
   min-height: 232px;
   font-size: 0px;
@@ -648,10 +649,11 @@ input[type="text"] + input[type="submit"]:active {
   text-decoration: none;
   color: #000000;
   position: relative;
-  padding-top: 195px;
+  padding-top: 193px;
   margin-top: 0;
   font-family: "Gilroy", "Arial", gilroy;
   font-size: 18px;
+  line-height: 1;
 }
 
 .variation::before {
@@ -777,24 +779,30 @@ input[type="text"] + input[type="submit"]:active {
   background: linear-gradient(to bottom, transparent 100px, #e5e5e5 100px);
 }
 
-
 .info-block {
   font-family: "Open Sans", "Arial", sans;
+  font-weight: 400;
+}
+
+.hidden-block {
+  display: none;
 }
 
 .info-menu {
   float: left;
   width: 276px;
-  border-right: 4px solid #000000;
+  border-right: 7px solid #000000;
   padding-top: 80px;
+  padding-bottom: 43px;
 }
 
 .info-menu a{
   display: block;
   width: 160px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-decoration: none;
 }
+
 
 .info-menu a:active{
   min-width: 255px;
@@ -824,10 +832,14 @@ input[type="text"] + input[type="submit"]:active {
 
 .info-description {
   float: right;
-  width: 760px;
+  width: 756px;
   padding-left: 120px;
   padding-top: 30px;
   position: relative;
+}
+
+.info-description h2{
+  margin-bottom: 33px;
 }
 
 .info-description p {
@@ -838,10 +850,10 @@ input[type="text"] + input[type="submit"]:active {
   content: "";
   position: absolute;
   right: 67px;
-  top: 87px;
+  top: 82px;
   display: block;
-  width: 140px;
-  height: 190px;
+  width: 138px;
+  height: 173px;
 
   margin-left: 0;
   padding: 0;
@@ -853,8 +865,8 @@ input[type="text"] + input[type="submit"]:active {
 .info-warranity::before {
   content: "";
   position: absolute;
-  right: 67px;
-  top: 87px;
+  right: 46px;
+  top: 63px;
   display: block;
   width: 178px;
   height: 190px;
@@ -869,10 +881,10 @@ input[type="text"] + input[type="submit"]:active {
 .info-credit::before {
   content: "";
   position: absolute;
-  right: 67px;
-  top: 87px;
+  right: 80px;
+  top: 59px;
   display: block;
-  width: 173px;
+  width: 165px;
   height: 190px;
 
   margin-left: 0;
@@ -889,7 +901,7 @@ input[type="text"] + input[type="submit"]:active {
   vertical-align: top;
 
   width: 1200px;
-  margin-bottom: 92px;
+  margin-bottom: 83px;
 }
 
 .partners-logo-item{
@@ -914,18 +926,19 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 /* О нас и контакты */
+.slider-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-info {
+  padding-top: 10px;
+}
+
 .about-us {
-  float: left;
-  width: 460px;
+  width: 480px;
   min-height: 651px;
-  padding-right: 140px;
-}
-
-.about-us {
-  background-color: #ffffff;
-}
-
-.contacts {
+  margin-right: 120px;
   background-color: #ffffff;
 }
 
@@ -947,19 +960,21 @@ input[type="text"] + input[type="submit"]:active {
 .about-us p {
   font-size: 15px;
   font-family: "Open Sans","Arial", sans;
+  font-weight: 400;
   color: #464646;
   line-height: 2;
   text-align: left;
+  padding-bottom: 15px;
 }
 
 .about-us ul {
-  margin-top: 60px;
+  margin-top: 50px;
   padding-left: 0;
   font-family: "Gilroy", "Arial", gilroy;
   font-weight: bold;
   line-height: 40px;
   color: #000000;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .about-us li{
@@ -983,8 +998,8 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .contacts {
-  float: left;
   width: 560px;
+  background-color: #ffffff;
 
 }
 
@@ -1016,13 +1031,8 @@ input[type="text"] + input[type="submit"]:active {
   width: 560px;
   height: 225px;
   background: #e9e9e9 url("../img/map.jpg") no-repeat;
-  margin-bottom: 77px;
+  margin-bottom: 65px;
   cursor: pointer;
-}
-
-.contacts iframe{
-  margin-top: 30px;
-  margin-bottom: 70px;
 }
 
 /* Подвал */
@@ -1038,11 +1048,12 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .footer-links{
-  padding-top: 60px;
+  padding-top: 68px;
   padding-right: 0;
-  margin-bottom: 38px;
+  margin-bottom: 33px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 
 }
 
@@ -1187,31 +1198,35 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .footer-contacts {
-  min-height: 87px;
-
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
 }
 
 .organization-adress {
-  float: left;
   font-size: 15px;
-  width: 360px;
+
   font-family: "Open Sans", "Arial", sans;
   font-size: 15px;
   font-weight: 400;
   color: #ffffff;
-  margin-top:0;
+  margin-top: 0;
 }
 
 .footer-navigation {
-  float: left;
-  width: 440px;
+  width: 460px;
   font-size: 0px;
   margin-top: 0px;
+  padding: 0;
+}
+
+.footer-navigation ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .footer-navigation li {
-  display: flex;
-  align-content: space-between;
   list-style: none;
   font-size: 15px;
 }
@@ -1219,6 +1234,7 @@ input[type="text"] + input[type="submit"]:active {
 .footer-navigation a {
   color: #ffffff;
   font-family: "Gilroy", "Arial", gilroy;
+  font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -1232,26 +1248,10 @@ input[type="text"] + input[type="submit"]:active {
   opacity: 0.3;
 }
 
-.foot-delivery {
-  float: left;
-  width: 120px;
-}
-
-.foot-warranity {
-  float: left;
-  width: 120px;
-}
-
-.foot-contacts{
-  float: left;
-  width: 120px;
-}
-
 .number-phone {
-  float: right;
   text-align: right;
   font-size: 15px;
-  width: 360px;
+
   font-family: "Open Sans", "Arial", sans;
   font-size: 15px;
   font-weight: 400;
@@ -1346,8 +1346,8 @@ input[type="text"] + input[type="submit"]:active {
 
 /*catalog*/
 
-.catalog-hat {
-
+.catalog-hat h1{
+  margin-bottom: 15px;
 }
 
 .title-variation {
@@ -1361,7 +1361,7 @@ input[type="text"] + input[type="submit"]:active {
 .breadcrumps {
   font-size: 0px;
   padding-left: 60px;
-  margin-bottom: 45px;
+  margin-bottom: 43px;
 }
 
 .breadcrumps-item {
@@ -1425,7 +1425,6 @@ input[type="text"] + input[type="submit"]:active {
 .catalog-page {
   position: relative;
   background: linear-gradient(to left, transparent 50%, #efefef 50%);
-
 }
 
 .list-settings {
@@ -1433,7 +1432,7 @@ input[type="text"] + input[type="submit"]:active {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.08);
   width: 100%;
-  min-height: 64px;
+  min-height: 70px;
 }
 
 
@@ -1571,8 +1570,11 @@ input[type="text"] + input[type="submit"]:active {
 
 .catalog-filter fieldset {
   border: 0px solid;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   padding-left: 0;
+
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -1584,23 +1586,27 @@ input[type="text"] + input[type="submit"]:active {
   font-weight: bold;
   line-height: 1.2;
   text-align: left;
-  padding-top: 15px;
-  margin-bottom: 25px;
+  padding-top: 14px;
+
   border-top: 2px solid #000000;
   width: 200px;
 
 }
 /*Оформление range*/
 
+.filter-price .catalog-content-title {
+  margin-bottom: 24px;
+}
+
 .filter-price input[type="text"] {
   font-size: 14px;
   font-family: "Gilroy", "Arial", sans;
   font-weight: 400;
   opacity: 0.2;
+  margin-bottom: 10px;
 
   outline: transparent;
   border-color: transparent;
-  background-color: transparent;
 }
 
 .filter-price input[type="range"] {
@@ -1614,7 +1620,6 @@ input[type="text"] + input[type="submit"]:active {
 
   background: linear-gradient(to top, transparent 13px, #dcdcdc 13px);
   background-position: 0 8px;
-
   position: relative;
 }
 
@@ -1623,7 +1628,7 @@ input[type="text"] + input[type="submit"]:active {
   height: 15px;
 
   background: linear-gradient(to top, transparent 13px, #72ca00 13px);
-  background-position: 0 8px;
+  background-position: 0 7px;
 
   display: flex;
   justify-content: space-between;
@@ -1632,8 +1637,8 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .range-runner {
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
 
   background-color: #efefef;
   border: 2px solid #000000;
@@ -1649,12 +1654,21 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 /*Оформление ckeck-box*/
+.filter-color {
+  padding-bottom: 15px;
+}
+
+.filter-color .catalog-content-title{
+  padding-bottom: 18px;
+}
 
 .filter-color label{
   display: block;
   position: relative;
   padding-left: 40px;
-  margin-top: 18px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+
 }
 
 .filter-color input[type="checkbox"] {
@@ -1710,10 +1724,13 @@ label:active input[type="checkbox"] + .checkbox-indicator{
 }
 
 /*Оформление radio-button*/
+.filter-bluetooth .catalog-content-title {
+  margin-bottom: 18px;
+}
 
 .filter-bluetooth label {
   display: block;
-  margin-top: 20px;
+  margin-bottom: 10px;
   padding-left: 40px;
   position: relative;
 }
@@ -1727,8 +1744,8 @@ label:active input[type="checkbox"] + .checkbox-indicator{
   top: 3px;
   left: 0;
 
-  width: 22px;
-  height: 22px;
+  width: 19px;
+  height: 19px;
 
   border: 2px solid #dcdcdc;
   border-radius: 12px;
@@ -1745,11 +1762,11 @@ label:active input[type="radio"] + .radio-indicator{
 .filter-bluetooth input[type="radio"]:checked +.radio-indicator::before {
   content:"";
   position: absolute;
-  top: 6px;
-  left: 6px;
+  top: 5px;
+  left: 5px;
 
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 
   border: 2px solid #000000;
   border-radius: 5px;
