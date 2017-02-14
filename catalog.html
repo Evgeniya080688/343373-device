@@ -76,7 +76,7 @@
             <a href="#">Главная</a>
           </li>
           <li class="breadcrumps-item">
-            <a href="#">Каталог</a>
+            <a href="#">Каталог товаров</a>
           </li>
           <li class="breadcrumps-item active">
           Моноподы для селфи
@@ -123,8 +123,10 @@
                     <div class="range-runner range-runner-max"></div>
                   </div>
                 </div>
-                <input type="text" class="min-price" size="10" placeholder="от 0">
-                <input type="text" class="max-price" size="10" placeholder="до 5000">
+                <div class="type-max-min">
+                  <input type="text" class="min-price" size="10" placeholder="от 0">
+                  <input type="text" class="max-price" size="10" placeholder="до 5000">
+                </div>
               </fieldset>
               <!-- По цвету -->
               <fieldset class="filter-color">
@@ -158,16 +160,18 @@
               <fieldset class="filter-bluetooth">
                 <!-- По наличию блютуса -->
                <legend class="catalog-content-title">Bluetooth</legend>
-                <label>
-                  <input type="radio" name="presence" value="Есть" checked>
-                  <span class="radio-indicator"></span>
-                  Есть
-                </label>
-                <label>
-                  <input type="radio" name="presence" value="Нет" >
-                  <span class="radio-indicator"></span>
-                  Нет
-                </label>
+               <div class="groups-radio">
+                  <label>
+                    <input type="radio" name="presence" value="Есть" checked>
+                    <span class="radio-indicator"></span>
+                    Есть
+                  </label>
+                  <label>
+                    <input type="radio" name="presence" value="Нет" >
+                    <span class="radio-indicator"></span>
+                    Нет
+                  </label>
+                </div>
               </fieldset>
               <input type="submit" class="btn show-results" value="Показать">
             </form>

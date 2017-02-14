@@ -151,7 +151,7 @@
         <a href="#" class="variation virtual-reality"><span>Виртуальная реальность</span></a>
         <a href="catalog.html" class="variation monopods-for-selfi"><span>Моноподы<br>для селфи</span></a>
         <a href="#" class="variation action-camera"><span>Экшн-камеры</span></a>
-        <a href="#" class="variation fitness-bracelets"><span>Фитнес-браслеты</span></a>
+        <a href="#" class="variation fitness-bracelets"><span>Фитнес-<br>браслеты</span></a>
         <a href="#" class="variation smart-clock"><span>Умные часы</span></a>
         <a href="#" class="variation quadcopters"><span>Квадрокоптеры</span></a>
       </div>
@@ -160,20 +160,20 @@
     <div class="index-content">
       <div class="container info-block clearfix">
         <div class="info-menu">
-          <a href="#" class="btn active-info"> Доставка</a>
-          <a href="#" class="btn"> Гарантия</a>
-          <a href="#" class="btn"> Кредит</a>
+          <a href="#" class="btn btn-delivery active-info"> Доставка</a>
+          <a href="#" class="btn btn-warranity"> Гарантия</a>
+          <a href="#" class="btn btn-credit"> Кредит</a>
         </div>
         <div class="info-description">
           <div class="info-delivery">
             <h2 class="title-info">Доставка</h2>
-            <p>Мы с удовольствием доставим ваш товар к вашему подъезду совершенно бесплатно. Ведь мы неплохо заработаем, поднимая его на ваш этаж. </p>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо<br>заработаем, поднимая его на ваш этаж. </p>
           </div>
-          <div class="info-warranity" hidden>
+          <div class="info-warranity hidden-block">
             <h2 class="title-info">Гарантия</h2>
             <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же. </p>
           </div>
-          <div class="info-credit" hidden>
+          <div class="info-credit hidden-block">
             <h2 class="title-info">Кредит</h2>
             <p>Залезть в долговую яму стало проще! Кредитные <br> консультанты подберут для вас наиболее выгодные <br> условия кредита. Выгодные для нашего банка, разумеется</p>
           </div>
@@ -191,11 +191,11 @@
     </div>
 <!--Информация о нас-->
     <div class="container">
-      <div class="catalog-content clearfix">
+      <div class="slider-info catalog-content clearfix">
         <div class="about-us">
           <h2 class="title-info">О нас</h2>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России. DEVICE работает со многими транспортными компаниями:</p>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика,<br>который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки<br>России. DEVICE работает со многими транспортными компаниями:</p>
           <ul>
             <li class="list-style-marker">Деловые линии</li>
             <li class="list-style-marker">Автотрейдинг</li>
@@ -224,7 +224,7 @@
           </div>
         </div>
         <div class="footer-contacts">
-          <p class="organization-adress">Адрес: г. Москва, ул. Строителей, 15</p>
+          <p class="organization-adress">г. Москва, ул. Строителей, 15</p>
           <nav class="footer-navigation">
             <ul>
               <li class="foot-delivery">
@@ -238,7 +238,7 @@
               </li>
             </ul>
           </nav>
-          <p class="number-phone">Телефон: +7 (495) 495-95-95</p>
+          <p class="number-phone">Тел: +7 (495) 495-95-95</p>
         </div>
         <div class="footer-info-links clearfix">
           <div class="decorative-element"></div>
@@ -407,6 +407,46 @@
       linknav3.classList.remove("list-style-active");
       linknav3.classList.add("list-style-active");
     });
+
+  //оживление инфоблока
+
+  var linkbtn1 = document.querySelector(".btn-delivery");
+  var linkbtn2 = document.querySelector(".btn-warranity");
+  var linkbtn3 = document.querySelector(".btn-credit");
+
+  var infoblock1 = document.querySelector(".info-delivery");
+  var infoblock2 = document.querySelector(".info-warranity");
+  var infoblock3 = document.querySelector(".info-credit");
+
+  linkbtn1.addEventListener("click", function(event) {
+  event.preventDefault();
+  infoblock2.classList.add("hidden-block");
+  infoblock3.classList.add("hidden-block");
+  infoblock1.classList.remove("hidden-block");
+  linkbtn2.classList.remove("active-info");
+  linkbtn3.classList.remove("active-info");
+  linkbtn1.classList.add("active-info");
+  });
+
+  linkbtn2.addEventListener("click", function(event) {
+  event.preventDefault();
+  infoblock1.classList.add("hidden-block");
+  infoblock3.classList.add("hidden-block");
+  infoblock2.classList.remove("hidden-block");
+  linkbtn1.classList.remove("active-info");
+  linkbtn3.classList.remove("active-info");
+  linkbtn2.classList.add("active-info");
+  });
+
+  linkbtn3.addEventListener("click", function(event) {
+  event.preventDefault();
+  infoblock1.classList.add("hidden-block");
+  infoblock2.classList.add("hidden-block");
+  infoblock3.classList.remove("hidden-block");
+  linkbtn1.classList.remove("active-info");
+  linkbtn2.classList.remove("active-info");
+  linkbtn3.classList.add("active-info");
+  });
 
     </script>
   </body>
