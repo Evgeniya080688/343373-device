@@ -75,7 +75,7 @@
     <main class="container clearfix">
       <!--Банер сайта -->
       <div class="banner clearfix">
-        <div class="banner-slide">
+        <div class="banner-slide first-slide">
           <div class="banner-picture"><img src="img/slider-1.png" alt="Селфи-палки" width="384" height="486"></div>
           <div class="banner-content">
             <p class="banner-number">01</p>
@@ -100,10 +100,50 @@
             </div>
           </div>
         </div>
+        <div class="banner-slide second-slide banner-hide">
+          <div class="banner-picture"><img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485"></div>
+          <div class="banner-content">
+            <p class="banner-number">02</p>
+            <h2 class="banner-title">Худеем<br>правильно!</h2>
+            <p class="banner-description">Мотивирующие фитнесс-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
+            <div class="more-info clearfix">
+              <a class="btn banner-details" href="#">Подробнее</a>
+            </div>
+            <div class="banner-info">
+              <section class="feature-info">
+                <h3 class="feature-title">48 часов</h3>
+                <p>Без подзарядки</p>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="banner-slide third-slide banner-hide">
+          <div class="banner-picture"><img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334"></div>
+          <div class="banner-content">
+            <p class="banner-number">03</p>
+            <h2 class="banner-title">Порхает как бабочка,<br>жалит как пчела!</h2>
+
+            <p class="banner-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
+            <div class="more-info clearfix">
+              <a class="btn banner-details" href="#">Подробнее</a>
+            </div>
+            <div class="banner-info">
+              <section class="feature-info">
+                <h3 class="feature-title">800 м</h3>
+                <p>Дальность полета</p>
+              </section>
+              <section class="feature-info">
+                <h3 class="feature-title">50 м</h3>
+                <p>Радиус поражения</p>
+              </section>
+
+            </div>
+          </div>
+        </div>
         <div class="banner-navigation">
-          <div class="list-style-nav list-style-active"></div>
-          <div class="list-style-nav"></div>
-          <div class="list-style-nav"></div>
+          <div class="list-style-nav nav1 list-style-active"></div>
+          <div class="list-style-nav nav2"></div>
+          <div class="list-style-nav nav3"></div>
         </div>
       </div>
       <!--Категории продукции -->
@@ -289,7 +329,7 @@
           popup.classList.remove("modal-error");
           popup.offsetWidth = popup.offsetWidth;
           popup.classList.add("modal-error");
-          //this.style.backgroundColor = 'black';
+          client.classList.add("invalide-value");
         } else {
           localStorage.setItem("client", client.value);
         }
@@ -329,6 +369,44 @@
           }
         }
       });
+//оживление банера
+      var linknav1 = document.querySelector(".nav1");
+      var linknav2 = document.querySelector(".nav2");
+      var linknav3 = document.querySelector(".nav3");
+      var banner = document.querySelector(".banner");
+      var slider1 = banner.querySelector(".first-slide");
+      var slider2 = banner.querySelector(".second-slide");
+      var slider3 = banner.querySelector(".third-slide");
+
+      linknav1.addEventListener("click", function(event) {
+      event.preventDefault();
+      slider2.classList.add("banner-hide");
+      slider3.classList.add("banner-hide");
+      slider1.classList.remove("banner-hide");
+      linknav2.classList.remove("list-style-active");
+      linknav3.classList.remove("list-style-active");
+      linknav1.classList.add("list-style-active");
+    });
+
+      linknav2.addEventListener("click", function(event) {
+      event.preventDefault();
+      slider1.classList.add("banner-hide");
+      slider3.classList.add("banner-hide");
+      slider2.classList.remove("banner-hide");
+      linknav1.classList.remove("list-style-active");
+      linknav3.classList.remove("list-style-active");
+      linknav2.classList.add("list-style-active");
+    });
+
+      linknav3.addEventListener("click", function(event) {
+      event.preventDefault();
+      slider2.classList.add("banner-hide");
+      slider3.classList.add("banner-hide");
+      slider3.classList.remove("banner-hide");
+      linknav2.classList.remove("list-style-active");
+      linknav3.classList.remove("list-style-active");
+      linknav3.classList.add("list-style-active");
+    });
 
     </script>
   </body>
