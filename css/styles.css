@@ -361,7 +361,7 @@ input[type="text"] + input[type="submit"]:active {
 .show-menu {
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   top: 100%;
   left: -60px;
   width: 1100px;
@@ -445,18 +445,37 @@ input[type="text"] + input[type="submit"]:active {
   margin-bottom: 98px;
   position: relative;
   background: linear-gradient(to top, transparent 402px, rgba(240, 197, 46, 0.5) 402px);
+
+}
+
+.banner-slide {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.banner-hide {
+  display: none;
+}
+
+.banner-show {
+  display: flex;
 }
 
 .banner-picture {
-  float: left;
-  width: 600px;
+  width: 560px;
+  max-height: 520px;
+
   padding: auto;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .banner-content {
-  float: right;
   width: 560px;
+  max-height: 520px;
   position: relative;
 }
 
@@ -471,11 +490,14 @@ input[type="text"] + input[type="submit"]:active {
   padding: 0;
   right: 45px;
   top: 0px;
+  z-index: 0;
 }
 
 .banner-title {
   margin: 0;
   padding-top: 87px;
+  position: absolute;
+  z-index: 1;
 }
 
 .banner-title::before {
@@ -487,22 +509,47 @@ input[type="text"] + input[type="submit"]:active {
   height: 7px;
   background-color: #ffffff;
   margin-top: -45px;
+
 }
 
 .banner-description {
   font-family: "Open Sans", "Arial", sans;
   font-size: 15px;
+  margin-top: 220px;
   margin-bottom: 50px;
+
 }
 
 .more-info {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .banner-details {
   float: left;
   width: 222px;
   margin: 0;
+}
+
+.banner-info {
+  font-size: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-info {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+  margin-right: 80px;
+  font-family: "Open Sans", "Arial", sans;
+}
+
+.feature-title {
+  font-size: 36px;
+  font-weight: normal;
+  font-family: "Gilroy", "Arial", gilroy;
+  color: #000000;
+  margin-bottom: 0;
 }
 
 .btn {
@@ -585,29 +632,6 @@ input[type="text"] + input[type="submit"]:active {
 
 .list-style-active {
   opacity: 1;
-}
-
-
-.banner-info {
-  font-size: 0px;
-  padding: 0;
-  margin: 0;
-}
-
-.feature-info {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 15px;
-  width: 150px;
-  font-family: "Open Sans", "Arial", sans;
-}
-
-.feature-title {
-  font-size: 36px;
-  font-weight: normal;
-  font-family: "Gilroy", "Arial", gilroy;
-  color: #000000;
-  margin-bottom: 0;
 }
 
 /* Категории продукции */
@@ -2178,7 +2202,7 @@ label:active input[type="radio"] + .radio-indicator{
 
 
 
+.login-form input[type="text"].invalide-value{
 
-.invalide-value {
   background-color: rgba(255, 182, 182, 0.5);
 }
