@@ -215,7 +215,8 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 /*иконка формы входа*/
-.user-account::before {
+.enter::before,
+.user .name::before {
   content: "";
   position: absolute;
   margin: auto;
