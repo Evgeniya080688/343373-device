@@ -1068,17 +1068,17 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .footer-links{
-  padding-top: 62px;
+
   padding-right: 0;
   margin-bottom: 35px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
 }
 
 .logo-foot {
   width: 170px;
+  padding-top: 70px;
   font-size: 48px;
   font-family: 'Gilroy', 'Sans Serif', sans;
   text-decoration: none;
@@ -1098,8 +1098,11 @@ input[type="text"] + input[type="submit"]:active {
 .user-block-foot{
   padding: 0;
   margin: 0;
+  padding-top: 65px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  width: 325px;
 }
 
 .user-block-foot a{
@@ -1123,7 +1126,7 @@ input[type="text"] + input[type="submit"]:active {
 
 .user-block-foot .login {
   padding-left: 28px;
-  margin-right: 45px;
+  margin-right: 42px;
   position: relative;
 
 }
@@ -1131,7 +1134,7 @@ input[type="text"] + input[type="submit"]:active {
 .user-block-foot .compare{
   width: 70px;
   padding-left: 21px;
-  margin-right: 45px;
+  margin-right: 43px;
 }
 
 .user-block-foot .basket {
@@ -1146,7 +1149,7 @@ input[type="text"] + input[type="submit"]:active {
   top: 8px;
   left: 0px;
 
-  width: 18px;
+  width: 10px;
   height: 18px;
 
   background: transparent url("../img/spritesheet.png") no-repeat;
@@ -1220,7 +1223,7 @@ input[type="text"] + input[type="submit"]:active {
 .footer-contacts {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;;
+  align-items: flex-start;
   margin-bottom: 45px;
 }
 
@@ -1231,7 +1234,8 @@ input[type="text"] + input[type="submit"]:active {
   font-size: 15px;
   font-weight: 400;
   color: #ffffff;
-  margin-top: 0;
+  margin-top: -5px;
+  padding-top: 0;
 }
 
 .footer-navigation {
@@ -1281,7 +1285,7 @@ input[type="text"] + input[type="submit"]:active {
   font-size: 15px;
   font-weight: 400;
   color: #ffffff;
-  margin-top:0;
+  margin-top: -5px;
 
 }
 
@@ -1289,7 +1293,6 @@ input[type="text"] + input[type="submit"]:active {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width:
 }
 
 .decorative-element {
@@ -1310,6 +1313,8 @@ input[type="text"] + input[type="submit"]:active {
   width: 27px;
   height: 37px;
 
+  margin-top: 5px;
+
   background: transparent url("../img/htmlacademy.png") no-repeat;
   background-position: 0px 0px;
 }
@@ -1327,7 +1332,7 @@ input[type="text"] + input[type="submit"]:active {
   display: flex;
   justify-content: space-between;
   font-size: 15px;
-  width: 155px;
+  width: 158px;
   margin-right: 50px;
 }
 
@@ -1337,7 +1342,6 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .social-btn {
-
   width: 39px;
   height: 39px;
   margin: 0 2px;
