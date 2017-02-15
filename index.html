@@ -3,35 +3,59 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс - интернет-магазин гаджетов</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stitches-1.3.5.min.css">
+
+    <script data-main="js/stitches.js" src="js/stitches-1.3.5.min.js"></script>
   </head>
 
   <body>
     <header class="main-header">
       <div class="container clearfix">
-        <a class="logo-to-index" href="index.html">DEVICE</a>
+        <a class="logo-to-index">DEVICE</a>
         <div class="user-block">
           <form class="search-block">
-            <label for="search">Поиск</label>
-            <input type="submit" id="search" value="Поиск по сайту">
+            <label for="search"></label>
+            <input type="text" class="search-field" id="search" name="search" value="" placeholder="Поиск по сайту">
+            <input type="submit" class="search-btn" value="Найти">
           </form>
-          <div class="user-account">
-            <a class="enter" href="#">Войти</a>
-            <div class="user" hidden>
-              <a class="name" href="#">Валентин Петухов</a>
-              <a class="exit" href="#">Выйти</a>
+          <div class="user-links">
+            <div class="user-account">
+              <a class="enter" href="#">Войти</a>
+              <div class="user" hidden>
+                <a class="name" href="#">Валентин Петухов</a>
+                <a class="exit" href="#">Выйти</a>
+              </div>
             </div>
-          </div>
-          <div class="action-block">
-            <a class="compare" href="#">Сравнить</a>
-            <a class="basket" href="#">Корзина</a>
+            <div class="action-block">
+              <a class="compare" href="#">Сравнить</a>
+              <a class="basket" href="#">Корзина</a>
+            </div>
           </div>
         </div>
         <div class="navigation-menu">
           <div class="nav-catalog">
             <a href="#" class="catalog-menu">Каталог товаров</a>
+            <div class="show-menu">
+              <div class="menu-list">
+                <div class="column-item">
+                  <p><a href="#">Виртуальная реальность</a></p>
+                  <p><a href="catalog.html">Моноподы для селфи</a></p>
+                  <p><a href="#">Экшн-камеры</a></p>
+                </div>
+                <div class="column-item">
+                  <p><a href="#">Фитнесc-браслеты</a></p>
+                  <p><a href="#">Умные часы</a></p>
+                </div>
+                <div class="column-item">
+                  <p><a href="#">Квадрокоптеры</a></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <nav class="main-navigation clearfix">
+          <nav class="main-navigation">
             <ul>
               <li class="nav-delivery">
                 <a href="#">Доставка</a>
@@ -51,67 +75,107 @@
     <main class="container clearfix">
       <!--Банер сайта -->
       <div class="banner clearfix">
-        <div class="banner-picture"><img src="img/slider-1.png" alt="Селфи-палки" width="384" height="486"></div>
-        <div class="banner-content">
-          <p class="banner-number">01</p>
-          <h2 class="banner-title">Делай селфи, как Бен Стиллер!</h2>
-          <p class="banner-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-          <div class="more-info clearfix">
-            <a class="banner-details" href="#">Подробнее</a>
-            <div class="banner-navigation">
-              <ul>
-                <li class="btn-active">1</li>
-                <li class="btn">2</li>
-                <li class="btn">3</li>
-              </ul>
+        <div class="banner-slide first-slide">
+          <div class="banner-picture"><img src="img/slider-1.png" alt="Селфи-палки" width="384" height="486"></div>
+          <div class="banner-content">
+            <p class="banner-number">01</p>
+            <h2 class="banner-title">Делай селфи,<br> как Бен Стиллер!</h2>
+            <p class="banner-description">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <div class="more-info clearfix">
+              <a class="btn banner-details" href="#">Подробнее</a>
+            </div>
+            <div class="banner-info">
+              <section class="feature-info">
+                <h3 class="feature-title">8,5 м</h3>
+                <p>Длина палки</p>
+              </section>
+              <section class="feature-info">
+                <h3 class="feature-title">5 кг</h3>
+                <p>Вес палки</p>
+              </section>
+              <section class="feature-info">
+                <h3 class="feature-title">Карбон</h3>
+                <p>Материал</p>
+              </section>
             </div>
           </div>
-          <div class="banner-info">
-            <section class="feature-info">
-              <h3 class="feature-title">8,5 метров</h3>
-              <p>Длина палки</p>
-            </section>
-            <section class="feature-info">
-              <h3 class="feature-title">5 кг</h3>
-              <p>Вес палки</p>
-            </section>
-            <section class="feature-info">
-              <h3 class="feature-title">Карбон</h3>
-              <p>Материал</p>
-            </section>
+        </div>
+        <div class="banner-slide second-slide banner-hide">
+          <div class="banner-picture"><img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485"></div>
+          <div class="banner-content">
+            <p class="banner-number">02</p>
+            <h2 class="banner-title">Худеем<br>правильно!</h2>
+            <p class="banner-description">Мотивирующие фитнесс-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
+            <div class="more-info clearfix">
+              <a class="btn banner-details" href="#">Подробнее</a>
+            </div>
+            <div class="banner-info">
+              <section class="feature-info">
+                <h3 class="feature-title">48 часов</h3>
+                <p>Без подзарядки</p>
+              </section>
+            </div>
           </div>
+        </div>
+        <div class="banner-slide third-slide banner-hide">
+          <div class="banner-picture"><img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334"></div>
+          <div class="banner-content">
+            <p class="banner-number">03</p>
+            <h2 class="banner-title">Порхает как бабочка,<br>жалит как пчела!</h2>
+
+            <p class="banner-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
+            <div class="more-info clearfix">
+              <a class="btn banner-details" href="#">Подробнее</a>
+            </div>
+            <div class="banner-info">
+              <section class="feature-info">
+                <h3 class="feature-title">800 м</h3>
+                <p>Дальность полета</p>
+              </section>
+              <section class="feature-info">
+                <h3 class="feature-title">50 м</h3>
+                <p>Радиус поражения</p>
+              </section>
+
+            </div>
+          </div>
+        </div>
+        <div class="banner-navigation">
+          <div class="list-style-nav nav1 list-style-active"></div>
+          <div class="list-style-nav nav2"></div>
+          <div class="list-style-nav nav3"></div>
         </div>
       </div>
       <!--Категории продукции -->
       <div class="catalog-list">
-        <a href="#" class="variation virtual-reality">Виртуальная реальность</a>
-        <a href="#" class="variation monopods-for-selfi">Моноподы для селфи</a>
-        <a href="#" class="variation action-camera">Экшн-камеры</a>
-        <a href="#" class="variation fitness-bracelets">Фитнес-браслеты</a>
-        <a href="#" class="variation smart-clock">Умные часы</a>
-        <a href="#" class="variation quadcopters">Квадрокоптеры</a>
+        <a href="#" class="variation virtual-reality"><span>Виртуальная реальность</span></a>
+        <a href="catalog.html" class="variation monopods-for-selfi"><span>Моноподы<br>для селфи</span></a>
+        <a href="#" class="variation action-camera"><span>Экшн-камеры</span></a>
+        <a href="#" class="variation fitness-bracelets"><span>Фитнес-<br>браслеты</span></a>
+        <a href="#" class="variation smart-clock"><span>Умные часы</span></a>
+        <a href="#" class="variation quadcopters"><span>Квадрокоптеры</span></a>
       </div>
     </main>
 <!--Важная информация для пользователей-->
     <div class="index-content">
       <div class="container info-block clearfix">
         <div class="info-menu">
-          <a href="#" class="active info"> Доставка</a>
-          <a href="#"> Гарантия</a>
-          <a href="#"> Кредит</a>
+          <a href="#" class="btn btn-delivery active-info"> Доставка</a>
+          <a href="#" class="btn btn-warranity"> Гарантия</a>
+          <a href="#" class="btn btn-credit"> Кредит</a>
         </div>
         <div class="info-description">
           <div class="info-delivery">
             <h2 class="title-info">Доставка</h2>
-            <p>Мы с удовольствием доставим ваш товар к вашему подъезду совершенно бесплатно. Ведь мы неплохо заработаем, поднимая его на ваш этаж. </p>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо<br>заработаем, поднимая его на ваш этаж. </p>
           </div>
-          <div class="info-warranity" hidden>
+          <div class="info-warranity hidden-block">
             <h2 class="title-info">Гарантия</h2>
-            <p>Мы с удовольствием бесплатно все починим. </p>
+            <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же. </p>
           </div>
-          <div class="info-credit" hidden>
+          <div class="info-credit hidden-block">
             <h2 class="title-info">Кредит</h2>
-            <p>Мы с удовольствием предоставим вам кредит. </p>
+            <p>Залезть в долговую яму стало проще! Кредитные <br> консультанты подберут для вас наиболее выгодные <br> условия кредита. Выгодные для нашего банка, разумеется</p>
           </div>
         </div>
       </div>
@@ -119,48 +183,48 @@
   <!--Лого производителей-->
     <div class="container">
       <div class="partners-logo">
-        <a class="partners-logo-item" href="#"><img src="img/dji.jpg" alt="DJI" width="260" height="100"></a>
-        <a class="partners-logo-item" href="#"><img src="img/spgadgets.jpg" alt="SP" width="260" height="100"></a>
-        <a class="partners-logo-item" href="#"><img src="img/gopro.jpg" alt="GoPro" width="260" height="100"></a>
-        <a class="partners-logo-item" href="#"><img src="img/vive.jpg" alt="VIVE" width="260" height="100"></a>
+        <a class="partners-logo-item logo-dji" href="#"><img src="img/dji.jpg" alt="DJI" width="260" height="100"></a>
+        <a class="partners-logo-item logo-spgadgets" href="#"><img src="img/spgadgets.jpg" alt="SP" width="260" height="100"></a>
+        <a class="partners-logo-item logo-gopro" href="#"><img src="img/gopro.jpg" alt="GoPro" width="260" height="100"></a>
+        <a class="partners-logo-item logo-vive" href="#"><img src="img/vive.jpg" alt="VIVE" width="260" height="100"></a>
       </div>
     </div>
 <!--Информация о нас-->
     <div class="container">
-      <div class="catalog-content clearfix">
+      <div class="slider-info catalog-content clearfix">
         <div class="about-us">
           <h2 class="title-info">О нас</h2>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России. DEVICE работает со многими транспортными компаниями:</p>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика,<br>который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки<br>России. DEVICE работает со многими транспортными компаниями:</p>
           <ul>
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелТорЭкспедиция</li>
+            <li class="list-style-marker">Деловые линии</li>
+            <li class="list-style-marker">Автотрейдинг</li>
+            <li class="list-style-marker">ЖелТорЭкспедиция</li>
           </ul>
-          <a class="details" href="#">Подробнее о нас</a>
+          <a class="btn details" href="#">Подробнее о нас</a>
         </div>
         <div class="contacts">
           <h2 class="title-info">Контакты</h2>
           <p>Вы сможете забрать товар сами, заехав в наш офис. Заодно вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473277!2d37.52742931553117!3d55.687034004530496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1485102946215"
-          width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <a class="details" href="mailto:eugeniya.pal@yandex.ru">Напишите нам</a>
+          <div class="map-contact js-open-map">
+          </div>
+          <a class="btn write-us">Напишите нам</a>
         </div>
       </div>
     </div>
 <!--подвал-->
     <footer class="main-footer">
       <div class="container">
-        <div class="footer-links clearfix">
+        <div class="footer-links">
           <a class="logo-foot" href="index.html">DEVICE</a>
           <div class="user-block-foot">
-            <a class="login" href="#"> Войти</a>
+            <a class="login" href="#">Войти</a>
             <a class="compare" href="#">Сравнить</a>
             <a class="basket" href="#">Корзина</a>
           </div>
         </div>
         <div class="footer-contacts">
-          <p class="organization-adress">Адрес: г. Москва, ул. Строителей, 15</p>
+          <p class="organization-adress">г. Москва, ул. Строителей, 15</p>
           <nav class="footer-navigation">
             <ul>
               <li class="foot-delivery">
@@ -174,14 +238,14 @@
               </li>
             </ul>
           </nav>
-          <p class="number-phone">Телефон: +7 (495) 495-95-95</p>
+          <p class="number-phone">Тел: +7 (495) 495-95-95</p>
         </div>
-        <div class="footer-info-links clearfix">
+        <div class="footer-info-links">
           <div class="decorative-element"></div>
           <div class="footer-social">
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-tw" href="#">Вконтакте</a>
           </div>
           <div class="htmlacademy-link">
             <a href="https://up.htmlacademy.ru"></a>
@@ -189,5 +253,202 @@
         </div>
       </div>
     </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="login-form" action="#" method="post">
+        <div class="name-mail">
+          <label class="user-name">
+            Ваше имя:
+            <input class="type-name" type="text" name="client" placeholder="Представьтесь пожалуйста" required>
+          </label>
+          <label class="user-e-mail">
+            Ваш e-mail:
+            <input class="type-e-mail" type="text" name="mail" placeholder="Для отправки ответа" required>
+          </label>
+        </div>
+        <div class="message-field">
+          <label class="user-message">
+            Текст письма:
+            <textarea rows="6" cols="45" class="type-message" name="message" placeholder="В свободной форме"></textarea>
+          </label>
+        </div>
+        <button class="btn-message btn" type="submit">Отправить</button>
+      </form>
+    </div>
+    <div class="modal-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473277!2d37.52742931553117!3d55.687034004530496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1485102946215"
+          width="960" height="564" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <script>
+      var link = document.querySelector(".write-us");
+      var popup = document.querySelector(".modal-content");
+      var close = popup.querySelector(".modal-content-close");
+      var form = popup.querySelector("form");
+      var client = popup.querySelector("[name=client]");
+      var mail = popup.querySelector("[name=mail]");
+      var message = popup.querySelector("[name=message]");
+      var storageclient = localStorage.getItem("client");
+      var storagemail = localStorage.getItem("mail");
+
+//открытие формы
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+
+
+        if (storageclient && storagemail){
+          client.value = storageclient;
+          mail.value = storagemail;
+          message.focus();
+        }
+        else if (storageclient) {
+          client.value = storageclient;
+          mail.focus();
+        } else if (storagemail){
+          mail.value = storagemail;
+          message.focus();
+        } else if (!storageclient && !storagemail){
+        client.focus();
+        }
+      });
+
+//закрытие формы
+      close.addEventListener("click", function(event) {
+       event.preventDefault();
+       popup.classList.remove("modal-content-show");
+       popup.classList.remove("modal-error");
+     });
+
+
+//проверка валидности
+     form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        if (!client.value || !mail.value) {
+          event.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+          client.classList.add("invalide-value");
+        } else {
+          localStorage.setItem("client", client.value);
+        }
+      });
+
+//закрытие по esc
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+            popup.classList.remove("modal-error");
+          }
+        }
+      });
+
+      var maplink = document.querySelector(".map-contact");
+      var mappopup = document.querySelector(".modal-map");
+      var closemap = mappopup.querySelector(".modal-content-close");
+      var mapopen = document.querySelector(".js-open-map");
+
+//открытие карты
+      maplink.addEventListener("click", function(event) {
+        event.preventDefault();
+        mappopup.classList.add("modal-content-show");
+      });
+
+//закрытие карты
+     closemap.addEventListener("click", function(event) {
+      event.preventDefault();
+      mappopup.classList.remove("modal-content-show");
+    });
+//закрытие по esc
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (mappopup.classList.contains("modal-content-show")) {
+            mappopup.classList.remove("modal-content-show");
+          }
+        }
+      });
+//оживление банера
+      var linknav1 = document.querySelector(".nav1");
+      var linknav2 = document.querySelector(".nav2");
+      var linknav3 = document.querySelector(".nav3");
+      var banner = document.querySelector(".banner");
+      var slider1 = banner.querySelector(".first-slide");
+      var slider2 = banner.querySelector(".second-slide");
+      var slider3 = banner.querySelector(".third-slide");
+
+
+      linknav1.addEventListener("click", function(event) {
+      event.preventDefault();
+      slider2.classList.add("banner-hide");
+      slider3.classList.add("banner-hide");
+      slider1.classList.remove("banner-hide");
+      linknav2.classList.remove("list-style-active");
+      linknav3.classList.remove("list-style-active");
+      linknav1.classList.add("list-style-active");
+    });
+
+      linknav2.addEventListener("click", function(event) {
+      event.preventDefault();
+      slider1.classList.add("banner-hide");
+      slider3.classList.add("banner-hide");
+      slider2.classList.remove("banner-hide");
+      linknav1.classList.remove("list-style-active");
+      linknav3.classList.remove("list-style-active");
+      linknav2.classList.add("list-style-active");
+    });
+
+      linknav3.addEventListener("click", function(event) {
+      event.preventDefault();
+      slider2.classList.add("banner-hide");
+      slider3.classList.add("banner-hide");
+      slider3.classList.remove("banner-hide");
+      linknav2.classList.remove("list-style-active");
+      linknav3.classList.remove("list-style-active");
+      linknav3.classList.add("list-style-active");
+    });
+
+  //оживление инфоблока
+
+  var linkbtn1 = document.querySelector(".btn-delivery");
+  var linkbtn2 = document.querySelector(".btn-warranity");
+  var linkbtn3 = document.querySelector(".btn-credit");
+
+  var infoblock1 = document.querySelector(".info-delivery");
+  var infoblock2 = document.querySelector(".info-warranity");
+  var infoblock3 = document.querySelector(".info-credit");
+
+  linkbtn1.addEventListener("click", function(event) {
+  event.preventDefault();
+  infoblock2.classList.add("hidden-block");
+  infoblock3.classList.add("hidden-block");
+  infoblock1.classList.remove("hidden-block");
+  linkbtn2.classList.remove("active-info");
+  linkbtn3.classList.remove("active-info");
+  linkbtn1.classList.add("active-info");
+  });
+
+  linkbtn2.addEventListener("click", function(event) {
+  event.preventDefault();
+  infoblock1.classList.add("hidden-block");
+  infoblock3.classList.add("hidden-block");
+  infoblock2.classList.remove("hidden-block");
+  linkbtn1.classList.remove("active-info");
+  linkbtn3.classList.remove("active-info");
+  linkbtn2.classList.add("active-info");
+  });
+
+  linkbtn3.addEventListener("click", function(event) {
+  event.preventDefault();
+  infoblock1.classList.add("hidden-block");
+  infoblock2.classList.add("hidden-block");
+  infoblock3.classList.remove("hidden-block");
+  linkbtn1.classList.remove("active-info");
+  linkbtn2.classList.remove("active-info");
+  linkbtn3.classList.add("active-info");
+  });
+
+    </script>
   </body>
 </html>
