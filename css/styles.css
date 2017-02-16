@@ -36,7 +36,6 @@ h1, h2{
 
 .clearfix::after {
   content: "";
-
   display: table;
   clear: both;
 }
@@ -52,7 +51,6 @@ h1, h2{
   margin: auto;
   padding-top: 25px;
   padding-bottom: 10px;
-
 }
 
 .logo-to-index {
@@ -63,7 +61,6 @@ h1, h2{
   font-family: 'Gilroy', 'Sans Serif', gilroy;
   text-decoration: none;
   color: #000000;
-
 }
 
 .logo-to-index:hover {
@@ -89,9 +86,8 @@ h1, h2{
   justify-content: space-between;
   align-items: center;
 
-  font-family: "Open Sans", "Arial", sans;
+  font-family: 'Open Sans', 'Arial', sans;
   font-size: 15px;
-
 }
 
 .search-block{
@@ -105,7 +101,7 @@ h1, h2{
 }
 
 .search-block label{
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -5px -175px ;
   padding-right: 20px;
   padding-top: 20px;
@@ -120,7 +116,7 @@ h1, h2{
 }
 
 .search-block input[type="text"]{
-  font-family: "Open Sans", "Arial", sans;
+  font-family: 'Open Sans', 'Arial', sans;
   font-size: 15px;
   background-color: transparent;
   line-height: 47px;
@@ -227,9 +223,8 @@ input[type="text"] + input[type="submit"]:active {
   width: 18px;
   height: 18px;
 
-  background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -29px -175px ;
-
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -31px -175px ;
 }
 
 .enter:hover::before {
@@ -253,14 +248,12 @@ input[type="text"] + input[type="submit"]:active {
   color: #272525;
   text-decoration: none;
   width: 220px;
-
 }
 
 .compare {
   width: 100px;
   padding-left: 20px;
   position: relative;
-
 }
 
 .compare::before {
@@ -272,7 +265,7 @@ input[type="text"] + input[type="submit"]:active {
   width: 18px;
   height: 18px;
 
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -71px -5px ;
 }
 
@@ -281,7 +274,6 @@ input[type="text"] + input[type="submit"]:active {
   padding-left: 23px;
   position: relative;
   text-align: right;
-
 }
 
 .basket::before {
@@ -293,11 +285,8 @@ input[type="text"] + input[type="submit"]:active {
   width: 18px;
   height: 18px;
 
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -5px -5px ;
-
-  opacity: 0.3;
-
 }
 
 .action-block a:hover {
@@ -308,14 +297,12 @@ input[type="text"] + input[type="submit"]:active {
   opacity: 0.3;
 }
 
-
 /* Основная навигация по сайту */
 
 .navigation-menu {
   display: flex;
   align-items: flex-start;
   align-self: baseline;
-
   margin-left: 60px;
   margin-right: 55px;
   padding: 0:
@@ -364,8 +351,8 @@ input[type="text"] + input[type="submit"]:active {
   width: 18px;
   height: 18px;
 
-  background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -53px -53px ;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -463px -49px ;
   opacity: 0.3;
 }
 
@@ -392,8 +379,7 @@ input[type="text"] + input[type="submit"]:active {
   display: flex;
   margin: 0;
   padding-left: 0px;
-
-  font-family: "Open Sans", "Arial", sans;
+  font-family: 'Open Sans', 'Arial', sans;
   font-size: 15px;
   text-transform: none;
 }
@@ -404,7 +390,7 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .show-menu a {
-  font-family: "Open Sans", "Arial", sans;
+  font-family: 'Open Sans', 'Arial', sans;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0px;
@@ -434,13 +420,11 @@ input[type="text"] + input[type="submit"]:active {
   display: flex;
   flex-wrap: nowrap;
   margin: 0;
-
-
 }
+
 .main-navigation li {
   list-style: none;
   margin: 0;
-
 }
 
 .nav-delivery {
@@ -454,7 +438,6 @@ input[type="text"] + input[type="submit"]:active {
 .nav-contacts {
   text-align: right;
   width: 223px;
-
 }
 
 /* Банер */
@@ -464,21 +447,16 @@ input[type="text"] + input[type="submit"]:active {
   margin-bottom: 93px;
   position: relative;
   background: linear-gradient(to top, transparent 390px, rgba(240, 197, 46, 0.5) 390px);
-
 }
 
 .banner-slide {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-.banner-hide {
   display: none;
 }
 
-.banner-show {
+.banner-slide.active{
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .banner-picture {
@@ -489,7 +467,6 @@ input[type="text"] + input[type="submit"]:active {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .banner-content {
@@ -501,7 +478,7 @@ input[type="text"] + input[type="submit"]:active {
 .banner-number {
   color: #ffffff;
   font-size: 179.2px;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: 'Gilroy', 'Arial', gilroy;
   font-weight: bold;
   line-height: 170px;
   position: absolute;
@@ -528,15 +505,13 @@ input[type="text"] + input[type="submit"]:active {
   height: 7px;
   background-color: #ffffff;
   margin-top: -45px;
-
 }
 
 .banner-description {
-  font-family: "Open Sans", "Arial", sans;
+  font-family: 'Open Sans', 'Arial', sans;
   font-size: 15px;
   margin-top: 215px;
   margin-bottom: 45px;
-
 }
 
 .more-info {
@@ -560,14 +535,14 @@ input[type="text"] + input[type="submit"]:active {
   vertical-align: top;
   font-size: 15px;
   margin-right: 70px;
-  font-family: "Open Sans", "Arial", sans;
+  font-family: 'Open Sans', 'Arial', sans;
   font-weight: 400;
 }
 
 .feature-title {
   font-size: 36px;
   font-weight: normal;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: 'Gilroy', 'Arial', gilroy;
   color: #000000;
   margin-bottom: 0;
 }
@@ -585,7 +560,6 @@ input[type="text"] + input[type="submit"]:active {
   line-height: 40px;
   position: relative;
   z-index: 2;
-
 }
 
 .btn::before {
@@ -601,7 +575,6 @@ input[type="text"] + input[type="submit"]:active {
   bottom: 0;
   margin: auto;
   transition: 0.5s height;
-
 }
 
 .btn:hover::before {
@@ -650,7 +623,7 @@ input[type="text"] + input[type="submit"]:active {
   opacity: 1;
 }
 
-.list-style-active {
+.list-style-nav.active {
   opacity: 1;
 }
 
@@ -670,7 +643,7 @@ input[type="text"] + input[type="submit"]:active {
   position: relative;
   padding-top: 193px;
   margin-top: 0;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: 'Gilroy', 'Arial', gilroy;
   font-size: 18px;
   line-height: 1;
 }
@@ -712,8 +685,8 @@ input[type="text"] + input[type="submit"]:active {
   display: block;
   width: 160px;
   height: 160px;
-  background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -275px -289px ;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -317px -179px ;
 }
 
 .monopods-for-selfi::after {
@@ -724,8 +697,8 @@ input[type="text"] + input[type="submit"]:active {
   display: block;
   width: 160px;
   height: 160px;
-  background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -445px -289px ;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -5px -349px ;
 }
 
 .action-camera::after {
@@ -736,8 +709,8 @@ input[type="text"] + input[type="submit"]:active {
   display: block;
   width: 160px;
   height: 160px;
-  background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -5px -459px ;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -175px -349px ;
 }
 
 .fitness-bracelets::after {
@@ -748,8 +721,8 @@ input[type="text"] + input[type="submit"]:active {
   display: block;
   width: 160px;
   height: 160px;
-  background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -175px -459px ;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -345px -349px ;
 }
 
 .smart-clock::after {
@@ -760,8 +733,8 @@ input[type="text"] + input[type="submit"]:active {
   display: block;
   width: 160px;
   height: 160px;
-  background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -345px -459px ;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -537px -5px ;
 }
 
 .quadcopters::after {
@@ -772,8 +745,8 @@ input[type="text"] + input[type="submit"]:active {
   display: block;
   width: 160px;
   height: 160px;
-  background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -635px -5px ;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -487px -175px ;
 }
 
 .variation {
@@ -783,7 +756,7 @@ input[type="text"] + input[type="submit"]:active {
   margin-right: 40px;
   margin-top: 195px;
   font-size: 18px;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: 'Gilroy', 'Arial', gilroy;
   font-weight: 800;
 }
 
@@ -799,7 +772,7 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .info-block {
-  font-family: "Open Sans", "Arial", sans;
+  font-family: 'Open Sans', 'Arial', sans;
   font-weight: 400;
 }
 
@@ -829,7 +802,6 @@ input[type="text"] + input[type="submit"]:active {
   padding-left: 25px;
   color: #f7e184;
   background-color: #000000;
-
 }
 
 .info-menu a:active::before {
@@ -877,9 +849,8 @@ input[type="text"] + input[type="submit"]:active {
 
   margin-left: 0;
   padding: 0;
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -317px -5px ;
-
 }
 
 .info-warranity::before {
@@ -893,9 +864,8 @@ input[type="text"] + input[type="submit"]:active {
 
   margin-left: 0;
   padding: 0;
-  background: transparent url("../img/spritesheet.png") no-repeat;
-  background-position: -615px -175px ;
-
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -515px -345px ;
 }
 
 .info-credit::before {
@@ -909,9 +879,8 @@ input[type="text"] + input[type="submit"]:active {
 
   margin-left: 0;
   padding: 0;
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -151px -5px ;
-
 }
 
 /* Логотипы партнеров */
@@ -974,12 +943,11 @@ input[type="text"] + input[type="submit"]:active {
 .about-us a{
   display: block;
   width: 260px;
-
 }
 
 .about-us p {
   font-size: 15px;
-  font-family: "Open Sans","Arial", sans;
+  font-family: 'Open Sans','Arial', sans;
   font-weight: 400;
   color: #464646;
   line-height: 2;
@@ -990,7 +958,7 @@ input[type="text"] + input[type="submit"]:active {
 .about-us ul {
   margin-top: 50px;
   padding-left: 0;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: 'Gilroy', 'Arial', gilroy;
   font-weight: bold;
   line-height: 40px;
   color: #000000;
@@ -1014,13 +982,11 @@ input[type="text"] + input[type="submit"]:active {
   border: 3px solid #000;
   border-radius: 50%;
   opacity: 0.3;
-
 }
 
 .contacts {
   width: 560px;
   background-color: #ffffff;
-
 }
 
 .contacts::before {
@@ -1040,7 +1006,7 @@ input[type="text"] + input[type="submit"]:active {
 
 .contacts p {
   font-size: 15px;
-  font-family: "Open Sans","Arial", sans;
+  font-family: 'Open Sans','Arial', sans;
   color: #767676;
   line-height: 2;
   text-align: left;
@@ -1064,11 +1030,9 @@ input[type="text"] + input[type="submit"]:active {
 
 .main-footer a {
   text-decoration: none;
-
 }
 
 .footer-links{
-
   padding-right: 0;
   margin-bottom: 35px;
   display: flex;
@@ -1080,7 +1044,7 @@ input[type="text"] + input[type="submit"]:active {
   width: 170px;
   padding-top: 70px;
   font-size: 48px;
-  font-family: 'Gilroy', 'Sans Serif', sans;
+  font-family: 'Gilroy', 'Arial', gilroy;
   text-decoration: none;
   color: #f7e184;
   opacity: 1;
@@ -1106,14 +1070,13 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .user-block-foot a{
-  font-family:  'Open Sans', 'Arial', sans;
+  font-family: 'Open Sans', 'Arial', sans;
   font-size: 15px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 
   margin-top:0;
   padding: 0;
-
 }
 
 .user-block-foot a:hover{
@@ -1128,7 +1091,6 @@ input[type="text"] + input[type="submit"]:active {
   padding-left: 28px;
   margin-right: 42px;
   position: relative;
-
 }
 
 .user-block-foot .compare{
@@ -1149,22 +1111,21 @@ input[type="text"] + input[type="submit"]:active {
   top: 8px;
   left: 0px;
 
-  width: 10px;
+  width: 18px;
   height: 18px;
 
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -54px -175px ;
   fill: #000000;
-
 }
 
 .user-block-foot .login:hover::before {
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -77px -175px ;
 }
 
 .user-block-foot .login:active::before {
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -77px -175px ;
   opacity: 0.3;
 }
@@ -1178,18 +1139,17 @@ input[type="text"] + input[type="submit"]:active {
   width: 18px;
   height: 18px;
 
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -91px -5px ;
-
 }
 
 .user-block-foot .compare:hover::before {
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -111px -5px ;
 }
 
 .user-block-foot .compare:active::before {
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -111px -5px ;
   opacity: 0.3;
 }
@@ -1203,19 +1163,18 @@ input[type="text"] + input[type="submit"]:active {
   width: 18px;
   height: 18px;
 
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -27px -5px ;
   opacity: 1;
-
 }
 
 .user-block-foot .basket:hover::before {
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -49px -5px ;
 }
 
 .user-block-foot .basket:active::before {
-  background: transparent url("../img/spritesheet.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -49px -5px ;
   opacity: 0.3;
 }
@@ -1230,7 +1189,7 @@ input[type="text"] + input[type="submit"]:active {
 .organization-adress {
   font-size: 15px;
 
-  font-family: "Open Sans", "Arial", sans;
+  font-family: 'Open Sans', 'Arial', sans;
   font-size: 15px;
   font-weight: 400;
   color: #ffffff;
@@ -1245,7 +1204,6 @@ input[type="text"] + input[type="submit"]:active {
   margin-top: 0px;
 
   padding: 0;
-
 }
 
 .footer-navigation ul {
@@ -1257,12 +1215,11 @@ input[type="text"] + input[type="submit"]:active {
 .footer-navigation li {
   list-style: none;
   font-size: 15px;
-
 }
 
 .footer-navigation a {
   color: #ffffff;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: 'Gilroy', 'Arial', gilroy;
   font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
@@ -1281,12 +1238,11 @@ input[type="text"] + input[type="submit"]:active {
   text-align: right;
   font-size: 15px;
 
-  font-family: "Open Sans", "Arial", sans;
+  font-family: 'Open Sans', 'Arial', sans;
   font-size: 15px;
   font-weight: 400;
   color: #ffffff;
   margin-top: -5px;
-
 }
 
 .footer-info-links {
@@ -1301,11 +1257,19 @@ input[type="text"] + input[type="submit"]:active {
   margin-top: 18px;
 
   background-color: #ffe27f;
-
 }
 
 .htmlacademy-link {
+  display: block;
+  width: 27px;
+  height: 37px;
+
+  margin-top: 5px;
+}
+
+.htmlacademy-link::before {
   content: "";
+  display: block;
 
   top: 5px;
   right: 0px;
@@ -1313,18 +1277,18 @@ input[type="text"] + input[type="submit"]:active {
   width: 27px;
   height: 37px;
 
-  margin-top: 5px;
-
-  background: transparent url("../img/htmlacademy.png") no-repeat;
-  background-position: 0px 0px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -463px -5px;
 }
 
-.htmlacademy-link:hover {
-  background: transparent url("../img/htmlacademy-y.png") no-repeat;
+.htmlacademy-link:hover::before {
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -500px -5px;
 }
 
-.htmlacademy-link:active {
-  background: transparent url("../img/htmlacademy-y.png") no-repeat;
+.htmlacademy-link:active::before {
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -500px -5px;
   opacity: 0.3;
 }
 
@@ -1361,15 +1325,18 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .social-btn-fb {
-  background: transparent url("../img/icon-fb.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -5px -49px;
 }
 
 .social-btn-inst {
-  background: transparent url("../img/icon-inst.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -54px -49px;
 }
 
 .social-btn-tw {
-  background: transparent url("../img/icon-twitter.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -103px -49px;
 }
 
 /*catalog*/
@@ -1399,7 +1366,7 @@ input[type="text"] + input[type="submit"]:active {
   vertical-align: top;
   font-size: 14px;
   padding-right: 40px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Arial', sans;
   font-weight: 400;
 }
 
@@ -1463,7 +1430,6 @@ input[type="text"] + input[type="submit"]:active {
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
-
 }
 
 .list-settings .container {
@@ -1474,7 +1440,6 @@ input[type="text"] + input[type="submit"]:active {
 /*Шапка фильтров и сортировок*/
 
 .filter-title {
-
   width: 267px;
   padding-left: 60px;
   font-size: 16px;
@@ -1484,7 +1449,6 @@ input[type="text"] + input[type="submit"]:active {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 4px;
-
 }
 
 .sorting-title {
@@ -1498,7 +1462,7 @@ input[type="text"] + input[type="submit"]:active {
 .sorting-title a {
   text-decoration: none;
   color: #000000;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans;
   opacity: 0.3;
   font-weight: normal;
 }
@@ -1527,7 +1491,7 @@ input[type="text"] + input[type="submit"]:active {
   margin-right: 53px;
   color: #000000;
   font-family: 'Gilroy', 'Arial', gilroy;
-  font-weight: 800px;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -1547,13 +1511,11 @@ input[type="text"] + input[type="submit"]:active {
   margin-top: 25px;
 
   font-size: 0px;
-
 }
 
 .sort-to-max {
   width: 17px;
   max-height: 9px;
-
 }
 
 .sort-to-max::before {
@@ -1569,7 +1531,6 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .sort-to-min {
-
   width: 17px;
   height: 9px;
   right: 0;
@@ -1594,7 +1555,7 @@ input[type="text"] + input[type="submit"]:active {
   padding-left: 60px;
   margin-left: 0;
   margin-top: 140px;
-  font-family: "Open Sans", "Arial", sans;
+  font-family: 'Open Sans', 'Arial', sans;
   font-weight: 400;
 }
 
@@ -1606,12 +1567,11 @@ input[type="text"] + input[type="submit"]:active {
 
   display: flex;
   flex-direction: column;
-
 }
 
 .catalog-content-title {
   font-size: 18px;
-  font-family: "Gilroy", "Arial", sans;
+  font-family: 'Gilroy', 'Arial', gilroy;
 
   color: #000000;
   font-weight: bold;
@@ -1621,7 +1581,6 @@ input[type="text"] + input[type="submit"]:active {
 
   border-top: 2px solid #000000;
   width: 200px;
-
 }
 /*Оформление range*/
 
@@ -1631,7 +1590,7 @@ input[type="text"] + input[type="submit"]:active {
 
 .filter-price input[type="text"] {
   font-size: 14px;
-  font-family: "Open Sans", "Arial", sans;
+  font-family: 'Open Sans', 'Arial', sans;
   font-weight: 400;
   opacity: 0.2;
   margin-bottom: 9px;
@@ -1666,7 +1625,6 @@ input[type="text"] + input[type="submit"]:active {
   display: flex;
   justify-content: space-between;
   position: relative;
-
 }
 
 .range-runner {
@@ -1687,30 +1645,30 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 /*Оформление ckeck-box*/
-.filter-color {
+.filter-checkbox {
   padding-bottom: 12px;
 }
 
-.filter-color .catalog-content-title{
+.filter-checkbox .catalog-content-title{
   padding-bottom: 18px;
 }
 
-.filter-color label{
+.filter-checkbox label{
   display: block;
   position: relative;
   padding-left: 40px;
   padding-bottom: 10px;
   padding-top: 0px;
   margin-left: 0px;
-
+  cursor: pointer;
 }
 
-.filter-color input[type="checkbox"] {
+.filter-checkbox input[type="checkbox"] {
   display: none;
 }
 
 
-.filter-color input[type="checkbox"] + .checkbox-indicator {
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: 3px;
   left: 0;
@@ -1729,7 +1687,7 @@ label:active input[type="checkbox"] + .checkbox-indicator{
   background-color: #c5c5c5;
 }
 
-.filter-color input[type="checkbox"]:checked +.checkbox-indicator::before {
+.filter-checkbox input[type="checkbox"]:checked +.checkbox-indicator::before {
   content:"";
   position: absolute;
   top: 10px;
@@ -1739,11 +1697,10 @@ label:active input[type="checkbox"] + .checkbox-indicator{
   height: 2px;
 
   background-color: #000000;
-
   transform: rotate(-45deg);
 }
 
-.filter-color input[type="checkbox"]:checked +.checkbox-indicator::after {
+.filter-checkbox input[type="checkbox"]:checked +.checkbox-indicator::after {
   content:"";
   position: absolute;
   top: 11px;
@@ -1753,28 +1710,28 @@ label:active input[type="checkbox"] + .checkbox-indicator{
   height: 2px;
 
   background-color: #000000;
-
   transform: rotate(45deg);
 }
 
 /*Оформление radio-button*/
-.filter-bluetooth .catalog-content-title {
+.filter-radio .catalog-content-title {
   margin-bottom: 18px;
 }
 
-.filter-bluetooth label {
+.filter-radio label {
   display: block;
   margin-bottom: 10px;
   padding-left: 40px;
   margin-left: 0px;
   position: relative;
+  cursor: pointer;
 }
 
-.filter-bluetooth input[type="radio"] {
+.filter-radio input[type="radio"] {
   display: none;
 }
 
-.filter-bluetooth input[type="radio"] + .radio-indicator {
+.filter-radio input[type="radio"] + .radio-indicator {
   position: absolute;
   top: 3px;
   left: 0;
@@ -1794,7 +1751,7 @@ label:active input[type="radio"] + .radio-indicator{
   border: 2px solid #adadad;
 }
 
-.filter-bluetooth input[type="radio"]:checked +.radio-indicator::before {
+.filter-radio input[type="radio"]:checked +.radio-indicator::before {
   content:"";
   position: absolute;
   top: 5px;
@@ -1805,7 +1762,6 @@ label:active input[type="radio"] + .radio-indicator{
 
   border: 2px solid #000000;
   border-radius: 5px;
-
 }
 
 /*Кнопка отправки*/
@@ -1814,13 +1770,12 @@ label:active input[type="radio"] + .radio-indicator{
   background: linear-gradient(to top, transparent 33px, #f0c52e 33px);
   background-position: 0 17px;
   border: 0px solid transparent;
-
+  outline: none;
 }
 
 .show-results:hover {
   background-color: #f0c52e;
 }
-
 
 /*Товары*/
 
@@ -1848,7 +1803,6 @@ label:active input[type="radio"] + .radio-indicator{
   margin-bottom: 50px;
   font-size: 0px;
   position: relative;
-
 }
 
 .image-info {
@@ -1865,7 +1819,6 @@ label:active input[type="radio"] + .radio-indicator{
 
 .catalog-product a {
   text-decoration: none;
-
 }
 
 .new-icon {
@@ -1878,7 +1831,7 @@ label:active input[type="radio"] + .radio-indicator{
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 32px;
 
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: 'Gilroy', 'Arial', gilroy;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 14px;
@@ -1897,9 +1850,8 @@ label:active input[type="radio"] + .radio-indicator{
 .image-info:hover .add-compare{
   color: #000000;
   opacity: 0.5;
-
   font-size: 13px;
-  font-family: "Open Sans", "Arial", sans;
+  font-family: 'Open Sans', 'Arial', sans;
   font-weight: 400;
   color: #000000;
   line-height: 2.769;
@@ -1920,7 +1872,6 @@ label:active input[type="radio"] + .radio-indicator{
   position: absolute;
   top: 0;
   left: 0;
-
   cursor: pointer;
 }
 
@@ -1936,7 +1887,6 @@ label:active input[type="radio"] + .radio-indicator{
 .to-compare {
   display: block;
   position: absolute;
-
   left: 0;
   right: 0;
   top: 220px;
@@ -1960,10 +1910,9 @@ label:active input[type="radio"] + .radio-indicator{
   vertical-align: top;
   padding: 0;
   margin-top: 0;
-
   width: 260px;
   font-size: 18px;
-  font-family: "Gilroy";
+  font-family: 'Gilroy', 'Arial', gilroy;
   color: #000000;
   font-weight: bold;
   line-height: 1.2;
@@ -1976,12 +1925,11 @@ label:active input[type="radio"] + .radio-indicator{
   margin-top: 1px;
   width: 100px;
   font-size: 16px;
-  font-family: "Gilroy";
+  font-family: 'Gilroy', 'Arial', gilroy;
   font-weight: normal;
   color: #444444;
   line-height: 1.2;
   text-align: right;
-
 }
 
 .catalog-product:nth-child(2n) {
@@ -2004,12 +1952,10 @@ label:active input[type="radio"] + .radio-indicator{
   margin-top: -10px;
   font-size: 0;
   padding: 0px;
-
 }
 
 .paginator a {
   text-decoration: none;
-
 }
 
 .paginator .btn-pag {
@@ -2048,7 +1994,6 @@ label:active input[type="radio"] + .radio-indicator{
   letter-spacing: 4px;
   padding: 20px 30px;
 }
-
 
 .btn-catalog-prev:hover {
   background-color: #d9d9d9;
@@ -2115,8 +2060,8 @@ label:active input[type="radio"] + .radio-indicator{
      0px 10px 40px 0px rgba(0, 0, 0, 0.3),
     -50px 0 50px -50px rgba(0, 0, 0, 0.7),
     50px 0 50px -50px rgba(0, 0, 0, 0.7);
-  z-index: 3;
 
+  z-index: 3;
 }
 
 .modal-map {
@@ -2136,7 +2081,6 @@ label:active input[type="radio"] + .radio-indicator{
      0px 10px 20px 0px rgba(0, 0, 0, 0.2);
 
   z-index: 3;
-
 }
 
 .modal-content-show {
@@ -2167,15 +2111,15 @@ label:active input[type="radio"] + .radio-indicator{
 
 .modal-content-close::before,
 .modal-content-close::after {
-    content: "";
-    position: absolute;
-    top: 23px;
-    left: 9px;
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 9px;
 
-    width: 32px;
-    height: 3px;
-    background-color: #ffffff;
-    border-radius: 1px;
+  width: 32px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 1px;
 }
 
 .modal-content-close::before {
@@ -2219,7 +2163,6 @@ label:active input[type="radio"] + .radio-indicator{
   padding: 15px 20px;
   border-color: transparent;
   min-width: 730px;
-
 }
 
 .login-form .btn-message {
@@ -2238,7 +2181,6 @@ label:active input[type="radio"] + .radio-indicator{
   position: relative;
   width: 320px;
   margin-bottom: 40px;
-
 }
 
 .login-form input:hover,
@@ -2264,9 +2206,6 @@ label:active input[type="radio"] + .radio-indicator{
   border: 2px solid #e5e5e5;
 }
 
-
-
 .login-form input[type="text"].invalide-value{
-
   background-color: rgba(255, 182, 182, 0.5);
 }
