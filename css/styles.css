@@ -900,7 +900,7 @@ input[type="text"] + input[type="submit"]:active {
   min-height: 100;
   margin-right: 40px;
   opacity: 0.2;
-  background-image: url();
+  background-color: #ffffff;
   filter: grayscale(100%);
 }
 
@@ -1013,10 +1013,25 @@ input[type="text"] + input[type="submit"]:active {
   margin-bottom: 40px;
 }
 
-.map-contact{
+.map-block {
+  display: block;
   width: 560px;
   height: 225px;
-  background: #e9e9e9 url("../img/map.jpg") no-repeat;
+  background-color: red;
+}
+
+.map-contact {
+  
+}
+
+.map-contact::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 560px;
+  height: 225px;
+
+  background: #e9e9e9 url(".map-contact") no-repeat;
   margin-bottom: 65px;
   cursor: pointer;
 }
@@ -1436,7 +1451,6 @@ input[type="text"] + input[type="submit"]:active {
   display: flex;
 }
 
-
 /*Шапка фильтров и сортировок*/
 
 .filter-title {
@@ -1803,6 +1817,7 @@ label:active input[type="radio"] + .radio-indicator{
   margin-bottom: 50px;
   font-size: 0px;
   position: relative;
+  background-color: #efefef;
 }
 
 .image-info {
