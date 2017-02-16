@@ -2206,6 +2206,10 @@ label:active input[type="radio"] + .radio-indicator{
   border: 2px solid #e5e5e5;
 }
 
+.btn-message {
+  outline: none;
+}
+
 .login-form input[type="text"].invalide-value{
   background-color: rgba(255, 182, 182, 0.5);
 }
