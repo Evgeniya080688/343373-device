@@ -1021,7 +1021,9 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .map-contact {
-  
+  width: 560px;
+  height: 225px;
+  margin-bottom: 65px;
 }
 
 .map-contact::before {
@@ -1031,8 +1033,8 @@ input[type="text"] + input[type="submit"]:active {
   width: 560px;
   height: 225px;
 
-  background: #e9e9e9 url(".map-contact") no-repeat;
-  margin-bottom: 65px;
+  background: #e9e9e9 url("../img/map.jpg") no-repeat;
+
   cursor: pointer;
 }
 
