@@ -1818,7 +1818,7 @@ label:active input[type="radio"] + .radio-indicator{
   margin-bottom: 50px;
   font-size: 0px;
   position: relative;
-  background-color: #efefef;
+
 }
 
 .image-info {
@@ -1826,7 +1826,7 @@ label:active input[type="radio"] + .radio-indicator{
 }
 
 .catalog-product img {
-  background-color: #eeeeee;
+  background-color: #efefef;
 }
 
 .catalog-product:nth-child(2n){
