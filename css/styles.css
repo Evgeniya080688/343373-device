@@ -47,6 +47,7 @@ h1, h2{
 }
 
 .main-header .container{
+  background: -webkit-linear-gradient(top, transparent 40px, rgba(240, 197, 46, 0.5) 20px);
   background: linear-gradient(to bottom, transparent 40px, rgba(240, 197, 46, 0.5) 20px);
   margin: auto;
   padding-top: 25px;
@@ -80,11 +81,21 @@ h1, h2{
   margin-left: 60px;
   margin-right: 60px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
@@ -93,8 +104,13 @@ h1, h2{
 .search-block{
   position: relative;
   min-width: 442px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 15px;
   border-bottom: 0px solid #000000;
   margin-right: 100px;
@@ -172,8 +188,12 @@ input[type="text"] + input[type="submit"]:active {
 
 .user-links {
   width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* enter  */
@@ -234,10 +254,17 @@ input[type="text"] + input[type="submit"]:active {
 /* compare and cat */
 
 .action-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   font-size: 15px;
   position: relative;
@@ -300,9 +327,14 @@ input[type="text"] + input[type="submit"]:active {
 /* main navigation */
 
 .navigation-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  align-self: baseline;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
   margin-left: 60px;
   margin-right: 55px;
   padding: 0;
@@ -332,12 +364,16 @@ input[type="text"] + input[type="submit"]:active {
   padding-bottom: 35px;
   margin: 0;
   font-size: 18px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 
 .catalog-menu {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   position: relative;
   padding-right: 30px;
 }
@@ -376,6 +412,8 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .menu-list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding-left: 0px;
@@ -417,8 +455,11 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .main-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin: 0;
 }
 
@@ -446,6 +487,7 @@ input[type="text"] + input[type="submit"]:active {
   min-height: 500px;
   margin-bottom: 93px;
   position: relative;
+  background: -webkit-linear-gradient(bottom, transparent 390px, rgba(240, 197, 46, 0.5) 390px);
   background: linear-gradient(to top, transparent 390px, rgba(240, 197, 46, 0.5) 390px);
 }
 
@@ -454,9 +496,14 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .banner-slide.active{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .banner-picture {
@@ -464,9 +511,15 @@ input[type="text"] + input[type="submit"]:active {
   max-height: 520px;
 
   padding: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .banner-content {
@@ -574,6 +627,7 @@ input[type="text"] + input[type="submit"]:active {
   top: 0;
   bottom: 0;
   margin: auto;
+  -webkit-transition: 0.5s height;
   transition: 0.5s height;
 }
 
@@ -588,6 +642,8 @@ input[type="text"] + input[type="submit"]:active {
 
 .banner-navigation {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   top: 335px;
   right: 80px;
@@ -767,6 +823,7 @@ input[type="text"] + input[type="submit"]:active {
 .index-content {
   padding-bottom: 70px;
   margin-bottom: 97px;
+  background: -webkit-linear-gradient(top, transparent 100px, #e5e5e5 100px);
   background: linear-gradient(to bottom, transparent 100px, #e5e5e5 100px);
   min-width: 1160px;
 }
@@ -901,12 +958,14 @@ input[type="text"] + input[type="submit"]:active {
   margin-right: 40px;
   opacity: 0.2;
   background-color: #ffffff;
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 
 .partners-logo-item:hover {
-  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
   opacity: 1;
 }
 
@@ -916,8 +975,12 @@ input[type="text"] + input[type="submit"]:active {
 
 /* about us and contacts */
 .slider-info{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .title-info {
@@ -1049,9 +1112,15 @@ input[type="text"] + input[type="submit"]:active {
 .footer-links{
   padding-right: 0;
   margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .logo-foot {
@@ -1077,9 +1146,15 @@ input[type="text"] + input[type="submit"]:active {
   padding: 0;
   margin: 0;
   padding-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 325px;
 }
 
@@ -1194,9 +1269,15 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .footer-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-bottom: 45px;
 }
 
@@ -1221,8 +1302,12 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .footer-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0;
 }
 
@@ -1261,8 +1346,12 @@ input[type="text"] + input[type="submit"]:active {
 
 .footer-info-links {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .decorative-element {
@@ -1307,8 +1396,12 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .footer-social{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 15px;
   min-width: 158px;
   margin-right: 50px;
@@ -1416,12 +1509,14 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .breadcrumps-item::after {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 14px;
 }
 
 .breadcrumps-item::before {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   top: 11px;
 }
 
@@ -1435,6 +1530,7 @@ input[type="text"] + input[type="submit"]:active {
 
 .catalog-page {
   position: relative;
+  background: -webkit-linear-gradient(right, transparent 50%, #efefef 50%);
   background: linear-gradient(to left, transparent 50%, #efefef 50%);
 }
 
@@ -1448,6 +1544,8 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .list-settings .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1469,8 +1567,14 @@ input[type="text"] + input[type="submit"]:active {
   width: 760px;
   padding-left: 73px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sorting-title a {
@@ -1495,10 +1599,16 @@ input[type="text"] + input[type="submit"]:active {
 
 .title-sort-type {
   width: 673px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
-  flex-wrap: wrap;
-  align-items: baseline;
+  -ms-flex-wrap: wrap;
+
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   font-size: 0px;
 }
 
@@ -1519,8 +1629,12 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .sorting-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 60px;
 
   max-height: 10px;
@@ -1566,6 +1680,8 @@ input[type="text"] + input[type="submit"]:active {
 
 /*filtres*/
 .catalog-content .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
 }
@@ -1585,8 +1701,15 @@ input[type="text"] + input[type="submit"]:active {
   padding-left: 0;
   margin-left: 0;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .catalog-content-title {
@@ -1629,6 +1752,8 @@ input[type="text"] + input[type="submit"]:active {
   width: 200px;
   height: 15px;
 
+  background: -webkit-linear-gradient(bottom, transparent 13px, #dcdcdc 13px);
+
   background: linear-gradient(to top, transparent 13px, #dcdcdc 13px);
   background-position: 0 8px;
   position: relative;
@@ -1638,11 +1763,19 @@ input[type="text"] + input[type="submit"]:active {
   width: 123px;
   height: 15px;
 
+  background: -webkit-linear-gradient(bottom, transparent 13px, #72ca00 13px);
+
   background: linear-gradient(to top, transparent 13px, #72ca00 13px);
   background-position: 0 7px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
 }
 
@@ -1716,7 +1849,8 @@ label:active input[type="checkbox"] + .checkbox-indicator{
   height: 2px;
 
   background-color: #000000;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .filter-checkbox input[type="checkbox"]:checked +.checkbox-indicator::after {
@@ -1729,7 +1863,8 @@ label:active input[type="checkbox"] + .checkbox-indicator{
   height: 2px;
 
   background-color: #000000;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 /*radio-button*/
@@ -1786,6 +1921,7 @@ label:active input[type="radio"] + .radio-indicator{
 /*submit*/
 .show-results{
   width: 200px;
+  background: -webkit-linear-gradient(bottom, transparent 33px, #f0c52e 33px);
   background: linear-gradient(to top, transparent 33px, #f0c52e 33px);
   background-position: 0 17px;
   border: 0px solid transparent;
@@ -1812,8 +1948,11 @@ label:active input[type="radio"] + .radio-indicator{
 }
 
 .catalog-listproducts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .catalog-product {
@@ -1961,9 +2100,15 @@ label:active input[type="radio"] + .radio-indicator{
 }
 
 .paginator {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   width: 100%;
 
   font-size: 15px;
@@ -2035,30 +2180,70 @@ label:active input[type="radio"] + .radio-indicator{
 }
 
 /*animation*/
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0%   {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70%  {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   90%  {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
@@ -2105,11 +2290,13 @@ label:active input[type="radio"] + .radio-indicator{
 
 .modal-content-show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .modal-content-close {
@@ -2143,11 +2330,13 @@ label:active input[type="radio"] + .radio-indicator{
 }
 
 .modal-content-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-content-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .login-form {
@@ -2155,10 +2344,18 @@ label:active input[type="radio"] + .radio-indicator{
 }
 
 .name-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .login-form .user-name {
