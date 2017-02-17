@@ -1092,10 +1092,9 @@ input[type="text"] + input[type="submit"]:active {
   cursor: pointer;
 }
 
-.details, .write-us {
-  padding-bottom: 80px;
+.map-contact, .write-us {
+  margin-bottom: 80px;
 }
-
 
 /* footer */
 .main-footer {
