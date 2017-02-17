@@ -9,26 +9,26 @@ var storageclient = localStorage.getItem("client");
 var storagemail = localStorage.getItem("mail");
 
 //открытие формы
-  link.addEventListener("click", function(event) {
-    event.preventDefault();
-    popup.classList.add("modal-content-show");
+link.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup.classList.add("modal-content-show");
 
 
-    if (storageclient && storagemail){
-      client.value = storageclient;
-      mail.value = storagemail;
-      message.focus();
-    }
-    else if (storageclient) {
-      client.value = storageclient;
-      mail.focus();
-    } else if (storagemail){
-      mail.value = storagemail;
-      message.focus();
-    } else if (!storageclient && !storagemail){
+  if (storageclient && storagemail){
+    client.value = storageclient;
+    mail.value = storagemail;
+    message.focus();
+  }
+  else if (storageclient) {
+    client.value = storageclient;
+    mail.focus();
+  } else if (storagemail){
+    mail.value = storagemail;
+    message.focus();
+  } else if (!storageclient && !storagemail){
     client.focus();
-    }
-  });
+  }
+});
 
 //закрытие формы
   close.addEventListener("click", function(event) {
