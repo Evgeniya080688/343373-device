@@ -104,6 +104,7 @@ h1, h2{
 .search-block{
   position: relative;
   min-width: 442px;
+  max-width: 442px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,6 +138,7 @@ h1, h2{
   background-color: transparent;
   line-height: 47px;
   width: 324px;
+  min-height: 50px;
   opacity: 0.3;
   border: 0px solid;
   outline: none;
