@@ -26,14 +26,6 @@ body {
   font-weight: bold;
 }
 
-h1, h2{
-  font-size: 47px;
-  line-height: 54px;
-  color: #000;
-  font-weight: bold;
-  font-family: "Gilroy", "Arial", gilroy;
-}
-
 .clearfix::after {
   content: "";
   display: table;
@@ -51,15 +43,15 @@ h1, h2{
   background: linear-gradient(to bottom, transparent 40px, rgba(240, 197, 46, 0.5) 20px);
   margin: auto;
   padding-top: 25px;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 }
 
 .logo-to-index {
   position: relative;
-  padding-left: 60px;
+  padding-left: 58px;
 
   font-size: 48px;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   text-decoration: none;
   color: #000000;
 }
@@ -76,8 +68,8 @@ h1, h2{
 
 .user-block {
   font-size: 0px;
-  margin-bottom: 26px;
-  margin-top: 8px;
+  margin-bottom: 24px;
+  margin-top: 7px;
   margin-left: 60px;
   margin-right: 60px;
   position: relative;
@@ -103,8 +95,8 @@ h1, h2{
 
 .search-block{
   position: relative;
-  min-width: 442px;
-  max-width: 442px;
+  min-width: 441px;
+  max-width: 441px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,8 +116,8 @@ h1, h2{
   padding-top: 20px;
   opacity: 1;
   position: absolute;
-  top: 15px;
-  left: 5px;
+  top: 17px;
+  left: 4px;
 }
 
 .search-block label:hover {
@@ -240,7 +232,7 @@ input[type="text"] + input[type="submit"]:active {
   margin: auto;
 
   top: 9px;
-  left: 0;
+  left: 0px;
 
   width: 18px;
   height: 18px;
@@ -281,14 +273,14 @@ input[type="text"] + input[type="submit"]:active {
 
 .compare {
   width: 100px;
-  padding-left: 20px;
+  padding-left: 25px;
   position: relative;
 }
 
 .compare::before {
   content: "";
   position: absolute;
-  left: 0px;
+  left: 5px;
   top: 10px;
 
   width: 18px;
@@ -308,8 +300,8 @@ input[type="text"] + input[type="submit"]:active {
 .basket::before {
   content: "";
   position: absolute;
-  right: 70px;
-  top: 10px;
+  right: 65px;
+  top: 8px;
 
   width: 18px;
   height: 18px;
@@ -332,6 +324,9 @@ input[type="text"] + input[type="submit"]:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -341,7 +336,7 @@ input[type="text"] + input[type="submit"]:active {
   margin-right: 55px;
   padding: 0;
   font-size: 0px;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
   position: relative;
 }
@@ -363,14 +358,13 @@ input[type="text"] + input[type="submit"]:active {
 
 .nav-catalog {
   width: 543px;
-  padding-bottom: 35px;
+  padding-bottom: 32px;
   margin: 0;
   font-size: 18px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
-
 
 .catalog-menu {
   -ms-flex-item-align: center;
@@ -383,7 +377,7 @@ input[type="text"] + input[type="submit"]:active {
 .catalog-menu::before {
   content: "";
   position: absolute;
-  right: 0px;
+  right: 6px;
   top: 2px;
 
   width: 18px;
@@ -450,7 +444,7 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .main-navigation {
-  width: 560px;
+  width: 510px;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -460,9 +454,13 @@ input[type="text"] + input[type="submit"]:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   margin: 0;
+  padding: 0;
 }
 
 .main-navigation li {
@@ -487,10 +485,10 @@ input[type="text"] + input[type="submit"]:active {
 
 .banner {
   min-height: 500px;
-  margin-bottom: 93px;
+  margin-bottom: 94px;
   position: relative;
-  background: -webkit-linear-gradient(bottom, transparent 390px, rgba(240, 197, 46, 0.5) 390px);
-  background: linear-gradient(to top, transparent 390px, rgba(240, 197, 46, 0.5) 390px);
+  background: -webkit-linear-gradient(bottom, transparent 387px, rgba(240, 197, 46, 0.5) 387px);
+  background: linear-gradient(to top, transparent 387px, rgba(240, 197, 46, 0.5) 387px);
 }
 
 .banner-slide {
@@ -513,6 +511,9 @@ input[type="text"] + input[type="submit"]:active {
   max-height: 520px;
 
   padding: auto;
+  position: absolute;
+  top: 2px;
+  left: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,27 +534,34 @@ input[type="text"] + input[type="submit"]:active {
 .banner-number {
   color: #ffffff;
   font-size: 179.2px;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
   line-height: 170px;
   position: absolute;
   margin: 0;
   padding: 0;
-  right: 45px;
-  top: 0px;
+  right: 47px;
+  top: -5px;
   z-index: 0;
 }
 
 .banner-title {
+  font-size: 47px;
+  line-height: 54px;
+  color: #000;
+  font-weight: bold;
+  font-family: "Gilroy", "Arial", sans-serif;
   margin: 0;
-  padding-top: 87px;
+  padding-top: 83px;
   position: absolute;
+  left: -3px;
   z-index: 1;
 }
 
 .banner-title::before {
   content: "";
   position: absolute;
+  left: 2px;
 
   display: block;
   width: 100px;
@@ -564,9 +572,10 @@ input[type="text"] + input[type="submit"]:active {
 
 .banner-description {
   font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 15px;
-  margin-top: 215px;
-  margin-bottom: 45px;
+  margin-top: 213px;
+  margin-bottom: 43px;
 }
 
 .more-info {
@@ -594,10 +603,14 @@ input[type="text"] + input[type="submit"]:active {
   font-weight: 400;
 }
 
+.feature-info p {
+  line-height: 20px;
+}
+
 .feature-title {
   font-size: 36px;
   font-weight: normal;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   margin-bottom: 0;
 }
@@ -608,7 +621,7 @@ input[type="text"] + input[type="submit"]:active {
 
   letter-spacing: 4px;
   font-size: 18px;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -647,8 +660,8 @@ input[type="text"] + input[type="submit"]:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 335px;
-  right: 80px;
+  top: 331px;
+  right: 84px;
   font-size: 0px;
   box-sizing: border-box;
   margin: 0;
@@ -698,11 +711,11 @@ input[type="text"] + input[type="submit"]:active {
   text-decoration: none;
   color: #000000;
   position: relative;
-  padding-top: 193px;
+  padding-top: 197px;
   margin-top: 0;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 1;
+  line-height: 19px;
 }
 
 .variation::before {
@@ -761,7 +774,8 @@ input[type="text"] + input[type="submit"]:active {
 .action-camera::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 2px;
+  left: 4px;
   z-index: 1;
   display: block;
   width: 160px;
@@ -773,7 +787,8 @@ input[type="text"] + input[type="submit"]:active {
 .fitness-bracelets::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 3px;
+  left: 2px;
   z-index: 1;
   display: block;
   width: 160px;
@@ -786,6 +801,7 @@ input[type="text"] + input[type="submit"]:active {
   content: "";
   position: absolute;
   top: 0;
+  left: 3px;
   z-index: 1;
   display: block;
   width: 160px;
@@ -797,7 +813,8 @@ input[type="text"] + input[type="submit"]:active {
 .quadcopters::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 4px;
+  left: 0px;
   z-index: 1;
   display: block;
   width: 160px;
@@ -811,9 +828,9 @@ input[type="text"] + input[type="submit"]:active {
   vertical-align: top;
   width: 160px;
   margin-right: 40px;
-  margin-top: 195px;
+  margin-top: 193px;
   font-size: 18px;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
 }
 
@@ -833,6 +850,7 @@ input[type="text"] + input[type="submit"]:active {
 .info-block {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
+  display: flex;
 }
 
 .hidden-block {
@@ -840,7 +858,6 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .info-menu {
-  float: left;
   width: 276px;
   border-right: 7px solid #000000;
   padding-top: 80px;
@@ -850,10 +867,15 @@ input[type="text"] + input[type="submit"]:active {
 .info-menu a{
   display: block;
   width: 160px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   text-decoration: none;
 }
 
+.info-menu .btn-warranity,
+.info-menu .btn-credit {
+  padding-left: 8px;
+  max-width: 152px;
+}
 
 .info-menu a:active{
   min-width: 255px;
@@ -867,7 +889,9 @@ input[type="text"] + input[type="submit"]:active {
   background: transparent;
 }
 
-.active-info{
+.btn-delivery.active-info,
+.btn-warranity.active-info,
+.btn-credit.active-info {
   min-width: 255px;
   text-align: left;
   padding-left: 25px;
@@ -881,11 +905,18 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 .info-description {
-  float: right;
   width: 756px;
-  padding-left: 120px;
+  padding-left: 118px;
   padding-top: 30px;
   position: relative;
+}
+
+.title-info {
+  font-size: 47px;
+  line-height: 54px;
+  color: #000;
+  font-weight: bold;
+  font-family: "Gilroy", "Arial", sans-serif;
 }
 
 .info-description h2{
@@ -900,8 +931,8 @@ input[type="text"] + input[type="submit"]:active {
 .info-delivery::before {
   content: "";
   position: absolute;
-  right: 67px;
-  top: 82px;
+  right: 60px;
+  top: 85px;
   display: block;
   width: 138px;
   height: 173px;
@@ -943,33 +974,58 @@ input[type="text"] + input[type="submit"]:active {
 }
 
 /* logos */
-
 .partners-logo {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 83px;
+  margin-bottom: 91px;
 }
 
 .partners-logo-item{
   float: left;
   display: block;
-  width: 260px;
-  min-height: 100;
+  min-width: 260px;
+  min-height: 100px;
   margin-right: 40px;
   opacity: 0.2;
-  background-color: #ffffff;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
 }
 
-
 .partners-logo-item:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
   opacity: 1;
 }
 
-.partners-logo-item:last-child {
+.logo-dji {
+  background: #ffffff url("../img/dji-gray.jpg") no-repeat;
+}
+
+.logo-dji:hover {
+  background: #ffffff url("../img/dji.jpg") no-repeat;
+}
+
+.logo-spgadgets {
+  background: #ffffff url("../img/sp-gray.jpg") no-repeat;
+}
+
+.logo-spgadgets:hover {
+  background: #ffffff url("../img/sp.jpg") no-repeat;
+}
+
+.logo-gopro {
+  background: #ffffff url("../img/gopro-gray.jpg") no-repeat;
+}
+
+.logo-gopro:hover {
+  background: #ffffff url("../img/gopro.jpg") no-repeat;
+}
+
+.logo-vive {
+  background: #ffffff url("../img/vive-gray.jpg") no-repeat;
+}
+
+.logo-vive:hover {
+  background: #ffffff url("../img/vive.jpg") no-repeat;
+}
+
+.partners-logo-item:nth-child(4n) {
   margin-right: 0px;
 }
 
@@ -985,11 +1041,11 @@ input[type="text"] + input[type="submit"]:active {
 
 .title-info {
   padding-top: 10px;
+  margin-bottom: 40px;
 }
 
 .about-us {
   width: 480px;
-  min-height: 651px;
   margin-right: 120px;
   background-color: #ffffff;
 }
@@ -1021,7 +1077,7 @@ input[type="text"] + input[type="submit"]:active {
 .about-us ul {
   margin-top: 50px;
   padding-left: 0;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
   line-height: 40px;
   color: #000000;
@@ -1064,36 +1120,32 @@ input[type="text"] + input[type="submit"]:active {
 .contacts .write-us{
   display: block;
   width: 260px;
-  cursor: pointer;
+
 }
 
 .contacts p {
   font-size: 15px;
   font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
   color: #767676;
   line-height: 2;
   text-align: left;
   margin-bottom: 40px;
 }
 
-.contacts .map-block {
-  width: 560px;
-  min-height: 225px;
-
-}
-
 .contacts .map-contact {
   display: block;
   width: 560px;
-  min-height: 225px;
-  margin-bottom: 65px;
+  min-height: 223px;
+  margin-bottom: 68px;
   background: #e9e9e9 url("../img/map.jpg") no-repeat;
   background-size: 560px 225px;
   cursor: pointer;
 }
 
 .details, .write-us {
-  margin-bottom: 80px;
+  cursor: pointer;
+  margin-bottom: 81px;
 }
 
 /* footer */
@@ -1126,7 +1178,7 @@ input[type="text"] + input[type="submit"]:active {
   width: 170px;
   padding-top: 70px;
   font-size: 48px;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   text-decoration: none;
   color: #f7e184;
   opacity: 1;
@@ -1307,6 +1359,8 @@ input[type="text"] + input[type="submit"]:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0;
 }
 
@@ -1317,7 +1371,7 @@ input[type="text"] + input[type="submit"]:active {
 
 .footer-navigation a {
   color: #ffffff;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
@@ -1402,20 +1456,20 @@ input[type="text"] + input[type="submit"]:active {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 15px;
-  min-width: 158px;
   margin-right: 50px;
+  min-width: 148px;
 }
 
 .social-btn:last-child {
-  margin-right: 0px;
+  padding-right: 0px;
 }
 
 .social-btn {
   width: 39px;
   height: 39px;
-  margin: 0 2px;
+  margin: 0;
   font-size: 0;
-
+  padding-right: 10px;
   text-decoration: none;
 
   opacity: 0.3;
@@ -1447,6 +1501,11 @@ input[type="text"] + input[type="submit"]:active {
 /*catalog*/
 
 .catalog-hat h1{
+  font-size: 47px;
+  line-height: 54px;
+  color: #000;
+  font-weight: bold;
+  font-family: "Gilroy", "Arial", sans-serif;
   margin-bottom: 15px;
 }
 
@@ -1526,7 +1585,6 @@ input[type="text"] + input[type="submit"]:active {
 
 /*content catalog*/
 
-
 .catalog-page {
   position: relative;
   background: -webkit-linear-gradient(right, transparent 50%, #efefef 50%);
@@ -1556,7 +1614,7 @@ input[type="text"] + input[type="submit"]:active {
   font-size: 16px;
 
   color: #000000;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -1615,7 +1673,7 @@ input[type="text"] + input[type="submit"]:active {
   font-size: 16px;
   margin-right: 53px;
   color: #000000;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -1713,7 +1771,7 @@ input[type="text"] + input[type="submit"]:active {
 
 .catalog-content-title {
   font-size: 18px;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
 
   color: #000000;
   font-weight: bold;
@@ -1973,7 +2031,7 @@ label:active input[type="radio"] + .radio-indicator{
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 32px;
 
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 14px;
@@ -2000,11 +2058,9 @@ label:active input[type="radio"] + .radio-indicator{
   text-decoration: none;
 }
 
-
-
 /*hover-image*/
 
-.catalog-product .image-info:hover .hover-item {
+.image-info:hover .hover-item {
   display: block;
   cursor: pointer;
 }
@@ -2074,7 +2130,7 @@ label:active input[type="radio"] + .radio-indicator{
   margin-top: 0;
   width: 260px;
   font-size: 18px;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   color: #000000;
   font-weight: bold;
   line-height: 1.2;
@@ -2087,7 +2143,7 @@ label:active input[type="radio"] + .radio-indicator{
   margin-top: 1px;
   width: 100px;
   font-size: 16px;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: normal;
   color: #444444;
   line-height: 1.2;
@@ -2125,7 +2181,7 @@ label:active input[type="radio"] + .radio-indicator{
 .paginator .btn-pag {
   font-size: 16px;
   color: #000000;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   opacity: 0.3;
@@ -2152,7 +2208,7 @@ label:active input[type="radio"] + .radio-indicator{
 .btn-catalog-next {
   font-size: 16px;
   color: #000000;
-  font-family: "Gilroy", "Arial", gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -2308,22 +2364,31 @@ label:active input[type="radio"] + .radio-indicator{
 
   font-size: 0;
 
-  background-color: #ffc600;
+  background-color: #f0c52e;
   opacity: 0.5;
   border: 0;
   border-radius: 25px;
   cursor: pointer;
 }
 
+.modal-content-close:hover {
+  opacity: 1;
+}
+
+.modal-content-close:active::before,
+.modal-content-close:active::after {
+  opacity: 0.3;
+}
+
 .modal-content-close::before,
 .modal-content-close::after {
   content: "";
   position: absolute;
-  top: 23px;
-  left: 9px;
+  top: 24px;
+  left: 10px;
 
-  width: 32px;
-  height: 3px;
+  width: 30px;
+  height: 2px;
   background-color: #ffffff;
   border-radius: 1px;
 }
@@ -2379,6 +2444,7 @@ label:active input[type="radio"] + .radio-indicator{
   padding: 15px 20px;
   border-color: transparent;
   min-width: 730px;
+  border: 2px solid #ffffff;
 }
 
 .login-form .btn-message {
