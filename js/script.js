@@ -13,7 +13,6 @@ link.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.add("modal-content-show");
 
-
   if (storageclient && storagemail){
     client.value = storageclient;
     mail.value = storagemail;
@@ -31,15 +30,14 @@ link.addEventListener("click", function(event) {
 });
 
 //закрытие формы
-  close.addEventListener("click", function(event) {
-   event.preventDefault();
-   popup.classList.remove("modal-content-show");
-   popup.classList.remove("modal-error");
- });
-
+close.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup.classList.remove("modal-content-show");
+  popup.classList.remove("modal-error");
+});
 
 //проверка валидности
- form.addEventListener("submit", function(event) {
+form.addEventListener("submit", function(event) {
   event.preventDefault();
   popup.classList.remove("modal-error");
   popup.offsetWidth = popup.offsetWidth;
@@ -57,17 +55,17 @@ link.addEventListener("click", function(event) {
     else {
       localStorage.setItem("client", client.value);
     }
-  });
+});
 
 //закрытие по esc
-  window.addEventListener("keydown", function(event) {
-    if (event.keyCode === 27) {
-      if (popup.classList.contains("modal-content-show")) {
-        popup.classList.remove("modal-content-show");
-        popup.classList.remove("modal-error");
-      }
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (popup.classList.contains("modal-content-show")) {
+      popup.classList.remove("modal-content-show");
+      popup.classList.remove("modal-error");
     }
-  });
+  }
+});
 
 var maplink = document.querySelector(".map-contact");
 var mappopup = document.querySelector(".modal-map");
@@ -75,24 +73,25 @@ var closemap = mappopup.querySelector(".modal-content-close");
 var mapopen = document.querySelector(".js-open-map");
 
 //открытие карты
-  maplink.addEventListener("click", function(event) {
-    event.preventDefault();
-    mappopup.classList.add("modal-content-show");
-  });
+maplink.addEventListener("click", function(event) {
+  event.preventDefault();
+  mappopup.classList.add("modal-content-show");
+});
 
 //закрытие карты
- closemap.addEventListener("click", function(event) {
+closemap.addEventListener("click", function(event) {
   event.preventDefault();
   mappopup.classList.remove("modal-content-show");
 });
 //закрытие по esc
-  window.addEventListener("keydown", function(event) {
-    if (event.keyCode === 27) {
-      if (mappopup.classList.contains("modal-content-show")) {
-        mappopup.classList.remove("modal-content-show");
-      }
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (mappopup.classList.contains("modal-content-show")) {
+      mappopup.classList.remove("modal-content-show");
     }
-  });
+  }
+});
+
 //оживление банера
 
 var slides = document.querySelectorAll('.banner-slide');
@@ -112,11 +111,10 @@ for (i=0; i<toggles.length; i++) {
 }
 
 setInterval(function() {  /* запуск таймера */
-  if (activeSlide<toggles.length-1){
+  if (activeSlide<toggles.length-1) {
     NextSlide++;}
-  else if (activeSlide==toggles.length-1){
-    NextSlide=0;
-  }
+  else if (activeSlide==toggles.length-1) {
+    NextSlide=0;}
   toggles[activeSlide].classList.remove('active');
   slides[activeSlide].classList.remove('active');
   toggles[NextSlide].classList.add('active');
