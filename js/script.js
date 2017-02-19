@@ -96,7 +96,7 @@ window.addEventListener("keydown", function(event) {
 
 var slides = document.querySelectorAll('.banner-slide');
 var activeSlide = 0;
-var NextSlide=0;
+var nextSlide=0;
 var toggles = document.querySelectorAll('.list-style-nav');
 var i=0;
 
@@ -104,7 +104,7 @@ for (i=0; i<toggles.length; i++) {
   toggles[i].onclick = function() {
     toggles[activeSlide].classList.remove('active');
     slides[activeSlide].classList.remove('active');
-    activeSlide = this.getAttribute('data-slide');
+    activeSlide = +this.getAttribute('data-slide');
     this.classList.add('active');
     slides[activeSlide].classList.add('active');
   }
@@ -112,14 +112,14 @@ for (i=0; i<toggles.length; i++) {
 
 setInterval(function() {  /* запуск таймера */
   if (activeSlide<toggles.length-1) {
-    NextSlide++;}
+    nextSlide=activeSlide+1;}
   else if (activeSlide==toggles.length-1) {
-    NextSlide=0;}
+    nextSlide=0;}
   toggles[activeSlide].classList.remove('active');
   slides[activeSlide].classList.remove('active');
-  toggles[NextSlide].classList.add('active');
-  slides[NextSlide].classList.add('active');
-  activeSlide=NextSlide;
+  toggles[nextSlide].classList.add('active');
+  slides[nextSlide].classList.add('active');
+  activeSlide=nextSlide;
 }, 2000);
 
 //оживление инфоблока
